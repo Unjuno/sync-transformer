@@ -73,7 +73,8 @@ class CSVSeriesAdapter(BaseAdapter):
             raise FileNotFoundError(path)
         if self.column is None:
             header = pd.read_csv(path, nrows=0).columns.tolist()
-            candidates = [c for c in header if c.lower() not in {'timestamp','datetime','date','time'}]
+            sample = pd.read_csv(path, nrows=32)
+            candidates = [c for c in header if c.lower() not in {'timestamp','datetime','date','time'} and pd.to_numeric(sample[c], errors='coerce').notna().any()]
             if not candidates:
                 raise ValueError(f'{path}: no sensor column found')
             self.column = candidates[0]
@@ -109,6 +110,25 @@ class PendingTrajectoryAdapter(PendingAdapter):
     def load_trajectory(self, *args, **kwargs) -> TrajectoryBatch:
         raise AdapterNotReady(f"{self.task_id}: trajectory dataset/formulation is not ready for {self.dataset}")
 
+class RoboMimicAdapter(BaseAdapter):
+    """Read low-dimensional RoboMimic demonstrations as observed/future poses."""
+    task_id = 'robot_manipulation'
+    def __init__(self, root: str | Path, filename='low_dim_v15.hdf5', observation='robot0_eef_pos'):
+        self.root, self.filename, self.observation = Path(root), filename, observation
+    def load_trajectory(self, context_length: int = 10, horizon: int = 10, step: int = 1) -> list[TrajectoryBatch]:
+        import h5py
+        path=self.root/self.filename
+        if not path.exists(): raise FileNotFoundError(path)
+        batches=[]
+        with h5py.File(path,'r') as f:
+            for name in sorted(f['data'].keys()):
+                obs=f[f'data/{name}/obs/{self.observation}'][...].astype(np.float32)
+                starts=np.arange(0,len(obs)-context_length-horizon+1,step)
+                for t in starts:
+                    batches.append(TrajectoryBatch(self.task_id,obs[t:t+context_length],obs[t+context_length:t+context_length+horizon],metadata={'demo':name,'observation':self.observation}))
+        if not batches: raise ValueError(f'{path}: no windows for context={context_length}, horizon={horizon}')
+        return batches
+
 def adapter_for(task_id: str, data_root: str | Path):
     if task_id == "ett":
         return ETTAdapter(data_root)
@@ -118,6 +138,8 @@ def adapter_for(task_id: str, data_root: str | Path):
         return HVACAdapter(Path(data_root).parent / 'data' / 'raw')
     if task_id == "traffic":
         return TrafficAdapter(Path(data_root).parent / 'data' / 'raw')
+    if task_id == "robot_manipulation":
+        return RoboMimicAdapter(Path(data_root).parent / 'data' / 'raw')
     from .tasks import get_task
     task = get_task(task_id)
     if task.track == "trajectory":

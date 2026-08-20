@@ -3,7 +3,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import pytest
-from sync_experiments.adapters import AdapterNotReady, PendingAdapter, PendingTrajectoryAdapter, TrajectoryMetrics, adapter_for, HVACAdapter, TrafficAdapter
+from sync_experiments.adapters import AdapterNotReady, PendingAdapter, PendingTrajectoryAdapter, TrajectoryMetrics, adapter_for, HVACAdapter, TrafficAdapter, RoboMimicAdapter
 
 def test_pending_adapter_fails_explicitly():
     with pytest.raises(AdapterNotReady):
@@ -33,6 +33,14 @@ def test_trajectory_adapter_is_separate_and_explicit():
     assert isinstance(adapter, PendingTrajectoryAdapter)
     with pytest.raises(AdapterNotReady):
         adapter.load_trajectory()
+
+def test_robomimic_adapter_reads_pose_windows(tmp_path):
+    h5py = pytest.importorskip('h5py')
+    with h5py.File(tmp_path/'low_dim_v15.hdf5','w') as f:
+        ds=f.create_dataset('data/demo_0/obs/robot0_eef_pos', data=[[float(i),0,0] for i in range(8)])
+    batches=RoboMimicAdapter(tmp_path).load_trajectory(context_length=3,horizon=2,step=2)
+    assert batches[0].observed.shape == (3,3)
+    assert batches[0].future.shape == (2,3)
 
 def test_trajectory_metrics_contract():
     metrics = TrajectoryMetrics(ade=1.0, fde=2.0, tracking_error=None,
