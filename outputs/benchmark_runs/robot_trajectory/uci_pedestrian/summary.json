@@ -21,6 +21,15 @@
     ],
     "n": 305
   },
+  "tracking_error": {
+    "mean": 1.2537020320158998,
+    "ci95": [
+      1.1933708310964624,
+      1.3142187443983473
+    ],
+    "n": 305
+  },
+  "open_loop_success_rate": 0.3704918032786885,
   "persistence_ade": {
     "mean": 0.859517993735305,
     "ci95": [
@@ -40,5 +49,5 @@
   "fallback_rate": 0.0,
   "safety_violation_rate": 0.0,
   "vanilla_transformer_artifact": "vanilla_transformer.json",
-  "failure_notes": "UCI pedestrian traffic alternative; open-loop trajectory forecast, no vehicle control or collision guarantee"
+  "failure_notes": "UCI pedestrian traffic alternative; success is open-loop endpoint tolerance <=2m, not closed-loop control"
 }
