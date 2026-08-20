@@ -1,0 +1,18 @@
+{
+  "task_id": "hvac",
+  "dataset": "BDG2_Panther_office_Hannah",
+  "status": "measured",
+  "mean_sync_external_mse": 0.5797796845436096,
+  "mean_vanilla_mse": 0.5812908013661703,
+  "paired_delta_sync_minus_vanilla": -0.0015111045429000148,
+  "paired_delta_95ci": [
+    -0.03138537649065256,
+    0.02871176971950465
+  ],
+  "mean_gate_use_rate": 0.0,
+  "failure_notes": "three BDG2 meters; gate behavior is series-dependent; not a building-wide claim",
+  "mean_sync_mae": 0.6450170079867045,
+  "mean_vanilla_mae": 0.5866747299830118,
+  "sync_inference_latency_ms_per_query": 0.079092592555012,
+  "vanilla_inference_latency_ms_per_query": 0.28996203696738965
+}

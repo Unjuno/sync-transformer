@@ -9,5 +9,9 @@
     -0.16182482018734198
   ],
   "mean_gate_use_rate": 0.0,
-  "failure_notes": "Microsoft Cloud Monitoring MongoDB machine RPS; workload forecasting, not anomaly classification"
+  "failure_notes": "Microsoft Cloud Monitoring MongoDB machine RPS; workload forecasting, not anomaly classification",
+  "mean_sync_mae": 0.3798916240533193,
+  "mean_vanilla_mae": 0.5331609845161438,
+  "sync_inference_latency_ms_per_query": 0.10240793661011148,
+  "vanilla_inference_latency_ms_per_query": 0.1616206347881373
 }

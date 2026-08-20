@@ -10,5 +10,9 @@
     -2.0036452499218282
   ],
   "mean_gate_use_rate": 0.0,
-  "failure_notes": "OPSD solar_DE_generation alternative; restricted to 2012-2015 observed coverage with interpolation limited to three consecutive gaps; no claim beyond this dataset"
+  "failure_notes": "OPSD solar_DE_generation alternative; restricted to 2012-2015 observed coverage with interpolation limited to three consecutive gaps; no claim beyond this dataset",
+  "mean_sync_mae": 0.7534933686256409,
+  "mean_vanilla_mae": 1.4455801248550415,
+  "sync_inference_latency_ms_per_query": 0.12643750004052115,
+  "vanilla_inference_latency_ms_per_query": 0.14813194448598319
 }

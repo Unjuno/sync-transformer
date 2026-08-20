@@ -9,5 +9,9 @@
     0.03940899124679466
   ],
   "mean_gate_use_rate": 1.0,
-  "failure_notes": "Microsoft Cloud Monitoring consumer purchase-rate; small retail-demand alternative, not SKU-level inventory"
+  "failure_notes": "Microsoft Cloud Monitoring consumer purchase-rate; small retail-demand alternative, not SKU-level inventory",
+  "mean_sync_mae": 0.18351608514785767,
+  "mean_vanilla_mae": 0.10231182724237442,
+  "sync_inference_latency_ms_per_query": 0.0873688889745002,
+  "vanilla_inference_latency_ms_per_query": 0.20407777790549317
 }

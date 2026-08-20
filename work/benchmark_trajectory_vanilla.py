@@ -21,7 +21,8 @@ def main():
  for seed in [163,164,165]:
   torch.manual_seed(seed); m=Model(); opt=torch.optim.Adam(m.parameters(),lr=2e-3); t=time.perf_counter()
   for _ in range(20): opt.zero_grad(); loss=((m(X)-Y)**2).mean(); loss.backward(); opt.step()
-  with torch.no_grad(): pred=m(Xt).numpy()*sd+mu
-  results.append({'seed':seed,'ade':ade(pred,Yt),'fde':fde(pred,Yt),'parameter_count':sum(p.numel() for p in m.parameters()),'elapsed_seconds':time.perf_counter()-t})
+  with torch.no_grad():
+   ti=time.perf_counter(); pred=m(Xt).numpy()*sd+mu; infer_ms=(time.perf_counter()-ti)*1000/max(1,len(te))
+  results.append({'seed':seed,'ade':ade(pred,Yt),'fde':fde(pred,Yt),'parameter_count':sum(p.numel() for p in m.parameters()),'elapsed_seconds':time.perf_counter()-t,'inference_latency_ms_per_query':infer_ms})
  out=ROOT/'outputs'/'benchmark_runs'/'robot_trajectory'/'uci_pedestrian'; payload={'model':'vanilla_transformer_trajectory','rows':results,'ade':bootstrap_ci([x['ade'] for x in results]),'fde':bootstrap_ci([x['fde'] for x in results])}; (out/'vanilla_transformer.json').write_text(json.dumps(payload,indent=2)); print(json.dumps(payload,indent=2))
 if __name__=='__main__': main()

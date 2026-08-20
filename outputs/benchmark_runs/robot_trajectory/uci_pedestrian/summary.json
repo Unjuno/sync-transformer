@@ -49,5 +49,6 @@
   "fallback_rate": 0.0,
   "safety_violation_rate": 0.0,
   "vanilla_transformer_artifact": "vanilla_transformer.json",
-  "failure_notes": "UCI pedestrian traffic alternative; success is open-loop endpoint tolerance <=2m, not closed-loop control"
+  "failure_notes": "UCI pedestrian traffic alternative; success is open-loop endpoint tolerance <=2m, not closed-loop control",
+  "vanilla_inference_latency_ms_per_query": 0.07521027321876357
 }

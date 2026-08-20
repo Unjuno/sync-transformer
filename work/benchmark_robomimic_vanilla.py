@@ -15,7 +15,8 @@ def main():
  for seed in [163,164,165]:
   torch.manual_seed(seed);m=M(X.shape[-1]);o=torch.optim.Adam(m.parameters(),lr=2e-3);t=time.perf_counter()
   for _ in range(20):o.zero_grad();l=((m(X)-Y)**2).mean();l.backward();o.step()
-  with torch.no_grad():p=m(Xt).numpy()*sd+mu
-  rows.append({'seed':seed,'ade':ade(p,YT),'fde':fde(p,YT),'parameter_count':sum(q.numel() for q in m.parameters()),'elapsed_seconds':time.perf_counter()-t})
+  with torch.no_grad():
+   ti=time.perf_counter();p=m(Xt).numpy()*sd+mu; infer_ms=(time.perf_counter()-ti)*1000/max(1,len(z))
+  rows.append({'seed':seed,'ade':ade(p,YT),'fde':fde(p,YT),'parameter_count':sum(q.numel() for q in m.parameters()),'elapsed_seconds':time.perf_counter()-t,'inference_latency_ms_per_query':infer_ms})
  out=ROOT/'outputs'/'benchmark_runs'/'robot_manipulation'/'robomimic_lift_ph';(out/'vanilla_transformer.json').write_text(json.dumps({'model':'vanilla_transformer_trajectory','rows':rows,'ade':bootstrap_ci([x['ade'] for x in rows]),'fde':bootstrap_ci([x['fde'] for x in rows])},indent=2));print(json.dumps(rows,indent=2))
 if __name__=='__main__':main()

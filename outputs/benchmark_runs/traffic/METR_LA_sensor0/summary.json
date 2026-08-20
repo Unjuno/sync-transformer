@@ -1,0 +1,18 @@
+{
+  "task_id": "traffic",
+  "dataset": "METR_LA_sensor0",
+  "status": "measured",
+  "mean_sync_external_mse": 0.9961344003677368,
+  "mean_vanilla_mse": 1.0645275910695393,
+  "paired_delta_sync_minus_vanilla": -0.06839321189048425,
+  "paired_delta_95ci": [
+    -0.1550185700137378,
+    0.022805392050223628
+  ],
+  "mean_gate_use_rate": 0.0,
+  "failure_notes": "one METR-LA sensor; spatial multivariate traffic effects not evaluated",
+  "mean_sync_mae": 0.6518874565760294,
+  "mean_vanilla_mae": 0.7281466722488403,
+  "sync_inference_latency_ms_per_query": 0.17169530511923362,
+  "vanilla_inference_latency_ms_per_query": 0.16855399055732198
+}

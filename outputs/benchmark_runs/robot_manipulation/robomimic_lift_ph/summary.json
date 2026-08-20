@@ -50,5 +50,6 @@
   "safety_violation_rate": 0.0847457627118644,
   "gate_threshold": 0.01161886006593704,
   "safety_limit": 0.014211593195796013,
-  "failure_notes": "nearest-context retrieval SYNC formulation; success is open-loop endpoint tolerance <=0.05m, not closed-loop control"
+  "failure_notes": "nearest-context retrieval SYNC formulation; success is open-loop endpoint tolerance <=0.05m, not closed-loop control",
+  "vanilla_inference_latency_ms_per_query": 0.11936384186610359
 }

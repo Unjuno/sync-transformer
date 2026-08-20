@@ -6,21 +6,24 @@
       "ade": 0.025131314560272597,
       "fde": 0.026270424110031693,
       "parameter_count": 18206,
-      "elapsed_seconds": 4.715144700006931
+      "elapsed_seconds": 1.005961799994111,
+      "inference_latency_ms_per_query": 0.11294067803261233
     },
     {
       "seed": 164,
       "ade": 0.02596520934223675,
       "fde": 0.028893924868580195,
       "parameter_count": 18206,
-      "elapsed_seconds": 2.888736599998083
+      "elapsed_seconds": 1.0678672000067309,
+      "inference_latency_ms_per_query": 0.12476779670963632
     },
     {
       "seed": 165,
       "ade": 0.02671187490832229,
       "fde": 0.02881163491232623,
       "parameter_count": 18206,
-      "elapsed_seconds": 2.0605511000030674
+      "elapsed_seconds": 1.0051689999963855,
+      "inference_latency_ms_per_query": 0.1203830508560621
     }
   ],
   "ade": {
