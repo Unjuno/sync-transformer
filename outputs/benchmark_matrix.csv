@@ -1,5 +1,9 @@
 task,dataset,horizon,split,model,parameter_count,mean_metric,95% CI,improvement_fraction,abstention_or_fallback_rate,latency,failure_notes,status
 ett,ETTh1/ETTh2/ETTm1/ETTm2,task-specific,canonical,Vanilla/SYNC,recorded,recorded,recorded,conditional,recorded,recorded,split-sensitive transfer,measured
+ett,ETTh1,task-specific,canonical,Vanilla small/SYNC,recorded,0.068385,recorded,conditional,1.000000,recorded,canonical ETT result; interpretation is dataset/split conditional,measured
+ett,ETTh2,task-specific,canonical,Vanilla small/SYNC,recorded,0.349260,recorded,conditional,1.000000,recorded,canonical ETT result; interpretation is dataset/split conditional,measured
+ett,ETTm1,task-specific,canonical,Vanilla small/SYNC,recorded,0.054497,recorded,conditional,1.000000,recorded,canonical ETT result; interpretation is dataset/split conditional,measured
+ett,ETTm2,task-specific,canonical,Vanilla small/SYNC,recorded,0.383151,recorded,conditional,1.000000,recorded,canonical ETT result; interpretation is dataset/split conditional,measured
 electricity,UCI ElectricityLoadDiagrams MT_001,96,60/20/20,Vanilla small/SYNC,12800/19296,0.795544,"[0.723004, 0.869040]",not pooled,0.000000,recorded,gate abstained on every query,measured
 electricity,UCI ElectricityLoadDiagrams MT_002,96,60/20/20,Vanilla small/SYNC,12800/19296,0.237559,"[0.231607, 0.244159]",not pooled,0.102740,recorded,deployed residual worsened base head,measured
 electricity,UCI ElectricityLoadDiagrams MT_003,96,60/20/20,Vanilla small/SYNC,12800/19296,0.003625,"[0.003573, 0.003686]",not pooled,1.000000,recorded,no measured worsening,measured

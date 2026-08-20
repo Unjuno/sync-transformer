@@ -8,6 +8,9 @@ FIELDS = ['task','dataset','horizon','split','model','parameter_count','mean_met
 def main():
     rows = []
     rows.append(dict(zip(FIELDS, ['ett','ETTh1/ETTh2/ETTm1/ETTm2','task-specific','canonical','Vanilla/SYNC','recorded','recorded','recorded','conditional','recorded','recorded','split-sensitive transfer','measured'])))
+    for dataset in ('ETTh1','ETTh2','ETTm1','ETTm2'):
+        d=json.loads((ROOT/'outputs/benchmark_runs/ett'/dataset/'summary.json').read_text())
+        rows.append(dict(zip(FIELDS,['ett',dataset,d['horizon'] if 'horizon' in d else 'task-specific','canonical','Vanilla small/SYNC','recorded',f"{d['mean_sync_external_mse']:.6f}",'recorded','conditional',f"{d['mean_gate_use_rate']:.6f}",'recorded',d['failure_notes'],'measured'])))
     summary = json.loads((ROOT/'outputs/electricity_cross_client_summary.json').read_text())
     for r in summary['rows']:
         rows.append(dict(zip(FIELDS, ['electricity',f"UCI ElectricityLoadDiagrams {r['client']}",'96','60/20/20','Vanilla small/SYNC','12800/19296',f"{r['sync_external_mse']['mean']:.6f}",f"[{r['sync_external_mse']['ci95'][0]:.6f}, {r['sync_external_mse']['ci95'][1]:.6f}]",'not pooled',f"{r['gate_use_rate']:.6f}",'recorded',r['failure'],'measured'])))
