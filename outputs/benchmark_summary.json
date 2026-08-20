@@ -60,7 +60,7 @@
       "task_id": "industrial",
       "track": "forecasting",
       "dataset": "NASA C-MAPSS",
-      "status": "pending_adapter",
+      "status": "blocked_source_unavailable",
       "message": "industrial: acquire and license NASA C-MAPSS, then implement its adapter"
     },
     {
