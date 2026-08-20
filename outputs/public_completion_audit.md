@@ -18,8 +18,9 @@ and failure notes are present.
 | CPU ETT regression | `work/validate_public_benchmark.py` and test suite | met |
 | Raw data excluded from Git | `git ls-files data/raw` is empty | met |
 | GPU artifacts isolated | `outputs/runtime_manifest.json` and CUDA overwrite guard | met |
-| All ten tasks measured | Six task families remain source/data/formulation constrained | not yet met |
+| All ten tasks measured | Renewable, server, retail, industrial, and robot trajectory remain constrained; RoboMimic manipulation data/adapter are ready but ADE/FDE comparison is pending | not yet met |
 
 Current measured scope is ETT, three electricity clients, three BDG2 meters,
-and two METR-LA sensors. Renewable, server, retail, industrial, and trajectory
-tasks remain hypotheses until their data and evaluation adapters are complete.
+and two METR-LA sensors. RoboMimic manipulation data and its adapter are now
+ready, but the trajectory benchmark is not measured until Vanilla/SYNC,
+ADE/FDE, fallback, and safety evaluation are run.
