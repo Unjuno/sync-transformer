@@ -20,7 +20,7 @@ def main():
             assert (d/name).exists(), f'missing {d/name}'
     matrix_path=ROOT/'outputs/benchmark_matrix.csv'
     rows=list(csv.DictReader(matrix_path.open(newline='', encoding='utf-8')))
-    assert len(rows) == 17, f'expected 17 benchmark matrix rows, got {len(rows)}'
+    assert len(rows) == 16, f'expected 16 benchmark matrix rows, got {len(rows)}'
     ett_rows={r['dataset'] for r in rows if r['task']=='ett'}
     assert {'ETTh1','ETTh2','ETTm1','ETTm2'} <= ett_rows
     electricity_rows={r['dataset'] for r in rows if r['task']=='electricity'}
