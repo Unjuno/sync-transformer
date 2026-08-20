@@ -1,0 +1,77 @@
+{
+  "protocol": "causal seasonal naive, canonical 60/20/20 test",
+  "rows": [
+    {
+      "dataset": "ETTh1",
+      "period": 24,
+      "mse": 0.06906495988368988,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTh1",
+      "period": 48,
+      "mse": 0.12356390058994293,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTh1",
+      "period": 168,
+      "mse": 0.19564980268478394,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTh2",
+      "period": 24,
+      "mse": 0.15895134210586548,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTh2",
+      "period": 48,
+      "mse": 0.2840905487537384,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTh2",
+      "period": 168,
+      "mse": 0.44537076354026794,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTm1",
+      "period": 96,
+      "mse": 0.06975533813238144,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTm1",
+      "period": 192,
+      "mse": 0.12426818162202835,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTm1",
+      "period": 672,
+      "mse": 0.1968182474374771,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTm2",
+      "period": 96,
+      "mse": 0.1588074117898941,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTm2",
+      "period": 192,
+      "mse": 0.2844131588935852,
+      "queries": 145
+    },
+    {
+      "dataset": "ETTm2",
+      "period": 672,
+      "mse": 0.4457053244113922,
+      "queries": 145
+    }
+  ]
+}

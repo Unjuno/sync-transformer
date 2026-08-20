@@ -1,0 +1,29 @@
+{
+  "protocol": "same candidate bank; endpoint+seasonal; query bootstrap",
+  "rows": [
+    {
+      "dataset": "ETTh1",
+      "queries": 435,
+      "sync_minus_raw": -0.06059822419487026,
+      "ci95_low": -0.07699937565931943,
+      "ci95_high": -0.04484661128080247,
+      "fraction_sync_better": 0.5126436781609195
+    },
+    {
+      "dataset": "ETTm1",
+      "queries": 435,
+      "sync_minus_raw": -0.06481521753487231,
+      "ci95_low": -0.08067376912159353,
+      "ci95_high": -0.0494446969174127,
+      "fraction_sync_better": 0.5149425287356322
+    },
+    {
+      "dataset": "ETTm2",
+      "queries": 435,
+      "sync_minus_raw": 0.009228651880704123,
+      "ci95_low": -0.004074771849160222,
+      "ci95_high": 0.022465105915613383,
+      "fraction_sync_better": 0.45057471264367815
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local data and generated large artifacts
+outputs/*.csv
+outputs/*_raw.csv
+outputs/*.log
+outputs/*.pt
+outputs/*.pth
+outputs/*.ckpt
+work/vendor/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

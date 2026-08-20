@@ -1,0 +1,215 @@
+{
+  "protocol": "offline calibration-distance quantile sweep",
+  "rows": [
+    {
+      "split": "primary",
+      "dataset": "ETTh1",
+      "quantile": 0.5,
+      "mean_delta": -0.0017507062925175689,
+      "use_rate": 0.42758620689655175
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTh1",
+      "quantile": 0.75,
+      "mean_delta": -0.0070920595021426,
+      "use_rate": 0.7586206896551724
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTh1",
+      "quantile": 0.9,
+      "mean_delta": -0.015230343747755577,
+      "use_rate": 0.8206896551724138
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTh1",
+      "quantile": 0.95,
+      "mean_delta": -0.01648310633140734,
+      "use_rate": 0.8413793103448276
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTh1",
+      "quantile": 1.0,
+      "mean_delta": -0.03257382828956363,
+      "use_rate": 0.993103448275862
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTm1",
+      "quantile": 0.5,
+      "mean_delta": 0.002176730268388644,
+      "use_rate": 0.593103448275862
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTm1",
+      "quantile": 0.75,
+      "mean_delta": 7.539743707440366e-05,
+      "use_rate": 0.7586206896551724
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTm1",
+      "quantile": 0.9,
+      "mean_delta": -0.00788180852715654,
+      "use_rate": 0.9724137931034482
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTm1",
+      "quantile": 0.95,
+      "mean_delta": -0.009252509241388446,
+      "use_rate": 0.993103448275862
+    },
+    {
+      "split": "primary",
+      "dataset": "ETTm1",
+      "quantile": 1.0,
+      "mean_delta": -0.009464791235139314,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTh1",
+      "quantile": 0.5,
+      "mean_delta": 0.004396297044462042,
+      "use_rate": 0.39779005524861877
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTh1",
+      "quantile": 0.75,
+      "mean_delta": 0.0032614540981049916,
+      "use_rate": 0.4696132596685083
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTh1",
+      "quantile": 0.9,
+      "mean_delta": -0.0013710330815001307,
+      "use_rate": 0.6519337016574586
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTh1",
+      "quantile": 0.95,
+      "mean_delta": -0.0028361728651582867,
+      "use_rate": 0.6629834254143646
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTh1",
+      "quantile": 1.0,
+      "mean_delta": -0.006210414432057798,
+      "use_rate": 0.6961325966850829
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTm1",
+      "quantile": 0.5,
+      "mean_delta": -0.001162142985076755,
+      "use_rate": 0.430939226519337
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTm1",
+      "quantile": 0.75,
+      "mean_delta": -0.0023649878967999314,
+      "use_rate": 0.5359116022099447
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTm1",
+      "quantile": 0.9,
+      "mean_delta": -0.004273230333436918,
+      "use_rate": 0.6187845303867403
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTm1",
+      "quantile": 0.95,
+      "mean_delta": -0.005847023113958304,
+      "use_rate": 0.6850828729281768
+    },
+    {
+      "split": "split50",
+      "dataset": "ETTm1",
+      "quantile": 1.0,
+      "mean_delta": -0.012861260118625002,
+      "use_rate": 0.856353591160221
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTh1",
+      "quantile": 0.5,
+      "mean_delta": 0.03158181094575995,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTh1",
+      "quantile": 0.75,
+      "mean_delta": 0.03158181094575995,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTh1",
+      "quantile": 0.9,
+      "mean_delta": 0.03158181094575995,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTh1",
+      "quantile": 0.95,
+      "mean_delta": 0.03158181094575995,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTh1",
+      "quantile": 1.0,
+      "mean_delta": 0.03158181094575995,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTm1",
+      "quantile": 0.5,
+      "mean_delta": 0.008758362517749637,
+      "use_rate": 0.9907407407407407
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTm1",
+      "quantile": 0.75,
+      "mean_delta": 0.008979281108757411,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTm1",
+      "quantile": 0.9,
+      "mean_delta": 0.008979281108757411,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTm1",
+      "quantile": 0.95,
+      "mean_delta": 0.008979281108757411,
+      "use_rate": 1.0
+    },
+    {
+      "split": "split70",
+      "dataset": "ETTm1",
+      "quantile": 1.0,
+      "mean_delta": 0.008979281108757411,
+      "use_rate": 1.0
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "name": "SYNC Transformer",
+  "status": "conditional representation-sensitive causal residual transport prototype",
+  "headline_allowed": [
+    "Endpoint plus seasonal-lag features yield statistically nonzero improvement over the learned head on ETTh1 and ETTm1 under the primary split.",
+    "Causal candidate transport, distance/volatility gating, and fallback are auditable and reproducible."
+  ],
+  "headline_forbidden": [
+    "Universal accuracy improvement",
+    "split-robust generalization",
+    "superiority to seasonal-naive baselines",
+    "exact reproduction of the initial SYNC_CORE table"
+  ],
+  "canonical_fixed_gate": {
+    "protocol": "pooled calibration-frozen volatility gate",
+    "rows": [
+      {
+        "dataset": "ETTh1",
+        "threshold": 0.079168,
+        "queries": 435,
+        "mean_delta_external_minus_head": 0.008478557665286393,
+        "use_rate": 0.6275862068965518
+      },
+      {
+        "dataset": "ETTh2",
+        "threshold": 0.079168,
+        "queries": 435,
+        "mean_delta_external_minus_head": 0.0,
+        "use_rate": 0.0
+      },
+      {
+        "dataset": "ETTm1",
+        "threshold": 0.079168,
+        "queries": 435,
+        "mean_delta_external_minus_head": 0.0010700031986524319,
+        "use_rate": 1.0
+      },
+      {
+        "dataset": "ETTm2",
+        "threshold": 0.079168,
+        "queries": 435,
+        "mean_delta_external_minus_head": 0.008026754526400018,
+        "use_rate": 1.0
+      }
+    ]
+  },
+  "endpoint_seasonal_bootstrap": {
+    "protocol": "endpoint+seasonal features, pooled query bootstrap",
+    "rows": [
+      {
+        "dataset": "ETTh1",
+        "queries": 435,
+        "mean_delta": -0.033154610565852845,
+        "ci95_low": -0.041983436276258404,
+        "ci95_high": -0.02456636552217192,
+        "fraction_improved": 0.41379310344827586
+      },
+      {
+        "dataset": "ETTh2",
+        "queries": 435,
+        "mean_delta": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "fraction_improved": 0.0
+      },
+      {
+        "dataset": "ETTm1",
+        "queries": 435,
+        "mean_delta": -0.009464791235139314,
+        "ci95_low": -0.015563802988825088,
+        "ci95_high": -0.0035364231176610137,
+        "fraction_improved": 0.45057471264367815
+      },
+      {
+        "dataset": "ETTm2",
+        "queries": 435,
+        "mean_delta": 0.01374953191342025,
+        "ci95_low": 0.006408878256534708,
+        "ci95_high": 0.02090064973195736,
+        "fraction_improved": 0.31264367816091954
+      }
+    ]
+  },
+  "seasonal_naive_baseline": {
+    "protocol": "causal seasonal naive, canonical 60/20/20 test",
+    "rows": [
+      {
+        "dataset": "ETTh1",
+        "period": 24,
+        "mse": 0.06906495988368988,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTh1",
+        "period": 48,
+        "mse": 0.12356390058994293,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTh1",
+        "period": 168,
+        "mse": 0.19564980268478394,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTh2",
+        "period": 24,
+        "mse": 0.15895134210586548,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTh2",
+        "period": 48,
+        "mse": 0.2840905487537384,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTh2",
+        "period": 168,
+        "mse": 0.44537076354026794,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTm1",
+        "period": 96,
+        "mse": 0.06975533813238144,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTm1",
+        "period": 192,
+        "mse": 0.12426818162202835,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTm1",
+        "period": 672,
+        "mse": 0.1968182474374771,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTm2",
+        "period": 96,
+        "mse": 0.1588074117898941,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTm2",
+        "period": 192,
+        "mse": 0.2844131588935852,
+        "queries": 145
+      },
+      {
+        "dataset": "ETTm2",
+        "period": 672,
+        "mse": 0.4457053244113922,
+        "queries": 145
+      }
+    ]
+  },
+  "distance_gate_envelope": {
+    "protocol": "offline calibration-distance quantile sweep",
+    "rows": [
+      {
+        "split": "primary",
+        "dataset": "ETTh1",
+        "quantile": 0.5,
+        "mean_delta": -0.0017507062925175689,
+        "use_rate": 0.42758620689655175
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTh1",
+        "quantile": 0.75,
+        "mean_delta": -0.0070920595021426,
+        "use_rate": 0.7586206896551724
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTh1",
+        "quantile": 0.9,
+        "mean_delta": -0.015230343747755577,
+        "use_rate": 0.8206896551724138
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTh1",
+        "quantile": 0.95,
+        "mean_delta": -0.01648310633140734,
+        "use_rate": 0.8413793103448276
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTh1",
+        "quantile": 1.0,
+        "mean_delta": -0.03257382828956363,
+        "use_rate": 0.993103448275862
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTm1",
+        "quantile": 0.5,
+        "mean_delta": 0.002176730268388644,
+        "use_rate": 0.593103448275862
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTm1",
+        "quantile": 0.75,
+        "mean_delta": 7.539743707440366e-05,
+        "use_rate": 0.7586206896551724
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTm1",
+        "quantile": 0.9,
+        "mean_delta": -0.00788180852715654,
+        "use_rate": 0.9724137931034482
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTm1",
+        "quantile": 0.95,
+        "mean_delta": -0.009252509241388446,
+        "use_rate": 0.993103448275862
+      },
+      {
+        "split": "primary",
+        "dataset": "ETTm1",
+        "quantile": 1.0,
+        "mean_delta": -0.009464791235139314,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTh1",
+        "quantile": 0.5,
+        "mean_delta": 0.004396297044462042,
+        "use_rate": 0.39779005524861877
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTh1",
+        "quantile": 0.75,
+        "mean_delta": 0.0032614540981049916,
+        "use_rate": 0.4696132596685083
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTh1",
+        "quantile": 0.9,
+        "mean_delta": -0.0013710330815001307,
+        "use_rate": 0.6519337016574586
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTh1",
+        "quantile": 0.95,
+        "mean_delta": -0.0028361728651582867,
+        "use_rate": 0.6629834254143646
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTh1",
+        "quantile": 1.0,
+        "mean_delta": -0.006210414432057798,
+        "use_rate": 0.6961325966850829
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTm1",
+        "quantile": 0.5,
+        "mean_delta": -0.001162142985076755,
+        "use_rate": 0.430939226519337
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTm1",
+        "quantile": 0.75,
+        "mean_delta": -0.0023649878967999314,
+        "use_rate": 0.5359116022099447
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTm1",
+        "quantile": 0.9,
+        "mean_delta": -0.004273230333436918,
+        "use_rate": 0.6187845303867403
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTm1",
+        "quantile": 0.95,
+        "mean_delta": -0.005847023113958304,
+        "use_rate": 0.6850828729281768
+      },
+      {
+        "split": "split50",
+        "dataset": "ETTm1",
+        "quantile": 1.0,
+        "mean_delta": -0.012861260118625002,
+        "use_rate": 0.856353591160221
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTh1",
+        "quantile": 0.5,
+        "mean_delta": 0.03158181094575995,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTh1",
+        "quantile": 0.75,
+        "mean_delta": 0.03158181094575995,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTh1",
+        "quantile": 0.9,
+        "mean_delta": 0.03158181094575995,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTh1",
+        "quantile": 0.95,
+        "mean_delta": 0.03158181094575995,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTh1",
+        "quantile": 1.0,
+        "mean_delta": 0.03158181094575995,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTm1",
+        "quantile": 0.5,
+        "mean_delta": 0.008758362517749637,
+        "use_rate": 0.9907407407407407
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTm1",
+        "quantile": 0.75,
+        "mean_delta": 0.008979281108757411,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTm1",
+        "quantile": 0.9,
+        "mean_delta": 0.008979281108757411,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTm1",
+        "quantile": 0.95,
+        "mean_delta": 0.008979281108757411,
+        "use_rate": 1.0
+      },
+      {
+        "split": "split70",
+        "dataset": "ETTm1",
+        "quantile": 1.0,
+        "mean_delta": 0.008979281108757411,
+        "use_rate": 1.0
+      }
+    ]
+  },
+  "raw_vs_sync_bootstrap": {
+    "protocol": "same candidate bank; endpoint+seasonal; query bootstrap",
+    "rows": [
+      {
+        "dataset": "ETTh1",
+        "queries": 435,
+        "sync_minus_raw": -0.06059822419487026,
+        "ci95_low": -0.07699937565931943,
+        "ci95_high": -0.04484661128080247,
+        "fraction_sync_better": 0.5126436781609195
+      },
+      {
+        "dataset": "ETTm1",
+        "queries": 435,
+        "sync_minus_raw": -0.06481521753487231,
+        "ci95_low": -0.08067376912159353,
+        "ci95_high": -0.0494446969174127,
+        "fraction_sync_better": 0.5149425287356322
+      },
+      {
+        "dataset": "ETTm2",
+        "queries": 435,
+        "sync_minus_raw": 0.009228651880704123,
+        "ci95_low": -0.004074771849160222,
+        "ci95_high": 0.022465105915613383,
+        "fraction_sync_better": 0.45057471264367815
+      }
+    ]
+  },
+  "open_requirements": [
+    "same-budget RAFT/PFRP-like baseline",
+    "held-out frequency/dataset evaluation",
+    "rolling-origin robustness",
+    "strong baseline comparison"
+  ],
+  "artifact_policy": "Use deterministic canonical and _end_sf_ artifacts for claims; treat older nondeterministic values as historical only."
+}

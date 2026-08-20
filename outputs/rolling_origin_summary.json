@@ -1,0 +1,115 @@
+{
+  "pattern": "common_runner_*_ev*.json",
+  "rows": [
+    {
+      "artifact": "common_runner_ETTh1_q24_c24_lbfull_k8_rich0_end_sf_vg0.079168_tr0.7_ca0.8_ev0.8-0.9.json",
+      "dataset": "ETTh1",
+      "eval_start_frac": 0.8,
+      "eval_end_frac": 0.9,
+      "n_queries": 216,
+      "mean_sync_minus_head": -0.040689662974155334,
+      "median_sync_minus_head": 0.0,
+      "improvement_fraction": 0.4861111111111111,
+      "gate_use_rate_mean": 0.6111111111111112
+    },
+    {
+      "artifact": "common_runner_ETTh2_q24_c24_lbfull_k8_rich0_end_sf_vg0.079168_tr0.7_ca0.8_ev0.8-0.9.json",
+      "dataset": "ETTh2",
+      "eval_start_frac": 0.8,
+      "eval_end_frac": 0.9,
+      "n_queries": 216,
+      "mean_sync_minus_head": 0.0,
+      "median_sync_minus_head": 0.0,
+      "improvement_fraction": 0.0,
+      "gate_use_rate_mean": 0.0
+    },
+    {
+      "artifact": "common_runner_ETTm1_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.5_ca0.6_ev0.6-0.7.json",
+      "dataset": "ETTm1",
+      "eval_start_frac": 0.6,
+      "eval_end_frac": 0.7,
+      "n_queries": 216,
+      "mean_sync_minus_head": 0.08729274099244287,
+      "median_sync_minus_head": 0.052789218723773956,
+      "improvement_fraction": 0.21296296296296297,
+      "gate_use_rate_mean": 1.0
+    },
+    {
+      "artifact": "common_runner_ETTm1_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.6_ca0.7_ev0.7-0.8.json",
+      "dataset": "ETTm1",
+      "eval_start_frac": 0.7,
+      "eval_end_frac": 0.8,
+      "n_queries": 216,
+      "mean_sync_minus_head": -0.026213716387886693,
+      "median_sync_minus_head": -0.019686048850417137,
+      "improvement_fraction": 0.6898148148148148,
+      "gate_use_rate_mean": 1.0
+    },
+    {
+      "artifact": "common_runner_ETTm1_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.7_ca0.8_ev0.8-0.9.json",
+      "dataset": "ETTm1",
+      "eval_start_frac": 0.8,
+      "eval_end_frac": 0.9,
+      "n_queries": 216,
+      "mean_sync_minus_head": -0.01472675066475791,
+      "median_sync_minus_head": -6.689131259918213e-05,
+      "improvement_fraction": 0.5,
+      "gate_use_rate_mean": 1.0
+    },
+    {
+      "artifact": "common_runner_ETTm1_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.8_ca0.9_ev0.9-1.json",
+      "dataset": "ETTm1",
+      "eval_start_frac": 0.9,
+      "eval_end_frac": 1.0,
+      "n_queries": 216,
+      "mean_sync_minus_head": -0.0022874599607247445,
+      "median_sync_minus_head": -0.0001751631498336792,
+      "improvement_fraction": 0.5,
+      "gate_use_rate_mean": 1.0
+    },
+    {
+      "artifact": "common_runner_ETTm2_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.5_ca0.6_ev0.6-0.7.json",
+      "dataset": "ETTm2",
+      "eval_start_frac": 0.6,
+      "eval_end_frac": 0.7,
+      "n_queries": 216,
+      "mean_sync_minus_head": 0.0015400121876693986,
+      "median_sync_minus_head": 0.0009532254189252853,
+      "improvement_fraction": 0.4675925925925926,
+      "gate_use_rate_mean": 1.0
+    },
+    {
+      "artifact": "common_runner_ETTm2_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.6_ca0.7_ev0.7-0.8.json",
+      "dataset": "ETTm2",
+      "eval_start_frac": 0.7,
+      "eval_end_frac": 0.8,
+      "n_queries": 216,
+      "mean_sync_minus_head": 0.10634788789751905,
+      "median_sync_minus_head": 0.046805161982774734,
+      "improvement_fraction": 0.16666666666666666,
+      "gate_use_rate_mean": 1.0
+    },
+    {
+      "artifact": "common_runner_ETTm2_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.7_ca0.8_ev0.8-0.9.json",
+      "dataset": "ETTm2",
+      "eval_start_frac": 0.8,
+      "eval_end_frac": 0.9,
+      "n_queries": 216,
+      "mean_sync_minus_head": -0.0065052915295517,
+      "median_sync_minus_head": 0.0033184345811605453,
+      "improvement_fraction": 0.4722222222222222,
+      "gate_use_rate_mean": 1.0
+    },
+    {
+      "artifact": "common_runner_ETTm2_q96_c96_lbfull_k8_rich0_end_sf_vg0.079168_tr0.8_ca0.9_ev0.9-1.json",
+      "dataset": "ETTm2",
+      "eval_start_frac": 0.9,
+      "eval_end_frac": 1.0,
+      "n_queries": 216,
+      "mean_sync_minus_head": -0.003313377378853383,
+      "median_sync_minus_head": -0.0014401227235794067,
+      "improvement_fraction": 0.5648148148148148,
+      "gate_use_rate_mean": 1.0
+    }
+  ]
+}

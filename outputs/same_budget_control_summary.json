@@ -1,0 +1,193 @@
+{
+  "protocol": "canonical deterministic runner; same query/seed budget; internal controls only",
+  "rows": [
+    {
+      "dataset": "ETTh1",
+      "seeds": [
+        {
+          "dataset": "ETTh1",
+          "seed": 163,
+          "queries": 145,
+          "head_mse": 0.1072329481614047,
+          "sync_mse": 0.11357183315116784,
+          "raw_transport_mse": 0.20520191798468346,
+          "persistence_mse": 0.06904663890600204,
+          "sync_minus_head": 0.006338884989763129,
+          "raw_minus_head": 0.09796896982327874,
+          "sync_minus_raw": -0.09163008483351562,
+          "sync_minus_persistence": 0.044525194245165794
+        },
+        {
+          "dataset": "ETTh1",
+          "seed": 164,
+          "queries": 145,
+          "head_mse": 0.11731590175166212,
+          "sync_mse": 0.12541309094120717,
+          "raw_transport_mse": 0.20520191798468346,
+          "persistence_mse": 0.06904663890600204,
+          "sync_minus_head": 0.008097189189545039,
+          "raw_minus_head": 0.08788601623302134,
+          "sync_minus_raw": -0.07978882704347628,
+          "sync_minus_persistence": 0.05636645203520512
+        },
+        {
+          "dataset": "ETTh1",
+          "seed": 165,
+          "queries": 145,
+          "head_mse": 0.13249302768501742,
+          "sync_mse": 0.14349262650156844,
+          "raw_transport_mse": 0.20520191798468346,
+          "persistence_mse": 0.06904663890600204,
+          "sync_minus_head": 0.010999598816551012,
+          "raw_minus_head": 0.07270889029966603,
+          "sync_minus_raw": -0.06170929148311502,
+          "sync_minus_persistence": 0.07444598759556639
+        }
+      ],
+      "pooled_sync_minus_head": 0.008478557665286393,
+      "pooled_raw_minus_head": 0.08618795878532204,
+      "pooled_sync_minus_raw": -0.07770940112003565
+    },
+    {
+      "dataset": "ETTh2",
+      "seeds": [
+        {
+          "dataset": "ETTh2",
+          "seed": 163,
+          "queries": 145,
+          "head_mse": 0.4086868334433128,
+          "sync_mse": 0.4086868334433128,
+          "raw_transport_mse": 0.39418582491062837,
+          "persistence_mse": 0.5018366575241089,
+          "sync_minus_head": 0.0,
+          "raw_minus_head": -0.014501008532684425,
+          "sync_minus_raw": 0.014501008532684425,
+          "sync_minus_persistence": -0.09314982408079608
+        },
+        {
+          "dataset": "ETTh2",
+          "seed": 164,
+          "queries": 145,
+          "head_mse": 0.4567856693062289,
+          "sync_mse": 0.4567856693062289,
+          "raw_transport_mse": 0.39418582491062837,
+          "persistence_mse": 0.5018366575241089,
+          "sync_minus_head": 0.0,
+          "raw_minus_head": -0.06259984439560051,
+          "sync_minus_raw": 0.06259984439560051,
+          "sync_minus_persistence": -0.045050988217879985
+        },
+        {
+          "dataset": "ETTh2",
+          "seed": 165,
+          "queries": 145,
+          "head_mse": 0.481505428357371,
+          "sync_mse": 0.481505428357371,
+          "raw_transport_mse": 0.39418582491062837,
+          "persistence_mse": 0.5018366575241089,
+          "sync_minus_head": 0.0,
+          "raw_minus_head": -0.08731960344674258,
+          "sync_minus_raw": 0.08731960344674258,
+          "sync_minus_persistence": -0.020331229166737918
+        }
+      ],
+      "pooled_sync_minus_head": 0.0,
+      "pooled_raw_minus_head": -0.054806818791675836,
+      "pooled_sync_minus_raw": 0.054806818791675836
+    },
+    {
+      "dataset": "ETTm1",
+      "seeds": [
+        {
+          "dataset": "ETTm1",
+          "seed": 163,
+          "queries": 145,
+          "head_mse": 0.11232649411620765,
+          "sync_mse": 0.11232649411620765,
+          "raw_transport_mse": 0.16098512920133512,
+          "persistence_mse": 0.07618250697851181,
+          "sync_minus_head": 0.0,
+          "raw_minus_head": 0.04865863508512748,
+          "sync_minus_raw": -0.04865863508512748,
+          "sync_minus_persistence": 0.036143987137695836
+        },
+        {
+          "dataset": "ETTm1",
+          "seed": 164,
+          "queries": 145,
+          "head_mse": 0.12276527757017777,
+          "sync_mse": 0.12276527757017777,
+          "raw_transport_mse": 0.16098512920133512,
+          "persistence_mse": 0.07618250697851181,
+          "sync_minus_head": 0.0,
+          "raw_minus_head": 0.038219851631157355,
+          "sync_minus_raw": -0.038219851631157355,
+          "sync_minus_persistence": 0.04658277059166596
+        },
+        {
+          "dataset": "ETTm1",
+          "seed": 165,
+          "queries": 145,
+          "head_mse": 0.10446418061338622,
+          "sync_mse": 0.10767419020934352,
+          "raw_transport_mse": 0.16098512920133512,
+          "persistence_mse": 0.07618250697851181,
+          "sync_minus_head": 0.0032100095959572954,
+          "raw_minus_head": 0.056520948587948906,
+          "sync_minus_raw": -0.05331093899199161,
+          "sync_minus_persistence": 0.03149168323083171
+        }
+      ],
+      "pooled_sync_minus_head": 0.0010700031986524319,
+      "pooled_raw_minus_head": 0.04779981176807791,
+      "pooled_sync_minus_raw": -0.046729808569425484
+    },
+    {
+      "dataset": "ETTm2",
+      "seeds": [
+        {
+          "dataset": "ETTm2",
+          "seed": 163,
+          "queries": 145,
+          "head_mse": 0.2770132434136909,
+          "sync_mse": 0.28693535691448324,
+          "raw_transport_mse": 0.2908897296300736,
+          "persistence_mse": 0.4622960090637207,
+          "sync_minus_head": 0.009922113500792404,
+          "raw_minus_head": 0.013876486216382733,
+          "sync_minus_raw": -0.003954372715590329,
+          "sync_minus_persistence": -0.17536065214923743
+        },
+        {
+          "dataset": "ETTm2",
+          "seed": 164,
+          "queries": 145,
+          "head_mse": 0.29339072211035366,
+          "sync_mse": 0.29852499409482397,
+          "raw_transport_mse": 0.2908897296300736,
+          "persistence_mse": 0.4622960090637207,
+          "sync_minus_head": 0.0051342719844703014,
+          "raw_minus_head": -0.0025009924802800705,
+          "sync_minus_raw": 0.007635264464750372,
+          "sync_minus_persistence": -0.16377101496889673
+        },
+        {
+          "dataset": "ETTm2",
+          "seed": 165,
+          "queries": 145,
+          "head_mse": 0.27968458415105424,
+          "sync_mse": 0.2887084622449916,
+          "raw_transport_mse": 0.2908897296300736,
+          "persistence_mse": 0.4622960090637207,
+          "sync_minus_head": 0.009023878093937348,
+          "raw_minus_head": 0.011205145479019346,
+          "sync_minus_raw": -0.002181267385081998,
+          "sync_minus_persistence": -0.1735875468187291
+        }
+      ],
+      "pooled_sync_minus_head": 0.008026754526400018,
+      "pooled_raw_minus_head": 0.007526879738374004,
+      "pooled_sync_minus_raw": 0.0004998747880260151
+    }
+  ]
+}

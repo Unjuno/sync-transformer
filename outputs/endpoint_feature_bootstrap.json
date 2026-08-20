@@ -1,0 +1,37 @@
+{
+  "protocol": "endpoint+seasonal features, pooled query bootstrap",
+  "rows": [
+    {
+      "dataset": "ETTh1",
+      "queries": 435,
+      "mean_delta": -0.033154610565852845,
+      "ci95_low": -0.041983436276258404,
+      "ci95_high": -0.02456636552217192,
+      "fraction_improved": 0.41379310344827586
+    },
+    {
+      "dataset": "ETTh2",
+      "queries": 435,
+      "mean_delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "fraction_improved": 0.0
+    },
+    {
+      "dataset": "ETTm1",
+      "queries": 435,
+      "mean_delta": -0.009464791235139314,
+      "ci95_low": -0.015563802988825088,
+      "ci95_high": -0.0035364231176610137,
+      "fraction_improved": 0.45057471264367815
+    },
+    {
+      "dataset": "ETTm2",
+      "queries": 435,
+      "mean_delta": 0.01374953191342025,
+      "ci95_low": 0.006408878256534708,
+      "ci95_high": 0.02090064973195736,
+      "fraction_improved": 0.31264367816091954
+    }
+  ]
+}

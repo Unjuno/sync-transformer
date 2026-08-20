@@ -1,0 +1,77 @@
+{
+  "protocol": "fixed 60/20/20 split, threshold 0.079168, pooled query bootstrap",
+  "rows": [
+    {
+      "dataset": "ETTh1",
+      "k": 1,
+      "queries": 435,
+      "mean_delta": 0.005930585829519677,
+      "ci95_low": 0.0031997657492328652,
+      "ci95_high": 0.00864047213746556,
+      "mean_gate_use": 0.6275862068965518
+    },
+    {
+      "dataset": "ETTh1",
+      "k": 8,
+      "queries": 435,
+      "mean_delta": 0.008478557665286393,
+      "ci95_low": 0.005093113692348887,
+      "ci95_high": 0.011912857872894268,
+      "mean_gate_use": 0.6275862068965518
+    },
+    {
+      "dataset": "ETTh2",
+      "k": 1,
+      "queries": 435,
+      "mean_delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "mean_gate_use": 0.0
+    },
+    {
+      "dataset": "ETTh2",
+      "k": 8,
+      "queries": 435,
+      "mean_delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "mean_gate_use": 0.0
+    },
+    {
+      "dataset": "ETTm1",
+      "k": 1,
+      "queries": 435,
+      "mean_delta": 0.0012073844414332818,
+      "ci95_low": 0.0006085407524102036,
+      "ci95_high": 0.0018074001458569845,
+      "mean_gate_use": 1.0
+    },
+    {
+      "dataset": "ETTm1",
+      "k": 8,
+      "queries": 435,
+      "mean_delta": 0.0010700031986524319,
+      "ci95_low": 0.0004925793770101222,
+      "ci95_high": 0.0016831701271364402,
+      "mean_gate_use": 1.0
+    },
+    {
+      "dataset": "ETTm2",
+      "k": 1,
+      "queries": 435,
+      "mean_delta": 0.007227021001878826,
+      "ci95_low": 0.0051900580913984565,
+      "ci95_high": 0.009287453197777785,
+      "mean_gate_use": 1.0
+    },
+    {
+      "dataset": "ETTm2",
+      "k": 8,
+      "queries": 435,
+      "mean_delta": 0.008026754526400018,
+      "ci95_low": 0.006014036111340954,
+      "ci95_high": 0.010071215562137033,
+      "mean_gate_use": 1.0
+    }
+  ]
+}
