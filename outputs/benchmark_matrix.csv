@@ -12,6 +12,6 @@ traffic,METR-LA (2 sensors),96,60/20/20,Vanilla/SYNC,75360/19296,1.151871,per-se
 renewable,OPSD solar_DE_generation,96,60/20/20,Vanilla/SYNC,75360/19296,0.851922,query bootstrap CI,paired delta,0.000000,recorded,OPSD solar_DE_generation alternative; restricted to 2012-2015 observed coverage with interpolation limited to three consecutive gaps; no claim beyond this dataset,measured_alternative
 robot_manipulation,RoboMimic lift/ph,10,demo 60/20/20,persistence/retrieval,trajectory,0.018942,trajectory bootstrap CI,ADE,0.118644,recorded,nearest-context retrieval SYNC formulation; no closed-loop success claim,measured_alternative
 industrial,UCI AI4I process temperature,96,60/20/20,Vanilla/SYNC,75360/19296,0.156322,query bootstrap CI,paired delta,1.000000,recorded,"UCI AI4I 2020 is synthetic predictive-maintenance data; process-temperature forecasting, not RUL classification",measured_alternative
-server,Alibaba cluster trace,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
-retail,M5/Favorita,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
+server,Cloud Monitoring MongoDB machine RPS,96,60/20/20,Vanilla/SYNC,75360/19296,0.322070,query bootstrap CI,paired delta,0.000000,recorded,"Microsoft Cloud Monitoring MongoDB machine RPS; workload forecasting, not anomaly classification",measured_alternative
+retail,Cloud Monitoring consumer purchase rate,96,60/20/20,Vanilla/SYNC,75360/19296,0.056513,query bootstrap CI,paired delta,1.000000,recorded,"Microsoft Cloud Monitoring consumer purchase-rate; small retail-demand alternative, not SKU-level inventory",measured_alternative
 robot_trajectory,nuScenes or simulator logs,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending

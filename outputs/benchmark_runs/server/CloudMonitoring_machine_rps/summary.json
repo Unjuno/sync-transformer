@@ -1,0 +1,13 @@
+{
+  "task_id": "server",
+  "dataset": "CloudMonitoring_machine_rps",
+  "status": "measured_alternative",
+  "mean_sync_external_mse": 0.32207006216049194,
+  "mean_vanilla_mse": 0.5842100779215494,
+  "paired_delta_95ci": [
+    -0.3744495647320051,
+    -0.16182482018734198
+  ],
+  "mean_gate_use_rate": 0.0,
+  "failure_notes": "Microsoft Cloud Monitoring MongoDB machine RPS; workload forecasting, not anomaly classification"
+}
