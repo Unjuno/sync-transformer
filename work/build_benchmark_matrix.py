@@ -18,8 +18,8 @@ def main():
     hvac=[json.loads(p.read_text()) for p in (ROOT/'outputs/benchmark_runs/hvac').glob('*/summary.json')]
     if hvac:
         rows.append(dict(zip(FIELDS, ['hvac','BDG2 Panther (3 meters)','96','60/20/20','Vanilla/SYNC','75360/19296',f"{np.mean([x['mean_sync_external_mse'] for x in hvac]):.6f}",'per-meter CI','paired delta',f"{np.mean([x['mean_gate_use_rate'] for x in hvac]):.6f}",'recorded','three meters; series-dependent; not building-wide','measured'])))
-    traffic=json.loads((ROOT/'outputs/benchmark_runs/traffic/METR_LA_sensor0/summary.json').read_text())
-    rows.append(dict(zip(FIELDS, ['traffic','METR-LA sensor 0','96','60/20/20','Vanilla/SYNC','75360/19296',f"{traffic['mean_sync_external_mse']:.6f}",f"[{traffic['paired_delta_95ci'][0]:.6f}, {traffic['paired_delta_95ci'][1]:.6f}]",'paired delta',f"{traffic['mean_gate_use_rate']:.6f}",'recorded',traffic['failure_notes'],'measured'])))
+    traffic=[json.loads(p.read_text()) for p in (ROOT/'outputs/benchmark_runs/traffic').glob('METR_LA_sensor*/summary.json')]
+    rows.append(dict(zip(FIELDS, ['traffic','METR-LA (2 sensors)','96','60/20/20','Vanilla/SYNC','75360/19296',f"{np.mean([x['mean_sync_external_mse'] for x in traffic]):.6f}",'per-sensor CI','paired delta',f"{np.mean([x['mean_gate_use_rate'] for x in traffic]):.6f}",'recorded','two sensors; spatial multivariate effects not evaluated','measured'])))
     pending = [('renewable','GEFCom solar/wind or NREL','source_public_license_unresolved'),('server','Alibaba cluster trace','pending'),('retail','M5/Favorita','pending'),('industrial','NASA C-MAPSS','blocked_source_unavailable'),('robot_manipulation','RoboMimic/Open X subset','pending'),('robot_trajectory','nuScenes or simulator logs','pending')]
     for task, dataset, status in pending:
         note = 'official source unavailable/license unspecified' if task in ('industrial','renewable') else 'adapter/data not ready'

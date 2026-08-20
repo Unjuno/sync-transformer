@@ -28,9 +28,10 @@ def main():
         assert all(len(q['sync_external_mse'])==len(q['vanilla_mse']) for q in query)
         assert len(summary['paired_delta_95ci'])==2
         assert summary['paired_delta_95ci'][0] <= summary['paired_delta_95ci'][1]
-    traffic_dir=ROOT/'outputs/benchmark_runs/traffic/METR_LA_sensor0'
-    for name in ('config.json','per_seed.json','query_metrics.json','summary.json','comparison.md'):
-        assert (traffic_dir/name).exists(), f'missing {traffic_dir/name}'
+    for sensor in ('0','1'):
+        traffic_dir=ROOT/'outputs/benchmark_runs/traffic'/f'METR_LA_sensor{sensor}'
+        for name in ('config.json','per_seed.json','query_metrics.json','summary.json','comparison.md'):
+            assert (traffic_dir/name).exists(), f'missing {traffic_dir/name}'
     traffic_manifest=next(t for t in manifest['tasks'] if t['task_id']=='traffic')
     assert traffic_manifest['status']=='benchmarked_one_sensor'
     matrix_path=ROOT/'outputs/benchmark_matrix.csv'
