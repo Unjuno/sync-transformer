@@ -51,6 +51,15 @@ def main():
                 adapter_for(task.task_id, ROOT / "outputs").load(context_length=720, horizon=96, step=96)
             except (AdapterNotReady, FileNotFoundError, TypeError, ValueError) as exc:
                 record.update(status=task.status if task.status != "candidate" else "pending_adapter", message=str(exc))
+    elif task.task_id == "traffic":
+        traffic_root=ROOT/'outputs'/'benchmark_runs'/'traffic'/'METR_LA_sensor0'
+        if (traffic_root/'summary.json').exists():
+            record.update(status='completed_existing', artifacts=[str(traffic_root)])
+        else:
+            try:
+                adapter_for(task.task_id, ROOT / "outputs").load(context_length=720, horizon=96, step=96)
+            except (AdapterNotReady, FileNotFoundError, TypeError, ValueError) as exc:
+                record.update(status=task.status if task.status != "candidate" else "pending_adapter", message=str(exc))
     else:
         try:
             adapter = adapter_for(task.task_id, ROOT / "outputs")

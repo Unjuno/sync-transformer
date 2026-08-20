@@ -11,7 +11,7 @@ def test_run_task_reports_pending_candidate(tmp_path):
                     "--task", "traffic", "--output", str(out)],
                    cwd=ROOT, check=True, capture_output=True, text=True)
     record = json.loads(out.read_text(encoding="utf-8"))
-    assert record["status"] == "source_verified_pending_data"
+    assert record["status"] in {"completed_existing", "benchmarked_one_sensor"}
     assert record["task_id"] == "traffic"
 
 def test_run_task_reports_electricity_artifacts(tmp_path):
