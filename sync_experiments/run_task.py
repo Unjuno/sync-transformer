@@ -30,10 +30,10 @@ def main():
     if args.device == "cuda":
         record.update(status="deferred_cuda", message="CUDA runs are separate artifacts.")
     elif task.task_id == "electricity":
-        a = ROOT / "outputs/common_runner_Electricity_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json"
-        v = ROOT / "outputs/vanilla_Electricity20.json"
-        if a.exists() and v.exists():
-            record.update(status="completed_existing", artifacts=[str(a), str(v)])
+        artifacts = sorted(ROOT.glob("outputs/common_runner_Electricity*_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json"))
+        vanilla = sorted(ROOT.glob("outputs/vanilla_Electricity*_20.json"))
+        if artifacts and vanilla:
+            record.update(status="completed_existing", artifacts=[str(p) for p in artifacts + vanilla])
         else:
             record.update(status="pending_adapter", message="Prepare data and run the documented benchmark first.")
     elif task.task_id == "ett":

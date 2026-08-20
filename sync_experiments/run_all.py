@@ -36,10 +36,10 @@ def main():
         elif args.device != "cpu":
             record.update({"status": "deferred_cuda", "message": "CUDA execution is reserved for the separate GPU machine."})
         elif task_id == "electricity":
-            artifact = ROOT / "outputs/common_runner_Electricity_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json"
-            vanilla = ROOT / "outputs/vanilla_Electricity20.json"
-            if artifact.exists() and vanilla.exists():
-                record.update({"status": "completed_existing", "artifacts": [str(artifact), str(vanilla)]})
+            artifacts = sorted(ROOT.glob("outputs/common_runner_Electricity*_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json"))
+            vanilla = sorted(ROOT.glob("outputs/vanilla_Electricity*_20.json"))
+            if artifacts and vanilla:
+                record.update({"status": "completed_existing", "artifacts": [str(p) for p in artifacts + vanilla]})
             else:
                 record.update({"status": "pending_adapter", "message": "Run work/prepare_electricity.py and the electricity benchmark commands first."})
         else:

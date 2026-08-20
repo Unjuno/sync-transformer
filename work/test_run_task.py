@@ -21,4 +21,4 @@ def test_run_task_reports_electricity_artifacts(tmp_path):
                    cwd=ROOT, check=True, capture_output=True, text=True)
     record = json.loads(out.read_text(encoding="utf-8"))
     assert record["status"] == "completed_existing"
-    assert len(record["artifacts"]) == 2
+    assert len(record["artifacts"]) >= 6
