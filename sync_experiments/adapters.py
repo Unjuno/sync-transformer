@@ -7,6 +7,7 @@ silently substituting another dataset.
 from dataclasses import dataclass
 from pathlib import Path
 import numpy as np
+import pandas as pd
 
 @dataclass
 class WindowBatch:
@@ -61,6 +62,29 @@ class ElectricityAdapter(ETTAdapter):
     def load(self, dataset="Electricity", context_length=720, horizon=96, step=96):
         return super().load(dataset, context_length, horizon, step)
 
+class CSVSeriesAdapter(BaseAdapter):
+    """Load one deterministic numeric column from a timestamped CSV."""
+    def __init__(self, task_id: str, root: str | Path, filename: str, column: str):
+        self.task_id, self.root, self.filename, self.column = task_id, Path(root), filename, column
+
+    def load(self, context_length: int, horizon: int, step: int = 1) -> WindowBatch:
+        path = self.root / self.filename
+        if not path.exists():
+            raise FileNotFoundError(path)
+        frame = pd.read_csv(path, usecols=[self.column])
+        y = pd.to_numeric(frame[self.column], errors='coerce').interpolate(limit_direction='both').to_numpy(np.float32)
+        starts = np.arange(0, len(y) - context_length - horizon + 1, step)
+        if len(starts) == 0:
+            raise ValueError(f'{path}: insufficient rows for context={context_length}, horizon={horizon}')
+        return WindowBatch(self.task_id,
+                           np.stack([y[t:t+context_length] for t in starts]),
+                           np.stack([y[t+context_length:t+context_length+horizon] for t in starts]))
+
+class HVACAdapter(CSVSeriesAdapter):
+    """BDG2 electricity series adapter; column choice is explicit for reproducibility."""
+    def __init__(self, root: str | Path, filename='bdg2_electricity_cleaned.csv', column='Panther_office_Hannah'):
+        super().__init__('hvac', root, filename, column)
+
 class PendingAdapter(BaseAdapter):
     def __init__(self, task_id: str, dataset: str):
         self.task_id, self.dataset = task_id, dataset
@@ -77,6 +101,8 @@ def adapter_for(task_id: str, data_root: str | Path):
         return ETTAdapter(data_root)
     if task_id == "electricity":
         return ElectricityAdapter(data_root)
+    if task_id == "hvac":
+        return HVACAdapter(Path(data_root).parent / 'data' / 'raw')
     from .tasks import get_task
     task = get_task(task_id)
     if task.track == "trajectory":
