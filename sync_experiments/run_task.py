@@ -43,7 +43,11 @@ def main():
         record.update(status="completed_existing", artifacts=["outputs/common_runner_*.json"])
     else:
         try:
-            adapter_for(task.task_id, ROOT / "outputs").load()
+            adapter = adapter_for(task.task_id, ROOT / "outputs")
+            if task.task_id in ("traffic", "hvac"):
+                adapter.load(context_length=720, horizon=96, step=96)
+            else:
+                adapter.load()
         except (AdapterNotReady, FileNotFoundError, TypeError) as exc:
             record.update(status=task.status if task.status != "candidate" else "pending_adapter", message=str(exc))
     out = Path(args.output) if args.output else ROOT / "outputs" / "benchmark_runs" / task.task_id / "summary.json"
