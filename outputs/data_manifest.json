@@ -11,6 +11,6 @@
     {"task_id": "retail", "status": "benchmarked_alternative", "source": "https://github.com/microsoft/cloud-monitoring-dataset", "license": "MIT", "selection": "consumer-purchase-rate/purchase-01..06 concatenated; small retail-demand alternative, not SKU-level inventory."},
     {"task_id": "industrial", "status": "benchmarked_alternative", "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance", "license": "CC BY 4.0", "raw_sha256": "DC6630CD9B1F0F853922FAD78A1B6436570D3F1EC863F1DD5C4340AC56BC8A8E", "selection": "Process temperature forecasting; synthetic predictive-maintenance data, not RUL classification."},
     {"task_id": "robot_manipulation", "status": "benchmarked_alternative", "source": "https://huggingface.co/datasets/amandlek/robomimic", "license": "dataset terms require review before publication", "raw_sha256": "2067777CB8B532E9263DD09FD6448C41CC31224BB27BE4A3B734010AE13EB540", "selection": "lift/ph/low_dim_v15.hdf5; demo-level 60/20/20 split; nearest-context retrieval with fallback; no closed-loop success claim."},
-    {"task_id": "robot_trajectory", "status": "pending_adapter", "source": "nuScenes or simulator logs", "license": "verify before download"}
+    {"task_id": "robot_trajectory", "status": "benchmarked_alternative", "source": "https://archive.ics.uci.edu/dataset/536/pedestrian+in+traffic+dataset", "license": "CC BY 4.0", "selection": "tracks.csv; track-level 60/20/20 split, 8 observed/12 predicted steps; open-loop pedestrian trajectory alternative."}
   ]
 }

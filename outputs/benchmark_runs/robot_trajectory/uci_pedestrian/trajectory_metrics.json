@@ -1,0 +1,2747 @@
+[
+  {
+    "track": "7682",
+    "ade_sync": 1.2665138819748007,
+    "fde_sync": 2.1967975146750427,
+    "ade_persistence": 1.0193221288763146,
+    "fde_persistence": 1.881891468769116,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.3056445445130274,
+    "fde_sync": 2.2146493941397822,
+    "ade_persistence": 1.0405443121478564,
+    "fde_persistence": 1.8906692112559331,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.2834418887963863,
+    "fde_sync": 2.177151364876928,
+    "ade_persistence": 1.0213371751712825,
+    "fde_persistence": 1.8422674049977126,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.2475549133073767,
+    "fde_sync": 2.080117778297106,
+    "ade_persistence": 0.9971623106307198,
+    "fde_persistence": 1.8302379779661655,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.1961886113342666,
+    "fde_sync": 1.9866894084407412,
+    "ade_persistence": 0.973291175181689,
+    "fde_persistence": 1.8321938610077426,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.1737958494886735,
+    "fde_sync": 1.963109687672176,
+    "ade_persistence": 0.9991532104623989,
+    "fde_persistence": 1.845768597635949,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.146479524676688,
+    "fde_sync": 1.9351763437834058,
+    "ade_persistence": 0.991259838977859,
+    "fde_persistence": 1.832887955592495,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.1172933645811678,
+    "fde_sync": 1.882774974581296,
+    "ade_persistence": 0.9995055407966033,
+    "fde_persistence": 1.8616694946464647,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6736422730026098,
+    "fde_sync": 1.3940634767403297,
+    "ade_persistence": 1.046720017995926,
+    "fde_persistence": 1.9033078231840819,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6722836175811167,
+    "fde_sync": 1.36144968731721,
+    "ade_persistence": 1.0271403927990395,
+    "fde_persistence": 1.9029366217388242,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6723665602318487,
+    "fde_sync": 1.3653672097779213,
+    "ade_persistence": 1.0016852287117282,
+    "fde_persistence": 1.8770634039155243,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6602329663127275,
+    "fde_sync": 1.3465181416304663,
+    "ade_persistence": 1.0254319183766418,
+    "fde_persistence": 1.8703484770148928,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6527186596299392,
+    "fde_sync": 1.3198971529416066,
+    "ade_persistence": 1.040024505425377,
+    "fde_persistence": 1.8939165271476248,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6428019204087702,
+    "fde_sync": 1.2942259813941261,
+    "ade_persistence": 1.017389288432056,
+    "fde_persistence": 1.8557580786521115,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6184963101931608,
+    "fde_sync": 1.2333737088793517,
+    "ade_persistence": 1.0209336213633422,
+    "fde_persistence": 1.8783813536500262,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.605626631059868,
+    "fde_sync": 1.16649790707547,
+    "ade_persistence": 0.9908321282045124,
+    "fde_persistence": 1.8313621879198752,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.5785263103622583,
+    "fde_sync": 1.2143678452628797,
+    "ade_persistence": 1.0005253790532118,
+    "fde_persistence": 1.9600842153854983,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.5772748507173013,
+    "fde_sync": 1.1994723728702519,
+    "ade_persistence": 1.0664377789951542,
+    "fde_persistence": 2.0587125086909075,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.5673277313609932,
+    "fde_sync": 1.1715294617773921,
+    "ade_persistence": 1.097320108218074,
+    "fde_persistence": 2.1302317281285776,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6130864048755816,
+    "fde_sync": 1.2345880052810398,
+    "ade_persistence": 1.185046062390818,
+    "fde_persistence": 2.269645812982765,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6572263001807773,
+    "fde_sync": 1.2907664113012471,
+    "ade_persistence": 1.2463590456650533,
+    "fde_persistence": 2.3612848377033098,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.7329469856211691,
+    "fde_sync": 1.389803401232099,
+    "ade_persistence": 1.340162154538848,
+    "fde_persistence": 2.4728558253517523,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 1.0101155713397414,
+    "fde_sync": 1.5158069631869675,
+    "ade_persistence": 1.336747927279099,
+    "fde_persistence": 2.46425569142304,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.7954052278061368,
+    "fde_sync": 1.2393836700834793,
+    "ade_persistence": 1.3725957167230511,
+    "fde_persistence": 2.451757045628639,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.758962666544393,
+    "fde_sync": 1.1440326767880398,
+    "ade_persistence": 1.3430387623535296,
+    "fde_persistence": 2.3392082022119483,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.7020897275695459,
+    "fde_sync": 1.0266165389203148,
+    "ade_persistence": 1.2750910698852833,
+    "fde_persistence": 2.1839890869263674,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6555020328940476,
+    "fde_sync": 0.974271614646502,
+    "ade_persistence": 1.197184311081917,
+    "fde_persistence": 2.0754740857023695,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6145307302318868,
+    "fde_sync": 0.9477601626110447,
+    "ade_persistence": 1.1108836144347018,
+    "fde_persistence": 1.9728635439384032,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6088293163781457,
+    "fde_sync": 0.9825505298850165,
+    "ade_persistence": 1.049402026777597,
+    "fde_persistence": 1.9040129134590613,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6190110945710937,
+    "fde_sync": 1.0290120634894537,
+    "ade_persistence": 1.0046764447040175,
+    "fde_persistence": 1.8620902896253186,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6453483856061463,
+    "fde_sync": 1.0690476796505342,
+    "ade_persistence": 0.9977094270159382,
+    "fde_persistence": 1.8602625419959493,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.6929208666701708,
+    "fde_sync": 1.1163041459339915,
+    "ade_persistence": 1.0289246578812865,
+    "fde_persistence": 1.9014076697696478,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.7213739415234076,
+    "fde_sync": 1.1309665963536797,
+    "ade_persistence": 1.0275042029811097,
+    "fde_persistence": 1.8922272607603132,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.7386298645792903,
+    "fde_sync": 1.1431091723815594,
+    "ade_persistence": 1.024964137641586,
+    "fde_persistence": 1.8863025617608742,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7682",
+    "ade_sync": 0.7208553292825886,
+    "fde_sync": 1.1197381089617569,
+    "ade_persistence": 1.022350791495999,
+    "fde_persistence": 1.881147013568029,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.394246102698992,
+    "fde_sync": 2.6490648220693775,
+    "ade_persistence": 0.8321446030780387,
+    "fde_persistence": 1.511977801776551,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.3498957450290503,
+    "fde_sync": 2.5923742369501506,
+    "ade_persistence": 0.800804736105273,
+    "fde_persistence": 1.46072021086242,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.309480460491345,
+    "fde_sync": 2.548599935633967,
+    "ade_persistence": 0.7680259212629869,
+    "fde_persistence": 1.4148896163061855,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.30039356693902,
+    "fde_sync": 2.3662964713697967,
+    "ade_persistence": 0.7332179403212504,
+    "fde_persistence": 1.2551359101149373,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.3295663145515941,
+    "fde_sync": 2.246908346449009,
+    "ade_persistence": 0.7235356712318475,
+    "fde_persistence": 1.0435186010276531,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.2546665748883665,
+    "fde_sync": 2.0764924893449423,
+    "ade_persistence": 0.6433153785152453,
+    "fde_persistence": 0.8109567460814773,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0448741390058698,
+    "fde_sync": 1.7193882464795107,
+    "ade_persistence": 0.42908694017788296,
+    "fde_persistence": 0.3902318264402775,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 0.9276255889742043,
+    "fde_sync": 1.7598017449052847,
+    "ade_persistence": 0.2777905114043573,
+    "fde_persistence": 0.41398522350031197,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 0.8367124440549317,
+    "fde_sync": 1.7244602857603764,
+    "ade_persistence": 0.19304965266876564,
+    "fde_persistence": 0.42772809086984437,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0237980745300903,
+    "fde_sync": 1.8726200950040888,
+    "ade_persistence": 0.36126456095248044,
+    "fde_persistence": 0.5948972803141206,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0363616475912412,
+    "fde_sync": 1.8643378119408907,
+    "ade_persistence": 0.3503436665264004,
+    "fde_persistence": 0.5317632007448649,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0431074749040525,
+    "fde_sync": 1.8635697417534582,
+    "ade_persistence": 0.331953997990696,
+    "fde_persistence": 0.5138006657137588,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.151573021188305,
+    "fde_sync": 2.013555786660982,
+    "ade_persistence": 0.4324306945118743,
+    "fde_persistence": 0.7157662115729936,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0385289479996642,
+    "fde_sync": 1.955847232390484,
+    "ade_persistence": 0.37153339242596956,
+    "fde_persistence": 0.7634445002337714,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0259284309595027,
+    "fde_sync": 2.004567957861042,
+    "ade_persistence": 0.42232101023298196,
+    "fde_persistence": 0.8853012740617995,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0427328984978776,
+    "fde_sync": 2.088650114197078,
+    "ade_persistence": 0.4810475017467169,
+    "fde_persistence": 1.0047038803244874,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.0862441020246172,
+    "fde_sync": 2.197687021424035,
+    "ade_persistence": 0.551921823344959,
+    "fde_persistence": 1.1408067189846982,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.1411270038276033,
+    "fde_sync": 2.281865338452581,
+    "ade_persistence": 0.6161803201443852,
+    "fde_persistence": 1.2305950136119215,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.2007641035380037,
+    "fde_sync": 2.3523441459339542,
+    "ade_persistence": 0.6763860036983477,
+    "fde_persistence": 1.2981219643468689,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.2417583874573037,
+    "fde_sync": 2.4184145712029896,
+    "ade_persistence": 0.7170010822027469,
+    "fde_persistence": 1.3702751697754612,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.2772019790959779,
+    "fde_sync": 2.469172619309779,
+    "ade_persistence": 0.7614617295682559,
+    "fde_persistence": 1.4471764094942698,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7683",
+    "ade_sync": 1.290041196736306,
+    "fde_sync": 2.502737596960305,
+    "ade_persistence": 0.7941195598734291,
+    "fde_persistence": 1.5372209200781033,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.7950239557156682,
+    "fde_sync": 3.1548693066299816,
+    "ade_persistence": 1.264336049931827,
+    "fde_persistence": 2.04399935013417,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.645887446063637,
+    "fde_sync": 2.9422717944158068,
+    "ade_persistence": 1.1058091541023147,
+    "fde_persistence": 1.813454860396157,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.5520427416143434,
+    "fde_sync": 2.801396317878298,
+    "ade_persistence": 0.9782398154652343,
+    "fde_persistence": 1.6449256296188215,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.4660434117152052,
+    "fde_sync": 2.6614560589522367,
+    "ade_persistence": 0.8793783159886077,
+    "fde_persistence": 1.5024029645655648,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.3421339794922773,
+    "fde_sync": 2.5087176361641728,
+    "ade_persistence": 0.7569968285044341,
+    "fde_persistence": 1.3607707920382561,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.2789726048016077,
+    "fde_sync": 2.434364190356953,
+    "ade_persistence": 0.699286215747643,
+    "fde_persistence": 1.2987436104051675,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.2995826777230672,
+    "fde_sync": 2.369934296291734,
+    "ade_persistence": 0.7252666182022217,
+    "fde_persistence": 1.2691158622001997,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "7684",
+    "ade_sync": 1.2744599654479658,
+    "fde_sync": 2.438100473904601,
+    "ade_persistence": 0.7102312171614015,
+    "fde_persistence": 1.2954725579776674,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.955955655171107,
+    "fde_sync": 3.617744058261959,
+    "ade_persistence": 1.0312612020992258,
+    "fde_persistence": 1.8832990616096232,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9458302389445938,
+    "fde_sync": 3.5939325896193353,
+    "ade_persistence": 1.0209858625385726,
+    "fde_persistence": 1.8654830994531304,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9128148149757411,
+    "fde_sync": 3.608080066952343,
+    "ade_persistence": 0.9945214116638312,
+    "fde_persistence": 1.896533880634223,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9632250674862843,
+    "fde_sync": 3.6900799939501483,
+    "ade_persistence": 1.056892577461416,
+    "fde_persistence": 1.9885645214408898,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9946000039588634,
+    "fde_sync": 3.663738571375535,
+    "ade_persistence": 1.0948325782495012,
+    "fde_persistence": 1.9624226481442233,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9409770076999386,
+    "fde_sync": 3.5210738226923564,
+    "ade_persistence": 1.038497700912241,
+    "fde_persistence": 1.8598318030000258,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9081828541410486,
+    "fde_sync": 3.4246433421554436,
+    "ade_persistence": 1.014245041121586,
+    "fde_persistence": 1.7625649876514147,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9194929971555343,
+    "fde_sync": 3.513966764916203,
+    "ade_persistence": 1.0383058097042186,
+    "fde_persistence": 1.8499116310697017,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8525966226808448,
+    "fde_sync": 3.461781038151597,
+    "ade_persistence": 0.9630840442838539,
+    "fde_persistence": 1.7566552994469788,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.789017327074091,
+    "fde_sync": 3.3805416384691243,
+    "ade_persistence": 0.906307040540383,
+    "fde_persistence": 1.6758658830995536,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8118934252729353,
+    "fde_sync": 3.4451196498761067,
+    "ade_persistence": 0.9432407579494216,
+    "fde_persistence": 1.7439526575970488,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8967789206731902,
+    "fde_sync": 3.5657453200143174,
+    "ade_persistence": 0.974136054657376,
+    "fde_persistence": 1.840381712208686,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9922592899017344,
+    "fde_sync": 3.6480349907245846,
+    "ade_persistence": 1.0680807329121504,
+    "fde_persistence": 1.921421757329959,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9273048985810945,
+    "fde_sync": 3.5479833709092077,
+    "ade_persistence": 1.0037354612588578,
+    "fde_persistence": 1.8186470311715288,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8940998338523583,
+    "fde_sync": 3.489364287349204,
+    "ade_persistence": 0.9817676772839755,
+    "fde_persistence": 1.7756899598176394,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9191214198221607,
+    "fde_sync": 3.5073625451990638,
+    "ade_persistence": 1.0090899719456052,
+    "fde_persistence": 1.7993575326547362,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.880958456671866,
+    "fde_sync": 3.469211197430561,
+    "ade_persistence": 0.9724882567268424,
+    "fde_persistence": 1.7588639894115088,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8547195243411265,
+    "fde_sync": 3.493429871672016,
+    "ade_persistence": 0.9374976297117553,
+    "fde_persistence": 1.7770769826662658,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8439864443808665,
+    "fde_sync": 3.4938069288929854,
+    "ade_persistence": 0.9299218755925264,
+    "fde_persistence": 1.7843338637485706,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.860704958672853,
+    "fde_sync": 3.4705941758000534,
+    "ade_persistence": 0.9556119220329146,
+    "fde_persistence": 1.7703919012125335,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8862995027085716,
+    "fde_sync": 3.4900680496112133,
+    "ade_persistence": 0.9824811259086736,
+    "fde_persistence": 1.791904197045936,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9040685393921895,
+    "fde_sync": 3.531947450247857,
+    "ade_persistence": 0.9953316736601238,
+    "fde_persistence": 1.8281265980153611,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.9070700389603807,
+    "fde_sync": 3.507674219948162,
+    "ade_persistence": 1.003103604789871,
+    "fde_persistence": 1.8039233749499035,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.851580506028285,
+    "fde_sync": 3.4797848994283584,
+    "ade_persistence": 0.9485885630286063,
+    "fde_persistence": 1.770923510757816,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8351368450507237,
+    "fde_sync": 3.447360796618492,
+    "ade_persistence": 0.926758850099263,
+    "fde_persistence": 1.7351099235744372,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8729052636235572,
+    "fde_sync": 3.448828553317035,
+    "ade_persistence": 0.9621109081214104,
+    "fde_persistence": 1.7414027498622024,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8779322978068702,
+    "fde_sync": 3.4403627978230444,
+    "ade_persistence": 0.9645821324496562,
+    "fde_persistence": 1.7349261557064442,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.838067454136709,
+    "fde_sync": 3.454597582367898,
+    "ade_persistence": 0.9267471507308492,
+    "fde_persistence": 1.7524473123585533,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8584156044568327,
+    "fde_sync": 3.4843281786130706,
+    "ade_persistence": 0.9527562879455328,
+    "fde_persistence": 1.7829685542008722,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8342617031151758,
+    "fde_sync": 3.4573468699668983,
+    "ade_persistence": 0.9354656384984973,
+    "fde_persistence": 1.7529540616026655,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8060955080046808,
+    "fde_sync": 3.1085316388173125,
+    "ade_persistence": 0.9125634791374622,
+    "fde_persistence": 1.440763025955026,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8047447799876328,
+    "fde_sync": 3.2866775009840032,
+    "ade_persistence": 0.9035084476728187,
+    "fde_persistence": 1.5797561488387768,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.7985508319404897,
+    "fde_sync": 3.3026427611182227,
+    "ade_persistence": 0.8887083940385082,
+    "fde_persistence": 1.5792587256376938,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.7225565015398825,
+    "fde_sync": 3.3178972251630023,
+    "ade_persistence": 0.8056513297842559,
+    "fde_persistence": 1.5832920492046956,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.672658417197758,
+    "fde_sync": 3.2329174297154317,
+    "ade_persistence": 0.7560854642171813,
+    "fde_persistence": 1.503744245002328,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.6363474278926464,
+    "fde_sync": 3.211888044452352,
+    "ade_persistence": 0.7501929006631493,
+    "fde_persistence": 1.4993087226455941,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 2.035198566792554,
+    "fde_sync": 3.5530882240448207,
+    "ade_persistence": 1.122553402881615,
+    "fde_persistence": 1.8654905296255104,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8626249144116487,
+    "fde_sync": 3.277866349122732,
+    "ade_persistence": 0.9599842874668357,
+    "fde_persistence": 1.591738055097411,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8088296383023694,
+    "fde_sync": 3.1678760090464353,
+    "ade_persistence": 0.9163870585966074,
+    "fde_persistence": 1.4734947711999704,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.6441722232888922,
+    "fde_sync": 3.051698281072059,
+    "ade_persistence": 0.7321273506523155,
+    "fde_persistence": 1.3264832345689237,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.6616929085442447,
+    "fde_sync": 3.0931080063416676,
+    "ade_persistence": 0.7441109000340758,
+    "fde_persistence": 1.361305457062798,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.615520321606642,
+    "fde_sync": 3.098232511949813,
+    "ade_persistence": 0.6883011360831665,
+    "fde_persistence": 1.363964661550218,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.6504049310779234,
+    "fde_sync": 3.204957648453975,
+    "ade_persistence": 0.7258806476998245,
+    "fde_persistence": 1.4753373472619975,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.7322513106128692,
+    "fde_sync": 3.312270323949394,
+    "ade_persistence": 0.8094179135117229,
+    "fde_persistence": 1.5839014704172336,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8110468064528782,
+    "fde_sync": 3.4065681255289975,
+    "ade_persistence": 0.8873378046934769,
+    "fde_persistence": 1.6773518762112365,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.820532293887933,
+    "fde_sync": 3.393724034482037,
+    "ade_persistence": 0.8970693163495995,
+    "fde_persistence": 1.6649286002943298,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8072",
+    "ade_sync": 1.8375820295986254,
+    "fde_sync": 3.3518653853652185,
+    "ade_persistence": 0.9157377444426565,
+    "fde_persistence": 1.624050799645595,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.9329780500686118,
+    "fde_sync": 3.5754082068521353,
+    "ade_persistence": 1.0192251939272354,
+    "fde_persistence": 1.8627936012711983,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.9164122845413694,
+    "fde_sync": 3.576872672127665,
+    "ade_persistence": 1.007261641969316,
+    "fde_persistence": 1.8720712734166634,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.9178422016757501,
+    "fde_sync": 3.571111092592007,
+    "ade_persistence": 1.0113662606958858,
+    "fde_persistence": 1.8810048936745767,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.9107300215931307,
+    "fde_sync": 3.515583863059561,
+    "ade_persistence": 1.0076852790915607,
+    "fde_persistence": 1.8270406806400594,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.897674616679148,
+    "fde_sync": 3.4886678799203823,
+    "ade_persistence": 0.9978277266414919,
+    "fde_persistence": 1.798759695268498,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.888626848661972,
+    "fde_sync": 3.4990497442141493,
+    "ade_persistence": 0.992416644131691,
+    "fde_persistence": 1.8082269588093993,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8872978008071775,
+    "fde_sync": 3.5142700194420846,
+    "ade_persistence": 0.9961177239373359,
+    "fde_persistence": 1.8234683243066367,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8597143238376663,
+    "fde_sync": 3.4845933943604326,
+    "ade_persistence": 0.9687700004160583,
+    "fde_persistence": 1.8095173589533808,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8419322400070763,
+    "fde_sync": 3.4504440431473236,
+    "ade_persistence": 0.9446560135625712,
+    "fde_persistence": 1.8101765514416404,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8838286572084992,
+    "fde_sync": 3.4889959581272385,
+    "ade_persistence": 0.9958079415449855,
+    "fde_persistence": 1.8317857636610484,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.892168839905719,
+    "fde_sync": 3.4430563480505567,
+    "ade_persistence": 1.0128265963884313,
+    "fde_persistence": 1.7626170738689275,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8605800083042865,
+    "fde_sync": 3.3948882028653684,
+    "ade_persistence": 0.9962010003094299,
+    "fde_persistence": 1.7621827346504806,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8262701059092823,
+    "fde_sync": 3.371170392133415,
+    "ade_persistence": 0.9804692529501353,
+    "fde_persistence": 1.7109943766727194,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8049628105713176,
+    "fde_sync": 3.3916432159904115,
+    "ade_persistence": 0.9418537418078405,
+    "fde_persistence": 1.729306773228425,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8172017730615255,
+    "fde_sync": 3.404747301529067,
+    "ade_persistence": 0.9025698383836209,
+    "fde_persistence": 1.6947658099204772,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.7982315719347668,
+    "fde_sync": 3.415159129378827,
+    "ade_persistence": 0.8906000859040003,
+    "fde_persistence": 1.6934523574750358,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.837158706634069,
+    "fde_sync": 3.3842010356235184,
+    "ade_persistence": 0.9530230457079397,
+    "fde_persistence": 1.6755688546301635,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8785522117306506,
+    "fde_sync": 3.4925388143705516,
+    "ade_persistence": 0.9569106122287373,
+    "fde_persistence": 1.7666185841362816,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8664882364664839,
+    "fde_sync": 3.495824900705498,
+    "ade_persistence": 0.9577374017138703,
+    "fde_persistence": 1.7756121745620257,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8588875670961678,
+    "fde_sync": 3.5152514803521235,
+    "ade_persistence": 0.9348578117310374,
+    "fde_persistence": 1.7833564984923809,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8876707473311594,
+    "fde_sync": 3.5312096835332807,
+    "ade_persistence": 0.9627706553296839,
+    "fde_persistence": 1.7962681202033939,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8628926446686973,
+    "fde_sync": 3.476439907371785,
+    "ade_persistence": 0.9457312192728858,
+    "fde_persistence": 1.74687778117678,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.9558438729534071,
+    "fde_sync": 3.6326845523968236,
+    "ade_persistence": 1.0358095642069112,
+    "fde_persistence": 1.8980841290133783,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.9363400015751304,
+    "fde_sync": 3.6221468873771108,
+    "ade_persistence": 1.009470389495473,
+    "fde_persistence": 1.8872896427518941,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.9239670898119912,
+    "fde_sync": 3.5028515764793355,
+    "ade_persistence": 0.996580978609011,
+    "fde_persistence": 1.7714126963737462,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8816144357788336,
+    "fde_sync": 3.385368456360792,
+    "ade_persistence": 0.956682759865661,
+    "fde_persistence": 1.6615066682937865,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8463678339342848,
+    "fde_sync": 3.1766290626679083,
+    "ade_persistence": 0.9321458166020419,
+    "fde_persistence": 1.475153275223337,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8155323575331581,
+    "fde_sync": 3.070364951289212,
+    "ade_persistence": 0.9172958261112961,
+    "fde_persistence": 1.4381880862327405,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.6567235853090798,
+    "fde_sync": 2.846158970167989,
+    "ade_persistence": 0.8100935230819734,
+    "fde_persistence": 1.2411053759221173,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.4775075187455997,
+    "fde_sync": 2.669875958378718,
+    "ade_persistence": 0.6538998319872235,
+    "fde_persistence": 1.0320381339705467,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.4320974235520632,
+    "fde_sync": 2.6926996973571984,
+    "ade_persistence": 0.5952370961396879,
+    "fde_persistence": 1.0075247759633315,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.3933330921851048,
+    "fde_sync": 2.768764811070205,
+    "ade_persistence": 0.5451442953802005,
+    "fde_persistence": 1.0613928981242873,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.523040424347976,
+    "fde_sync": 3.0041254342343637,
+    "ade_persistence": 0.6457024211626804,
+    "fde_persistence": 1.286311170343074,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.6272043955942632,
+    "fde_sync": 3.221953592856316,
+    "ade_persistence": 0.7066423233216103,
+    "fde_persistence": 1.4869098440529451,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.73900361370257,
+    "fde_sync": 3.3216878292700636,
+    "ade_persistence": 0.8128508200153629,
+    "fde_persistence": 1.588058598901461,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8305361463549261,
+    "fde_sync": 3.437733823543914,
+    "ade_persistence": 0.9063881974828787,
+    "fde_persistence": 1.7095889944647777,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8075",
+    "ade_sync": 1.8905669251671586,
+    "fde_sync": 3.551924014673936,
+    "ade_persistence": 0.9712056130692884,
+    "fde_persistence": 1.8320702778389875,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.39247790312888675,
+    "fde_sync": 0.7482272112914848,
+    "ade_persistence": 0.48899289238828514,
+    "fde_persistence": 0.8699202961605805,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.46809326197106754,
+    "fde_sync": 0.8505329275183284,
+    "ade_persistence": 0.4914236618467429,
+    "fde_persistence": 0.8841011568130628,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.5050832545825987,
+    "fde_sync": 0.9093361114828279,
+    "ade_persistence": 0.4291762788934399,
+    "fde_persistence": 0.8494298367965538,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.4937342340026567,
+    "fde_sync": 0.8823077142258913,
+    "ade_persistence": 0.47166488825177305,
+    "fde_persistence": 0.8914469211562056,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.4436096822726167,
+    "fde_sync": 0.8354176280819957,
+    "ade_persistence": 0.4989246375689607,
+    "fde_persistence": 0.884934012518479,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.42812777851243283,
+    "fde_sync": 0.7797631878946398,
+    "ade_persistence": 0.4889980288446814,
+    "fde_persistence": 0.8821330591505535,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.3977995771359392,
+    "fde_sync": 0.6651137371227871,
+    "ade_persistence": 0.49376635314313494,
+    "fde_persistence": 0.979841482937274,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.41339914924223436,
+    "fde_sync": 0.624188800905317,
+    "ade_persistence": 0.5111670948101591,
+    "fde_persistence": 1.0357216385864412,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.13289549963068276,
+    "fde_sync": 0.26565975978424006,
+    "ade_persistence": 0.5504442675059514,
+    "fde_persistence": 1.163525943479503,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.14319493552733784,
+    "fde_sync": 0.2853426150436879,
+    "ade_persistence": 0.6194424234972676,
+    "fde_persistence": 1.2960758555411014,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.17126066018026895,
+    "fde_sync": 0.26749260524322965,
+    "ade_persistence": 0.7126448852257029,
+    "fde_persistence": 1.3849728475977459,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.19959163751799758,
+    "fde_sync": 0.2818393744732923,
+    "ade_persistence": 0.7989534151568236,
+    "fde_persistence": 1.5063384273314488,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.19594593516449924,
+    "fde_sync": 0.3927286509603577,
+    "ade_persistence": 0.8082712280782366,
+    "fde_persistence": 1.560212195335146,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.2271580336567736,
+    "fde_sync": 0.44879232352756476,
+    "ade_persistence": 0.8833148519729358,
+    "fde_persistence": 1.6998525854188933,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.25920710574577405,
+    "fde_sync": 0.4761632735823174,
+    "ade_persistence": 0.9024059487491761,
+    "fde_persistence": 1.7928509541279378,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.26449968554511405,
+    "fde_sync": 0.52217248759656,
+    "ade_persistence": 0.9218474243852759,
+    "fde_persistence": 1.7836055008300937,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.33584455984771067,
+    "fde_sync": 0.5991192263374713,
+    "ade_persistence": 1.0069110927533842,
+    "fde_persistence": 1.8535617817495584,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.3895179940683544,
+    "fde_sync": 0.6123065324108596,
+    "ade_persistence": 1.0350174667984895,
+    "fde_persistence": 1.8304513755005054,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.36233713675669926,
+    "fde_sync": 0.5715087061915518,
+    "ade_persistence": 1.0316475776253418,
+    "fde_persistence": 1.8167769345884197,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.38588065548688516,
+    "fde_sync": 0.6657655212731679,
+    "ade_persistence": 0.9981703273332384,
+    "fde_persistence": 1.8533273856799066,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.2617950971055873,
+    "fde_sync": 0.48032069190253013,
+    "ade_persistence": 0.9334076907500927,
+    "fde_persistence": 1.8146233719068317,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.22056256543509734,
+    "fde_sync": 0.5107177703590622,
+    "ade_persistence": 0.9770853259963069,
+    "fde_persistence": 1.9101316649132458,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.29809626180167575,
+    "fde_sync": 0.47639633751354615,
+    "ade_persistence": 1.005529668031126,
+    "fde_persistence": 1.8833114407769058,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.2418820368827459,
+    "fde_sync": 0.420245127444195,
+    "ade_persistence": 1.065898808051358,
+    "fde_persistence": 1.9202109985741231,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.34469050542576635,
+    "fde_sync": 0.697581401230408,
+    "ade_persistence": 1.1182599235066697,
+    "fde_persistence": 2.0201708930470077,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.3016555688220459,
+    "fde_sync": 0.7433802240695676,
+    "ade_persistence": 1.0460375997337037,
+    "fde_persistence": 1.888206169765682,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.46410366800070574,
+    "fde_sync": 1.0540110176227055,
+    "ade_persistence": 1.0384796789158586,
+    "fde_persistence": 1.941537300372813,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.7770483880185763,
+    "fde_sync": 3.264337917017531,
+    "ade_persistence": 0.9885437372820368,
+    "fde_persistence": 1.8655529017003507,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 0.6393689113262319,
+    "fde_sync": 1.255662677968182,
+    "ade_persistence": 1.046556779870501,
+    "fde_persistence": 1.8808104403973434,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.8525306485718913,
+    "fde_sync": 3.34379924939337,
+    "ade_persistence": 1.0929995704668711,
+    "fde_persistence": 1.9259973196752849,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.7727591922382706,
+    "fde_sync": 3.1961708952669348,
+    "ade_persistence": 0.9873551906679987,
+    "fde_persistence": 1.7691255092803748,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.8022612639393991,
+    "fde_sync": 3.2228892209889413,
+    "ade_persistence": 1.0345950341308505,
+    "fde_persistence": 1.825859027764195,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.66736865436679,
+    "fde_sync": 3.077199199994515,
+    "ade_persistence": 0.925713441428142,
+    "fde_persistence": 1.7280143897337192,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.6702857837100737,
+    "fde_sync": 3.0179953389149348,
+    "ade_persistence": 0.9128910925770546,
+    "fde_persistence": 1.6872687046825776,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.6701119441460766,
+    "fde_sync": 2.937461996926981,
+    "ade_persistence": 0.955812063482396,
+    "fde_persistence": 1.6560620605214642,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.6095888907802272,
+    "fde_sync": 2.7929436566556696,
+    "ade_persistence": 0.8762864930856632,
+    "fde_persistence": 1.5034304205129223,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.6293975927797815,
+    "fde_sync": 2.7806564133831704,
+    "ade_persistence": 0.8750876331153178,
+    "fde_persistence": 1.4644401578190673,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.532431972690384,
+    "fde_sync": 2.65767588293787,
+    "ade_persistence": 0.8004376276587969,
+    "fde_persistence": 1.3745486338592687,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.42002283406351,
+    "fde_sync": 2.520402586087834,
+    "ade_persistence": 0.7178643984646587,
+    "fde_persistence": 1.2969052638544587,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.3484703348794536,
+    "fde_sync": 2.4307188086063207,
+    "ade_persistence": 0.6698078105623516,
+    "fde_persistence": 1.2628212196286146,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.5725150906299874,
+    "fde_sync": 2.888549444076617,
+    "ade_persistence": 0.6784611479209955,
+    "fde_persistence": 1.3013904429414784,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.501888232600091,
+    "fde_sync": 2.9265563053866677,
+    "ade_persistence": 0.7104215941249835,
+    "fde_persistence": 1.4019069795298973,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.5302382923815425,
+    "fde_sync": 2.962897992280494,
+    "ade_persistence": 0.7525855666420206,
+    "fde_persistence": 1.4658025819072837,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.55559825419771,
+    "fde_sync": 3.0042348812393223,
+    "ade_persistence": 0.801292341576269,
+    "fde_persistence": 1.5510480783334473,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.5828476395885491,
+    "fde_sync": 3.035461625574719,
+    "ade_persistence": 0.8458162840596831,
+    "fde_persistence": 1.6196891059084968,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.547374582630015,
+    "fde_sync": 3.010191970038755,
+    "ade_persistence": 0.8936561478127621,
+    "fde_persistence": 1.6699179567968743,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.5720629097176106,
+    "fde_sync": 3.0476923560722518,
+    "ade_persistence": 0.9309413444446205,
+    "fde_persistence": 1.7215531326854379,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.5406922371375513,
+    "fde_sync": 3.00593911652072,
+    "ade_persistence": 0.9150529211548951,
+    "fde_persistence": 1.6979137775309878,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.68943353863778,
+    "fde_sync": 3.0008321650859244,
+    "ade_persistence": 0.9374266053306238,
+    "fde_persistence": 1.7171472073236624,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.780768146956045,
+    "fde_sync": 3.0602195870794513,
+    "ade_persistence": 0.9310474836953628,
+    "fde_persistence": 1.6985632342039765,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.868945889177385,
+    "fde_sync": 3.1738660435125094,
+    "ade_persistence": 0.9124373975430462,
+    "fde_persistence": 1.6443584717765842,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.862802928050752,
+    "fde_sync": 3.1434432754346746,
+    "ade_persistence": 0.9051486564840499,
+    "fde_persistence": 1.6137170336270972,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "8217",
+    "ade_sync": 1.7552658157660073,
+    "fde_sync": 3.1493830545144714,
+    "ade_persistence": 0.8681571136679388,
+    "fde_persistence": 1.5495533340191843,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.5525395546970266,
+    "fde_sync": 2.634212535521541,
+    "ade_persistence": 0.8472384501790861,
+    "fde_persistence": 1.4116027522831058,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.512902313566955,
+    "fde_sync": 2.591549464790322,
+    "ade_persistence": 0.8148515155001826,
+    "fde_persistence": 1.3665139104340602,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.470794133741799,
+    "fde_sync": 2.5710629822725437,
+    "ade_persistence": 0.7159016826743175,
+    "fde_persistence": 1.300200773945128,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4443565827845475,
+    "fde_sync": 2.619948708516556,
+    "ade_persistence": 0.6936909936370076,
+    "fde_persistence": 1.3535836697323052,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4475039987480594,
+    "fde_sync": 2.710469474262427,
+    "ade_persistence": 0.6850574725100119,
+    "fde_persistence": 1.4332736171231077,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4827036325890262,
+    "fde_sync": 2.652521011947517,
+    "ade_persistence": 0.7206745931891811,
+    "fde_persistence": 1.3840862668453617,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.558990590447283,
+    "fde_sync": 2.624521132116323,
+    "ade_persistence": 0.8005425896370181,
+    "fde_persistence": 1.3368258252491703,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.550320956325937,
+    "fde_sync": 2.519849604698667,
+    "ade_persistence": 0.7925958928949566,
+    "fde_persistence": 1.2387252621585272,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.525008952991758,
+    "fde_sync": 2.6581166136535006,
+    "ade_persistence": 0.7578291864335136,
+    "fde_persistence": 1.2591755936573101,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4311813618824585,
+    "fde_sync": 2.648724142557889,
+    "ade_persistence": 0.6593740412204739,
+    "fde_persistence": 1.2591743167677483,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.311452510126256,
+    "fde_sync": 2.584334167880261,
+    "ade_persistence": 0.5390200091829639,
+    "fde_persistence": 1.1899967385585435,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.3846164187778323,
+    "fde_sync": 2.6685987754954925,
+    "ade_persistence": 0.5935034929433111,
+    "fde_persistence": 1.2500728542992876,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.462209314491651,
+    "fde_sync": 2.690713400821705,
+    "ade_persistence": 0.7113409792838893,
+    "fde_persistence": 1.3029466106347933,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.5672161887569616,
+    "fde_sync": 2.7474472018357723,
+    "ade_persistence": 0.8143298120414596,
+    "fde_persistence": 1.3513848955027903,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.5382439299153272,
+    "fde_sync": 2.7628674372702497,
+    "ade_persistence": 0.7724037758790083,
+    "fde_persistence": 1.3600863514873371,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4755466495603697,
+    "fde_sync": 2.7138194877727764,
+    "ade_persistence": 0.6897372862357524,
+    "fde_persistence": 1.3043422325714418,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4965644181052518,
+    "fde_sync": 2.7708209115953975,
+    "ade_persistence": 0.6519960991751704,
+    "fde_persistence": 1.2788713820477848,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4811713015058017,
+    "fde_sync": 2.7620150811925357,
+    "ade_persistence": 0.6585260304157933,
+    "fde_persistence": 1.284843972374373,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.5374821192466783,
+    "fde_sync": 2.7574680733562564,
+    "ade_persistence": 0.7169646283983898,
+    "fde_persistence": 1.2538438466270143,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.5782193908001056,
+    "fde_sync": 2.7873946589560856,
+    "ade_persistence": 0.7679769243939049,
+    "fde_persistence": 1.3416828419763036,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.5189108138841263,
+    "fde_sync": 2.7217990352205508,
+    "ade_persistence": 0.7092450258377069,
+    "fde_persistence": 1.2702938295273394,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.48070104242948,
+    "fde_sync": 2.678454456964344,
+    "ade_persistence": 0.6610735401080828,
+    "fde_persistence": 1.157154610958525,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4516114946247667,
+    "fde_sync": 2.5913337886699557,
+    "ade_persistence": 0.6035085212353798,
+    "fde_persistence": 0.9773255146179659,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.406107833535029,
+    "fde_sync": 2.5094367802756095,
+    "ade_persistence": 0.5310094366569104,
+    "fde_persistence": 0.8243261915315281,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4278929990107956,
+    "fde_sync": 2.5161135807874566,
+    "ade_persistence": 0.5471782219500771,
+    "fde_persistence": 0.802439077713963,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4065296044424347,
+    "fde_sync": 2.5344328273686,
+    "ade_persistence": 0.42289160831428774,
+    "fde_persistence": 0.706218499061059,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.3989741888567326,
+    "fde_sync": 2.6209220213698776,
+    "ade_persistence": 0.3581890443990898,
+    "fde_persistence": 0.728392364356877,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.1450235988438093,
+    "fde_sync": 2.2558167233351054,
+    "ade_persistence": 0.3425721323527798,
+    "fde_persistence": 0.8245808828862274,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.200706481698939,
+    "fde_sync": 2.324520984997356,
+    "ade_persistence": 0.4220176695350417,
+    "fde_persistence": 0.9673157069751398,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.260472083240096,
+    "fde_sync": 2.402582169254723,
+    "ade_persistence": 0.5296940178926681,
+    "fde_persistence": 1.1280092420261632,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.3010585486149373,
+    "fde_sync": 2.478984228588583,
+    "ade_persistence": 0.6377449034191606,
+    "fde_persistence": 1.2813941977376557,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.3452250298462107,
+    "fde_sync": 2.5829629500772553,
+    "ade_persistence": 0.7423032067162642,
+    "fde_persistence": 1.4188463700303744,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.3638759994046694,
+    "fde_sync": 2.61859697707124,
+    "ade_persistence": 0.7867834474423995,
+    "fde_persistence": 1.4704229728624807,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.3655341023578973,
+    "fde_sync": 2.625336595987396,
+    "ade_persistence": 0.7833928094273125,
+    "fde_persistence": 1.4717191983667912,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "9776",
+    "ade_sync": 1.4029307323407316,
+    "fde_sync": 2.6509534123559364,
+    "ade_persistence": 0.8032153888127463,
+    "fde_persistence": 1.4795701318753065,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50582",
+    "ade_sync": 1.1577534720786693,
+    "fde_sync": 1.9226033652216823,
+    "ade_persistence": 1.1533989529884612,
+    "fde_persistence": 1.9808632959691483,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50582",
+    "ade_sync": 0.9718280012425287,
+    "fde_sync": 1.7405711125081478,
+    "ade_persistence": 1.0102473032236468,
+    "fde_persistence": 1.8729248195806862,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50582",
+    "ade_sync": 0.7378649697575268,
+    "fde_sync": 1.5811813371787578,
+    "ade_persistence": 0.9930409482050018,
+    "fde_persistence": 1.873401508301478,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50582",
+    "ade_sync": 0.8455986947806254,
+    "fde_sync": 1.7180117872132257,
+    "ade_persistence": 0.9465336768520286,
+    "fde_persistence": 1.7823732411171647,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50582",
+    "ade_sync": 0.8770033133994927,
+    "fde_sync": 1.7799600897491326,
+    "ade_persistence": 1.1107079332963103,
+    "fde_persistence": 1.8802144357538155,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.611530418490397,
+    "fde_sync": 0.8281059630065749,
+    "ade_persistence": 0.7854674940419392,
+    "fde_persistence": 1.1406567608022609,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.6885372016329151,
+    "fde_sync": 1.069845852628208,
+    "ade_persistence": 0.612350065677695,
+    "fde_persistence": 0.9693618170781941,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.7145288061253675,
+    "fde_sync": 1.2072809509172684,
+    "ade_persistence": 0.5198668594878916,
+    "fde_persistence": 0.8969373325412882,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8512208672684553,
+    "fde_sync": 1.3582349085867476,
+    "ade_persistence": 0.5221877697087806,
+    "fde_persistence": 0.9024280551132655,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.657064210507295,
+    "fde_sync": 1.0097148671395406,
+    "ade_persistence": 0.44938230162708265,
+    "fde_persistence": 0.7990620077690475,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.626926765157321,
+    "fde_sync": 0.876112000912341,
+    "ade_persistence": 0.43899890533293373,
+    "fde_persistence": 0.7955192924169469,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.5833081550482796,
+    "fde_sync": 0.7975036051954264,
+    "ade_persistence": 0.4366743086952116,
+    "fde_persistence": 0.8396328743543228,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.5389937422433435,
+    "fde_sync": 0.7254863716014622,
+    "ade_persistence": 0.4785982134975441,
+    "fde_persistence": 0.9658520833598835,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.4748971932496196,
+    "fde_sync": 0.9170998208178477,
+    "ade_persistence": 0.5641323980134195,
+    "fde_persistence": 1.3143076586364804,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.49269764659284876,
+    "fde_sync": 0.9479935165746883,
+    "ade_persistence": 0.6506896404045429,
+    "fde_persistence": 1.4002869445707922,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.6432588272189941,
+    "fde_sync": 1.0314748311865984,
+    "ade_persistence": 0.7779959678596292,
+    "fde_persistence": 1.5322422583926087,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.7755795285067685,
+    "fde_sync": 1.0432112956187363,
+    "ade_persistence": 0.876123088596516,
+    "fde_persistence": 1.5951716059404364,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8429715743928043,
+    "fde_sync": 0.9254640360488505,
+    "ade_persistence": 0.9614149719245928,
+    "fde_persistence": 1.610301597408871,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8887473164689986,
+    "fde_sync": 1.0872203493228092,
+    "ade_persistence": 1.0317717741854993,
+    "fde_persistence": 1.8205428217566026,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.5805683277599135,
+    "fde_sync": 0.7433812803605767,
+    "ade_persistence": 0.8443769101190798,
+    "fde_persistence": 1.6701889811451596,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.5565958929507258,
+    "fde_sync": 0.6942928765412185,
+    "ade_persistence": 0.9062053707923803,
+    "fde_persistence": 1.7560764092231103,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.5713226704211707,
+    "fde_sync": 0.6989463412506866,
+    "ade_persistence": 0.9668907890613662,
+    "fde_persistence": 1.8277537234917878,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.597680349542509,
+    "fde_sync": 0.6231173188555407,
+    "ade_persistence": 1.005461900323265,
+    "fde_persistence": 1.750122605725634,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.6691943823050739,
+    "fde_sync": 0.7405412876723118,
+    "ade_persistence": 1.040768201375569,
+    "fde_persistence": 1.7443420543381554,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.4710627401292941,
+    "fde_sync": 0.520560378911106,
+    "ade_persistence": 0.8932889504839377,
+    "fde_persistence": 1.4872385597907212,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.4622048995188634,
+    "fde_sync": 0.5563459305244058,
+    "ade_persistence": 0.8761776361547625,
+    "fde_persistence": 1.5309496831094636,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.49533909942407695,
+    "fde_sync": 0.6362728627724418,
+    "ade_persistence": 0.8252255550975053,
+    "fde_persistence": 1.5364367326621355,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.642274776220214,
+    "fde_sync": 1.0418460197589243,
+    "ade_persistence": 0.806421669731999,
+    "fde_persistence": 1.6137554237997778,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8093669715344092,
+    "fde_sync": 1.2688096529415311,
+    "ade_persistence": 0.9406899457735899,
+    "fde_persistence": 1.782826223017148,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.7285508774676623,
+    "fde_sync": 1.2190666335617921,
+    "ade_persistence": 0.8923979074451102,
+    "fde_persistence": 1.7912000907906005,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8169786957871534,
+    "fde_sync": 1.2593077547700986,
+    "ade_persistence": 1.0122905641469702,
+    "fde_persistence": 1.8614445827199244,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.9183407242061282,
+    "fde_sync": 1.329363198502623,
+    "ade_persistence": 1.0247175507848072,
+    "fde_persistence": 1.7785362451382527,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.0416068909886322,
+    "fde_sync": 1.4015201638415529,
+    "ade_persistence": 1.0794628499994763,
+    "fde_persistence": 1.8286235648111138,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8701873061965083,
+    "fde_sync": 1.1989309555655374,
+    "ade_persistence": 0.9674093928535252,
+    "fde_persistence": 1.6903376719644796,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8088635391204401,
+    "fde_sync": 1.238461962240714,
+    "ade_persistence": 0.9278601740761653,
+    "fde_persistence": 1.736726446769894,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.7716321147836877,
+    "fde_sync": 1.1887388886164059,
+    "ade_persistence": 0.8697847541790162,
+    "fde_persistence": 1.7094919344615773,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.7760956128383477,
+    "fde_sync": 1.1293967384243306,
+    "ade_persistence": 0.8840634834340694,
+    "fde_persistence": 1.6753544684559474,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.8389944191370091,
+    "fde_sync": 1.2703047028905172,
+    "ade_persistence": 0.9906477442696916,
+    "fde_persistence": 1.7961762121847635,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.881500951878623,
+    "fde_sync": 1.39142658506503,
+    "ade_persistence": 0.970896000065864,
+    "fde_persistence": 1.7849811307951045,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.9573510065377467,
+    "fde_sync": 1.5803320027630747,
+    "ade_persistence": 1.0337760163758916,
+    "fde_persistence": 1.8838722361034421,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 0.9226313075648042,
+    "fde_sync": 1.6509758013424314,
+    "ade_persistence": 0.9688456901125743,
+    "fde_persistence": 1.837632050943886,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.0259116197392253,
+    "fde_sync": 1.8260442398633048,
+    "ade_persistence": 0.9702620627611758,
+    "fde_persistence": 1.8693780623817242,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.213244672961784,
+    "fde_sync": 1.981833306657228,
+    "ade_persistence": 1.088650014883512,
+    "fde_persistence": 1.9428496049065294,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.2324856775544666,
+    "fde_sync": 2.057861310522006,
+    "ade_persistence": 1.0690255886634603,
+    "fde_persistence": 1.8664596592251153,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.2843353740390782,
+    "fde_sync": 2.1453064126940955,
+    "ade_persistence": 1.067375121501047,
+    "fde_persistence": 1.810660154269381,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.2426751807201117,
+    "fde_sync": 2.117746483337225,
+    "ade_persistence": 0.974541845817547,
+    "fde_persistence": 1.6652173456317412,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.2038862239766341,
+    "fde_sync": 2.118454262879704,
+    "ade_persistence": 0.8847314816386153,
+    "fde_persistence": 1.569592966924035,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.218213809272904,
+    "fde_sync": 2.159342694657939,
+    "ade_persistence": 0.8458327594413654,
+    "fde_persistence": 1.5456925290987458,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.288206252080034,
+    "fde_sync": 2.2085670430476823,
+    "ade_persistence": 0.8791047236150628,
+    "fde_persistence": 1.5470388244746125,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.2182996111420474,
+    "fde_sync": 2.1155223436814103,
+    "ade_persistence": 0.8210475453991002,
+    "fde_persistence": 1.486960295062691,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1694917309125075,
+    "fde_sync": 2.059043844041916,
+    "ade_persistence": 0.7911254604780719,
+    "fde_persistence": 1.4568949270147145,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1655153961466225,
+    "fde_sync": 2.076247212164901,
+    "ade_persistence": 0.7999347197109565,
+    "fde_persistence": 1.475367144022284,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1575623400932287,
+    "fde_sync": 2.09813870444256,
+    "ade_persistence": 0.8004869444202057,
+    "fde_persistence": 1.5193675553382198,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1431690195796977,
+    "fde_sync": 1.9895035930597447,
+    "ade_persistence": 0.8003393161936643,
+    "fde_persistence": 1.5678518256490863,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1645523240036744,
+    "fde_sync": 2.002589407892946,
+    "ade_persistence": 0.8438079347703066,
+    "fde_persistence": 1.5943652748162525,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1682155223600208,
+    "fde_sync": 2.038044105018446,
+    "ade_persistence": 0.8640487871659398,
+    "fde_persistence": 1.635483640986351,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1972657982134105,
+    "fde_sync": 2.164999833978947,
+    "ade_persistence": 0.9077704287999907,
+    "fde_persistence": 1.6944499983848453,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.2354998976578573,
+    "fde_sync": 2.244945426665685,
+    "ade_persistence": 0.9566016790233397,
+    "fde_persistence": 1.7328063262516997,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.2562721044793945,
+    "fde_sync": 2.271802743778004,
+    "ade_persistence": 0.9698331927026,
+    "fde_persistence": 1.7304268583306333,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.3317479864089146,
+    "fde_sync": 2.420383513512502,
+    "ade_persistence": 0.9304637667747278,
+    "fde_persistence": 1.7271414100058784,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.3923477706769496,
+    "fde_sync": 2.399861601677497,
+    "ade_persistence": 0.9923661004268651,
+    "fde_persistence": 1.8105879535302507,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.418215064079211,
+    "fde_sync": 2.407306009039434,
+    "ade_persistence": 1.0141254237208577,
+    "fde_persistence": 1.7571231416036348,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.3205507244396866,
+    "fde_sync": 2.175893848214715,
+    "ade_persistence": 0.9468960895965672,
+    "fde_persistence": 1.5761670917675616,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.224634443476546,
+    "fde_sync": 1.9512151604577406,
+    "ade_persistence": 0.8911975082257536,
+    "fde_persistence": 1.4874206484927806,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.135614003482725,
+    "fde_sync": 1.82274190823149,
+    "ade_persistence": 0.8573024175185116,
+    "fde_persistence": 1.5119007515086433,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1330262186582516,
+    "fde_sync": 1.9948222439978318,
+    "ade_persistence": 0.8799347095313497,
+    "fde_persistence": 1.5371825322947614,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.0967874501197585,
+    "fde_sync": 2.250574804283059,
+    "ade_persistence": 0.7379807052723734,
+    "fde_persistence": 1.5765599040804257,
+    "fallback": false,
+    "safety_violation": false
+  },
+  {
+    "track": "50943",
+    "ade_sync": 1.1389683075937989,
+    "fde_sync": 2.3144502515880987,
+    "ade_persistence": 0.7952871922111768,
+    "fde_persistence": 1.676730624879694,
+    "fallback": false,
+    "safety_violation": false
+  }
+]

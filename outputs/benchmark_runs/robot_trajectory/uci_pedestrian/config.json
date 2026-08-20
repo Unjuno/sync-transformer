@@ -1,0 +1,7 @@
+{
+  "observed_steps": 8,
+  "predicted_steps": 12,
+  "split": "track-level 60/20/20",
+  "source": "UCI pedestrian in traffic",
+  "license": "CC BY 4.0"
+}
