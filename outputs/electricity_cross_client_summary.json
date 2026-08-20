@@ -1,0 +1,80 @@
+{
+  "protocol": "same 720/96 causal split, 3 seeds, 20 epochs; per-client pooled query bootstrap",
+  "rows": [
+    {
+      "client": "MT_001",
+      "vanilla_small_mse": {
+        "mean": 1.0976908525694418,
+        "ci95": [
+          1.0135831324708942,
+          1.186864660783792
+        ],
+        "n": 876
+      },
+      "sync_base_mse": {
+        "mean": 0.7955438331509493,
+        "ci95": [
+          0.723984114964414,
+          0.8736554781651149
+        ],
+        "n": 876
+      },
+      "sync_external_mse": {
+        "mean": 0.7955438331509493,
+        "ci95": [
+          0.7230036669206109,
+          0.8690403406977117
+        ],
+        "n": 876
+      },
+      "external_minus_base_delta": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 876
+      },
+      "gate_use_rate": 0.0,
+      "failure": "gate abstained on every query"
+    },
+    {
+      "client": "MT_002",
+      "vanilla_small_mse": {
+        "mean": 0.3011968386567891,
+        "ci95": [
+          0.29525866558834846,
+          0.30758677282791635
+        ],
+        "n": 876
+      },
+      "sync_base_mse": {
+        "mean": 0.23690642532148318,
+        "ci95": [
+          0.23060095345252724,
+          0.2435055696928542
+        ],
+        "n": 876
+      },
+      "sync_external_mse": {
+        "mean": 0.23755897139305393,
+        "ci95": [
+          0.2316071413397857,
+          0.244159385151991
+        ],
+        "n": 876
+      },
+      "external_minus_base_delta": {
+        "mean": 0.0006525460715707578,
+        "ci95": [
+          0.00016256734244015118,
+          0.0011536318655699898
+        ],
+        "n": 876
+      },
+      "gate_use_rate": 0.10273972602739727,
+      "failure": "deployed residual worsened base head"
+    }
+  ],
+  "conclusion": "SYNC behavior is client-dependent; no general electricity advantage is established."
+}
