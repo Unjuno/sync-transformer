@@ -48,7 +48,12 @@ def main():
         else:
             subprocess.run([sys.executable, "work/run_canonical_suite.py"], cwd=ROOT, check=True)
             record.update({"status": "completed", "artifact": "outputs/common_runner_*.json"})
+        # Keep the historical flat record and also emit the documented task layout.
         (out / f"{task_id}.json").write_text(json.dumps(record, indent=2))
+        task_out = out / task_id
+        task_out.mkdir(parents=True, exist_ok=True)
+        (task_out / "config.json").write_text(json.dumps({"task_id": task_id, "seeds": args.seeds, "epochs": args.epochs, "device": args.device}, indent=2))
+        (task_out / "summary.json").write_text(json.dumps(record, indent=2))
         records.append(record)
     (out / "run_manifest.json").write_text(json.dumps({"tasks": records, "seeds": args.seeds, "epochs": args.epochs, "device": args.device}, indent=2))
     print(json.dumps(records, indent=2))

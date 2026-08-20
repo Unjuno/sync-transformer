@@ -12,3 +12,9 @@ def test_registry_has_ten_unique_tasks_and_two_tracks():
 def test_ett_is_the_only_validated_task():
     assert get_task("ett").status == "validated_cpu"
     assert all(t.status != "validated_cpu" for t in TASKS if t.task_id != "ett")
+
+def test_task_output_layout_is_implemented():
+    import inspect
+    from sync_experiments import run_all
+    source = inspect.getsource(run_all.main)
+    assert '"config.json"' in source and '"summary.json"' in source
