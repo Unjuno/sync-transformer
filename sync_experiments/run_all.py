@@ -30,7 +30,10 @@ def main():
         adapter = adapter_for(task_id, ROOT / "outputs")
         if task_id not in ("ett", "electricity"):
             try:
-                if task_id == "hvac":
+                if task_id == "traffic":
+                    adapter.load(context_length=720, horizon=96, step=96)
+                    record.update({"status":"source_verified_adapter_ready", "message":"METR-LA/PEMS-BAY CSV adapter validated; model benchmark not yet run."})
+                elif task_id == "hvac":
                     hvac_root=ROOT/'outputs'/'benchmark_runs'/'hvac'
                     meters=('BDG2_Panther_office_Hannah','BDG2_Panther_office_Catherine','BDG2_Panther_lodging_Cora')
                     if all((hvac_root/m/'summary.json').exists() for m in meters):
@@ -40,7 +43,7 @@ def main():
                         record.update({"status": "source_verified_adapter_ready", "message": "BDG2 CSV adapter validated; model benchmark not yet run."})
                 else:
                     adapter.load()
-            except AdapterNotReady as exc:
+            except (AdapterNotReady, FileNotFoundError, TypeError) as exc:
                 source_statuses = {"blocked_source_unavailable", "source_public_license_unresolved", "source_verified_pending_adapter"}
                 record.update({"status": task.status if task.status in source_statuses else "pending_adapter", "message": str(exc)})
         elif args.device != "cpu":
