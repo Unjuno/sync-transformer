@@ -10,7 +10,7 @@ Every new task must compare SYNC against a Vanilla Transformer under the same sp
 
 | # | Task | Why SYNC may fit | Primary target | Candidate benchmark | Current status |
 |---:|---|---|---|---|---|
-| 1 | Building electricity-load forecasting | Daily/weekly cycles and recurring occupancy patterns | Load at 15–60 min horizon | UCI ElectricityLoadDiagrams, ASHRAE, or Pecan Street | First single-series benchmark; not generalised |
+| 1 | Building electricity-load forecasting | Daily/weekly cycles and recurring occupancy patterns | Load at 15–60 min horizon | UCI ElectricityLoadDiagrams, ASHRAE, or Pecan Street | Three UCI client series measured; client-dependent and not generalised |
 | 2 | Renewable-power forecasting | Day/night and weather-regime recurrence | Solar/wind power | GEFCom or public solar/wind series | Candidate; not tested |
 | 3 | Road-traffic forecasting | Rush-hour and weekday motifs | Flow/speed/occupancy | METR-LA, PEMS-BAY | Candidate; not tested |
 | 4 | HVAC/control-demand forecasting | Occupancy and thermal cycles | Zone temperature/load | Building energy datasets | Candidate; not tested |

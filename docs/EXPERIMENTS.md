@@ -44,7 +44,7 @@ The initial benchmark table is `outputs/benchmark_comparison_table.md`. It expli
 
 The task-level roadmap is `docs/TASKS.md`, and its public status matrix is `outputs/task_benchmark_matrix.md`. Candidate tasks are hypotheses until both Vanilla Transformer and SYNC have been evaluated on the same benchmark.
 
-Phase A uses `python -m sync_experiments.run_all --tasks all`. It runs the validated ETT suite, records the reproducible UCI MT_001 electricity artifacts when present, and writes explicit `pending_adapter` records for the remaining tasks; missing data are never silently treated as negative or positive results. The electricity result is a first single-series extension, not evidence of generalization: the learned gate abstained on every test query.
+Phase A uses `python -m sync_experiments.run_all --tasks all`. It runs the validated ETT suite, records the reproducible UCI MT_001/MT_002/MT_003 electricity artifacts when present, and writes explicit `pending_adapter` records for the remaining tasks; missing data are never silently treated as negative or positive results. The three electricity clients show client-dependent gate behavior and are not evidence of generalization.
 
 ## Deferred CUDA experiment
 

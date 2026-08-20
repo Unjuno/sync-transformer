@@ -30,11 +30,11 @@ Internal-search results remain protocol-sensitive. The repository records both t
 
 ## What can SYNC be used for?
 
-SYNC is intended for recurring or seasonal processes where comparable past episodes exist and a fallback is available. Plausible application families include electricity load, renewable power, traffic, HVAC, server workload, retail demand, industrial sensors, and repetitive robot trajectories. The public ETT suite and a first single-series UCI electricity benchmark are measured; the remaining applications are hypotheses and are listed in [the task map](docs/TASKS.md). The electricity result is limited by 100% gate abstention (see [the report](outputs/electricity_benchmark.md)).
+SYNC is intended for recurring or seasonal processes where comparable past episodes exist and a fallback is available. Plausible application families include electricity load, renewable power, traffic, HVAC, server workload, retail demand, industrial sensors, and repetitive robot trajectories. The public ETT suite and three UCI electricity client series are measured; the remaining applications are hypotheses and are listed in [the task map](docs/TASKS.md). Electricity results are client-dependent and do not establish general advantage (see the [cross-client summary](outputs/electricity_cross_client_summary.json)).
 
 Each new application must be compared with a Vanilla Transformer under the same data split, horizon, seeds, parameter budget, and compute budget. The public roadmap is [the task benchmark matrix](outputs/task_benchmark_matrix.md). No candidate task should be described as validated until its benchmark row has been filled.
 
-The common task registry and Phase-A orchestrator are available as `sync_experiments`. The current `--tasks all` command executes the validated ETT CPU suite, records measured electricity artifacts when present, and reports the remaining eight tasks as `pending_adapter`; it does not fabricate results for datasets that have not been downloaded and licensed.
+The common task registry and Phase-A orchestrator are available as `sync_experiments`. The current `--tasks all` command executes the validated ETT CPU suite, records measured electricity artifacts when present, and reports the remaining eight task families as `pending_adapter`; it does not fabricate results for datasets that have not been downloaded and licensed.
 
 ```powershell
 python -m sync_experiments.run_all --tasks all --track all --seeds 163,164,165 --epochs 20 --device cpu
