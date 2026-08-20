@@ -21,6 +21,7 @@
 - Rolling-origin windows across all four datasets
 - Internal E2E/Ranked diagnostic reruns
 - Conventional Vanilla Transformer benchmark (CPU, 3 seeds)
+- Capacity-control Vanilla Transformer benchmark
 - Bootstrap summaries and artifact audits
 
 ## Main empirical pattern

@@ -35,7 +35,8 @@ class VanillaTransformer(nn.Module):
         h = self.encoder(h)
         return self.out(h.mean(1))
 
-def run(dataset, seed, epochs=40, step=None, train_frac=.6, cal_frac=.8):
+def run(dataset, seed, epochs=40, step=None, train_frac=.6, cal_frac=.8,
+        d_model=64, nhead=4, layers=2, ff=128):
     seed_all(seed)
     y = pd.read_csv(OUT / f"{dataset}.csv").OT.to_numpy(np.float32)
     n = len(y); tr = int(n * train_frac); ca = int(n * cal_frac)
@@ -50,7 +51,8 @@ def run(dataset, seed, epochs=40, step=None, train_frac=.6, cal_frac=.8):
     Y = torch.tensor(np.stack([z[t:t+H] for t in train]), dtype=torch.float32)
     TX = torch.tensor(np.stack([feat(t) for t in test]), dtype=torch.float32)
     TY = np.stack([z[t:t+H] for t in test])
-    model = VanillaTransformer(horizon=H)
+    model = VanillaTransformer(d_model=d_model, nhead=nhead, layers=layers,
+                               ff=ff, horizon=H)
     opt = torch.optim.AdamW(model.parameters(), lr=3e-3, weight_decay=1e-4)
     loss_fn = nn.MSELoss(); start = time.perf_counter()
     model.train()
@@ -64,8 +66,9 @@ def run(dataset, seed, epochs=40, step=None, train_frac=.6, cal_frac=.8):
     return {
         "dataset": dataset, "seed": seed, "model": "vanilla_transformer",
         "P": P, "H": H, "query_step": step, "train_frac": train_frac,
-        "cal_frac": cal_frac, "epochs": epochs, "d_model": 64,
-        "nhead": 4, "layers": 2, "parameter_count": sum(p.numel() for p in model.parameters()),
+        "cal_frac": cal_frac, "epochs": epochs, "d_model": d_model,
+        "nhead": nhead, "layers": layers, "ff": ff,
+        "parameter_count": sum(p.numel() for p in model.parameters()),
         "train_queries": len(train), "test_queries": len(test),
         "normalized_mse": float(q_mse.mean()), "query_mse": q_mse.tolist(),
         "elapsed_seconds": elapsed,
@@ -77,8 +80,13 @@ def main():
     ap.add_argument("--seeds", default="163,164,165")
     ap.add_argument("--epochs", type=int, default=40)
     ap.add_argument("--output", default="vanilla_transformer_benchmark.json")
+    ap.add_argument("--d-model", type=int, default=64)
+    ap.add_argument("--nhead", type=int, default=4)
+    ap.add_argument("--layers", type=int, default=2)
+    ap.add_argument("--ff", type=int, default=128)
     args = ap.parse_args()
-    rows = [run(ds, int(s), epochs=args.epochs)
+    rows = [run(ds, int(s), epochs=args.epochs, d_model=args.d_model,
+                nhead=args.nhead, layers=args.layers, ff=args.ff)
             for ds in args.datasets.split(",") for s in args.seeds.split(",")]
     summary = []
     for ds in args.datasets.split(","):
