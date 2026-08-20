@@ -44,8 +44,8 @@ def main():
     else:
         try:
             adapter_for(task.task_id, ROOT / "outputs").load()
-        except AdapterNotReady as exc:
-            record.update(status="pending_adapter", message=str(exc))
+        except (AdapterNotReady, FileNotFoundError, TypeError) as exc:
+            record.update(status=task.status if task.status != "candidate" else "pending_adapter", message=str(exc))
     out = Path(args.output) if args.output else ROOT / "outputs" / "benchmark_runs" / task.task_id / "summary.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(record, indent=2), encoding="utf-8")
