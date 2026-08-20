@@ -36,6 +36,12 @@ Each new application must be compared with a Vanilla Transformer under the same 
 
 The common task registry and Phase-A orchestrator are available as `sync_experiments`. The current `--tasks all` command executes the validated ETT CPU suite, records measured electricity artifacts when present, and reports the remaining eight task families as `pending_adapter`; it does not fabricate results for datasets that have not been downloaded and licensed.
 
+Trajectory tasks use a separate contract from forecasting: `TrajectoryBatch`
+and `TrajectoryMetrics` report ADE, FDE, tracking error, success, fallback,
+safety violations, and latency. The implementation is in
+`sync_experiments/trajectory_metrics.py`; no robot performance claim is made
+until a licensed trajectory dataset and control formulation are available.
+
 ```powershell
 python -m sync_experiments.run_all --tasks all --track all --seeds 163,164,165 --epochs 20 --device cpu
 ```
