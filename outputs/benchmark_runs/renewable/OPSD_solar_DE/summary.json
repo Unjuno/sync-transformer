@@ -1,0 +1,14 @@
+{
+  "task_id": "renewable",
+  "dataset": "OPSD_solar_DE",
+  "status": "measured_alternative",
+  "mean_sync_external_mse": 3.80151582734917e+23,
+  "mean_vanilla_mse": 3.80151582734917e+23,
+  "paired_delta_sync_minus_vanilla": -0.0038985028257895685,
+  "paired_delta_95ci": [
+    -0.005440458813905248,
+    -0.0025551498419799784
+  ],
+  "mean_gate_use_rate": 0.19344262295081968,
+  "failure_notes": "OPSD solar_DE_generation alternative; values include long missing-data interpolation and are not a claim of superiority"
+}
