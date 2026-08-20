@@ -44,6 +44,8 @@ The initial benchmark table is `outputs/benchmark_comparison_table.md`. It expli
 
 The task-level roadmap is `docs/TASKS.md`, and its public status matrix is `outputs/task_benchmark_matrix.md`. Candidate tasks are hypotheses until both Vanilla Transformer and SYNC have been evaluated on the same benchmark.
 
+Phase A uses `python -m sync_experiments.run_all --tasks all`. It runs the validated ETT suite and writes explicit `pending_adapter` records for the remaining tasks; missing data are never silently treated as negative or positive results.
+
 ## Deferred CUDA experiment
 
 RAFT and other external-baseline comparisons are intentionally deferred to a CUDA-capable machine. The CUDA experiment must clone this repository, reproduce the CPU baseline, preserve the fixed split/seed/horizon protocol, and add GPU artifacts in a separate commit.

@@ -1,0 +1,16 @@
+{
+  "schema": "sync-task-manifest-v1",
+  "raw_data_policy": "Raw datasets are not committed. Each adapter must record source, license, version, and sha256 after download.",
+  "tasks": [
+    {"task_id": "ett", "status": "available_local", "source": "public ETT CSVs in local outputs/ only"},
+    {"task_id": "electricity", "status": "pending_adapter", "source": "UCI ElectricityLoadDiagrams20112014", "license": "verify before download"},
+    {"task_id": "renewable", "status": "pending_adapter", "source": "GEFCom solar/wind or NREL", "license": "verify before download"},
+    {"task_id": "traffic", "status": "pending_adapter", "source": "METR-LA or PEMS-BAY", "license": "verify before download"},
+    {"task_id": "hvac", "status": "pending_adapter", "source": "Building Data Genome 2", "license": "verify before download"},
+    {"task_id": "server", "status": "pending_adapter", "source": "Alibaba cluster trace", "license": "verify before download"},
+    {"task_id": "retail", "status": "pending_adapter", "source": "M5 or Favorita", "license": "verify before download"},
+    {"task_id": "industrial", "status": "pending_adapter", "source": "NASA C-MAPSS", "license": "verify before download"},
+    {"task_id": "robot_manipulation", "status": "pending_adapter", "source": "RoboMimic/Open X subset", "license": "verify before download"},
+    {"task_id": "robot_trajectory", "status": "pending_adapter", "source": "nuScenes or simulator logs", "license": "verify before download"}
+  ]
+}

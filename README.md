@@ -34,6 +34,12 @@ SYNC is intended for recurring or seasonal processes where comparable past episo
 
 Each new application must be compared with a Vanilla Transformer under the same data split, horizon, seeds, parameter budget, and compute budget. The public roadmap is [the task benchmark matrix](outputs/task_benchmark_matrix.md). No candidate task should be described as validated until its benchmark row has been filled.
 
+The common task registry and Phase-A orchestrator are available as `sync_experiments`. The current `--tasks all` command executes the validated ETT CPU suite and reports the other nine tasks as `pending_adapter`; it does not fabricate results for datasets that have not been downloaded and licensed.
+
+```powershell
+python -m sync_experiments.run_all --tasks all --track all --seeds 163,164,165 --epochs 20 --device cpu
+```
+
 ## Reproducibility
 
 ```powershell
