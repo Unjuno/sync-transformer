@@ -1,5 +1,6 @@
 """Build the public benchmark matrix with explicit N/A for unmeasured tasks."""
 import csv, json
+import numpy as np
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,8 +15,9 @@ def main():
     summary = json.loads((ROOT/'outputs/electricity_cross_client_summary.json').read_text())
     for r in summary['rows']:
         rows.append(dict(zip(FIELDS, ['electricity',f"UCI ElectricityLoadDiagrams {r['client']}",'96','60/20/20','Vanilla small/SYNC','12800/19296',f"{r['sync_external_mse']['mean']:.6f}",f"[{r['sync_external_mse']['ci95'][0]:.6f}, {r['sync_external_mse']['ci95'][1]:.6f}]",'not pooled',f"{r['gate_use_rate']:.6f}",'recorded',r['failure'],'measured'])))
-    hvac=json.loads((ROOT/'outputs/benchmark_runs/hvac/BDG2_Panther_office_Hannah/summary.json').read_text())
-    rows.append(dict(zip(FIELDS, ['hvac','BDG2 Panther_office_Hannah','96','60/20/20','Vanilla/SYNC','75360/19296',f"{hvac['mean_sync_external_mse']:.6f}",f"[{hvac['paired_delta_95ci'][0]:.6f}, {hvac['paired_delta_95ci'][1]:.6f}]",'paired delta',f"{hvac['mean_gate_use_rate']:.6f}",'recorded',hvac['failure_notes'],'measured'])))
+    hvac=[json.loads(p.read_text()) for p in (ROOT/'outputs/benchmark_runs/hvac').glob('*/summary.json')]
+    if hvac:
+        rows.append(dict(zip(FIELDS, ['hvac','BDG2 Panther (3 meters)','96','60/20/20','Vanilla/SYNC','75360/19296',f"{np.mean([x['mean_sync_external_mse'] for x in hvac]):.6f}",'per-meter CI','paired delta',f"{np.mean([x['mean_gate_use_rate'] for x in hvac]):.6f}",'recorded','three meters; series-dependent; not building-wide','measured'])))
     pending = [('renewable','GEFCom solar/wind or NREL','source_public_license_unresolved'),('traffic','METR-LA/PEMS-BAY','pending'),('server','Alibaba cluster trace','pending'),('retail','M5/Favorita','pending'),('industrial','NASA C-MAPSS','blocked_source_unavailable'),('robot_manipulation','RoboMimic/Open X subset','pending'),('robot_trajectory','nuScenes or simulator logs','pending')]
     for task, dataset, status in pending:
         note = 'official source unavailable/license unspecified' if task in ('industrial','renewable') else 'adapter/data not ready'
