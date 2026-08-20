@@ -79,6 +79,8 @@ class CSVSeriesAdapter(BaseAdapter):
             self.column = candidates[0]
         frame = pd.read_csv(path, usecols=[self.column])
         y = pd.to_numeric(frame[self.column], errors='coerce').interpolate(limit_direction='both').to_numpy(np.float32)
+        if not np.isfinite(y).any():
+            raise ValueError(f'{path}: sensor column contains no numeric values')
         starts = np.arange(0, len(y) - context_length - horizon + 1, step)
         if len(starts) == 0:
             raise ValueError(f'{path}: insufficient rows for context={context_length}, horizon={horizon}')
