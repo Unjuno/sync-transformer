@@ -1,0 +1,20 @@
+[
+  {
+    "seed": 163,
+    "sync_external_mse": 0.15042369067668915,
+    "vanilla_mse": 0.6853195428848267,
+    "gate_use_rate": 1.0
+  },
+  {
+    "seed": 164,
+    "sync_external_mse": 0.164994016289711,
+    "vanilla_mse": 0.630523681640625,
+    "gate_use_rate": 1.0
+  },
+  {
+    "seed": 165,
+    "sync_external_mse": 0.15354801714420319,
+    "vanilla_mse": 0.6719141006469727,
+    "gate_use_rate": 1.0
+  }
+]
