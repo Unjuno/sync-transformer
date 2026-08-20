@@ -38,6 +38,9 @@ def main():
         elif task_id == "electricity":
             artifacts = sorted(ROOT.glob("outputs/common_runner_Electricity*_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json"))
             vanilla = sorted(ROOT.glob("outputs/vanilla_Electricity*_20.json"))
+            base_vanilla = ROOT / "outputs/vanilla_Electricity20.json"
+            if base_vanilla.exists():
+                vanilla.append(base_vanilla)
             if artifacts and vanilla:
                 record.update({"status": "completed_existing", "artifacts": [str(p) for p in artifacts + vanilla]})
             else:
