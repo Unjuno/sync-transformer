@@ -11,7 +11,7 @@ Pending tasks have no performance result.
 | Electricity MT_003 | measured | Gate used 100% and improved base head, but seasonal persistence remained stronger. |
 | Renewable | source_public_license_unresolved | IEEE source is public but its license field is N/A; no benchmark is run before terms are clarified. |
 | Traffic | pending_adapter | Dataset source/license and adapter not completed. |
-| HVAC | pending_adapter | Dataset source/license and adapter not completed. |
+| HVAC | source_verified_pending_adapter | BDG2 source and CC BY-SA 4.0 license are verified; LFS data acquisition and adapter remain incomplete. |
 | Server | pending_adapter | Dataset source/license and adapter not completed. |
 | Retail | pending_adapter | Dataset source/license and adapter not completed. |
 | Industrial | blocked_source_unavailable | NASA C-MAPSS is unavailable in the official catalog and has no specified license; no unproven mirror is used. |
