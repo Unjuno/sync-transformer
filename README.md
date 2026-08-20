@@ -32,6 +32,8 @@ Internal-search results remain protocol-sensitive. The repository records both t
 
 SYNC is intended for recurring or seasonal processes where comparable past episodes exist and a fallback is available. Plausible application families include electricity load, renewable power, traffic, HVAC, server workload, retail demand, industrial sensors, and repetitive robot trajectories. The public ETT suite, three UCI electricity client series, two METR-LA sensors, and three BDG2 HVAC meters are measured; the remaining applications are hypotheses and are listed in [the task map](docs/TASKS.md). Electricity, traffic, and HVAC results are series-dependent and do not establish general advantage (see the [cross-client summary](outputs/electricity_cross_client_summary.json)).
 
+The measured-task matrix is in [`outputs/benchmark_matrix.csv`](outputs/benchmark_matrix.csv); the conservative requirement-by-requirement audit is in [`outputs/public_completion_audit.md`](outputs/public_completion_audit.md).
+
 Each new application must be compared with a Vanilla Transformer under the same data split, horizon, seeds, parameter budget, and compute budget. The public roadmap is [the task benchmark matrix](outputs/task_benchmark_matrix.md). No candidate task should be described as validated until its benchmark row has been filled.
 
 The common task registry and Phase-A orchestrator are available as `sync_experiments`. The current `--tasks all` command executes the validated ETT CPU suite, records measured electricity artifacts when present, and reports the remaining eight task families as `pending_adapter`; it does not fabricate results for datasets that have not been downloaded and licensed.
