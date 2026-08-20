@@ -20,6 +20,7 @@
 - Same-budget controls
 - Rolling-origin windows across all four datasets
 - Internal E2E/Ranked diagnostic reruns
+- Conventional Vanilla Transformer benchmark (CPU, 3 seeds)
 - Bootstrap summaries and artifact audits
 
 ## Main empirical pattern
@@ -37,6 +38,8 @@ python work/audit_public_sync.py
 ```
 
 The authoritative summary is `outputs/SYNC_Transformer_results_and_experiment_plan.md`. Individual JSON artifacts are condition-keyed; do not average incompatible protocols together.
+
+The initial benchmark table is `outputs/benchmark_comparison_table.md`. It explicitly separates absolute Vanilla Transformer MSE from SYNC's canonical paired deltas because the two protocols use different model sizes and training budgets.
 
 ## Deferred CUDA experiment
 

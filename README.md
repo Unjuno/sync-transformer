@@ -44,6 +44,7 @@ See `outputs/SYNC_Transformer_results_and_experiment_plan.md` for the protocol a
 
 - [Theory and scope](docs/THEORY.md): definitions, hypotheses, and non-claims.
 - [Experiments](docs/EXPERIMENTS.md): fixed protocol, completed CPU studies, and reproduction commands.
+- [Benchmark table](outputs/benchmark_comparison_table.md): conventional Transformer versus the existing baselines.
 - [Limitations](docs/LIMITATIONS.md): missing implementation, statistical limits, baseline limits, and CUDA handoff.
 
 ## GPU/CUDA extension
