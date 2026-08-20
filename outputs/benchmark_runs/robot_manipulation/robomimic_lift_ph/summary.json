@@ -1,0 +1,55 @@
+{
+  "task_id": "robot_manipulation",
+  "dataset": "robomimic_lift_ph",
+  "status": "measured_alternative",
+  "n_train": 425,
+  "n_calibration": 129,
+  "n_test": 118,
+  "sync_ade": {
+    "mean": 0.018942086788640306,
+    "ci95": [
+      0.016974891450149316,
+      0.02103379532699003
+    ],
+    "n": 118
+  },
+  "sync_fde": {
+    "mean": 0.02931916849002551,
+    "ci95": [
+      0.02586078779478189,
+      0.03283427330929459
+    ],
+    "n": 118
+  },
+  "tracking_error": {
+    "mean": 0.018942086788640306,
+    "ci95": [
+      0.016974891450149316,
+      0.02103379532699003
+    ],
+    "n": 118
+  },
+  "open_loop_success_rate": 0.8813559322033898,
+  "persistence_ade": {
+    "mean": 0.034964177666751875,
+    "ci95": [
+      0.03207379141773637,
+      0.03802288656593362
+    ],
+    "n": 118
+  },
+  "persistence_fde": {
+    "mean": 0.059485224987616075,
+    "ci95": [
+      0.05471944522680213,
+      0.06440071780668528
+    ],
+    "n": 118
+  },
+  "fallback_rate": 0.11864406779661017,
+  "safety_violation_rate": 0.0847457627118644,
+  "gate_threshold": 0.01161886006593704,
+  "safety_limit": 0.014211593195796013,
+  "failure_notes": "nearest-context retrieval SYNC formulation; success is open-loop endpoint tolerance <=0.05m, not closed-loop control",
+  "vanilla_inference_latency_ms_per_query": 0.11936384186610359
+}

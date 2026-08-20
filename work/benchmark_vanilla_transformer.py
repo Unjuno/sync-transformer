@@ -60,7 +60,8 @@ def run(dataset, seed, epochs=40, step=None, train_frac=.6, cal_frac=.8,
         opt.zero_grad(); pred = model(X); loss = loss_fn(pred, Y)
         loss.backward(); opt.step()
     model.eval()
-    with torch.no_grad(): pred = model(TX).numpy()
+    with torch.no_grad():
+        infer_start = time.perf_counter(); pred = model(TX).numpy(); infer_ms = (time.perf_counter() - infer_start) * 1000 / max(1, len(test))
     elapsed = time.perf_counter() - start
     q_mse = np.mean((pred - TY) ** 2, axis=1)
     return {
@@ -70,8 +71,8 @@ def run(dataset, seed, epochs=40, step=None, train_frac=.6, cal_frac=.8,
         "nhead": nhead, "layers": layers, "ff": ff,
         "parameter_count": sum(p.numel() for p in model.parameters()),
         "train_queries": len(train), "test_queries": len(test),
-        "normalized_mse": float(q_mse.mean()), "query_mse": q_mse.tolist(),
-        "elapsed_seconds": elapsed,
+        "normalized_mse": float(q_mse.mean()), "normalized_mae": float(np.abs(pred - TY).mean()), "query_mse": q_mse.tolist(),
+        "elapsed_seconds": elapsed, "inference_latency_ms_per_query": float(infer_ms),
     }
 
 def main():

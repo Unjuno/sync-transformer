@@ -1,0 +1,6 @@
+{
+  "context_length": 10,
+  "horizon": 10,
+  "split": "demo-level 60/20/20",
+  "source": "RoboMimic lift ph low_dim"
+}

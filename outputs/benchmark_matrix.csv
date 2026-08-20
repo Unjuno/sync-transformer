@@ -7,11 +7,11 @@ ett,ETTm2,task-specific,canonical,Vanilla small/SYNC,recorded,0.383151,recorded,
 electricity,UCI ElectricityLoadDiagrams MT_001,96,60/20/20,Vanilla small/SYNC,12800/19296,0.795544,"[0.723004, 0.869040]",not pooled,0.000000,recorded,gate abstained on every query,measured
 electricity,UCI ElectricityLoadDiagrams MT_002,96,60/20/20,Vanilla small/SYNC,12800/19296,0.237559,"[0.231607, 0.244159]",not pooled,0.102740,recorded,deployed residual worsened base head,measured
 electricity,UCI ElectricityLoadDiagrams MT_003,96,60/20/20,Vanilla small/SYNC,12800/19296,0.003625,"[0.003573, 0.003686]",not pooled,1.000000,recorded,no measured worsening,measured
-renewable,GEFCom solar/wind or NREL,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,official source unavailable/license unspecified,source_public_license_unresolved
-traffic,METR-LA/PEMS-BAY,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
-hvac,Building Data Genome 2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,source_verified_pending_adapter
-server,Alibaba cluster trace,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
-retail,M5/Favorita,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
-industrial,NASA C-MAPSS,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,official source unavailable/license unspecified,blocked_source_unavailable
-robot_manipulation,RoboMimic/Open X subset,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
-robot_trajectory,nuScenes or simulator logs,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
+hvac,BDG2 Panther (3 meters),96,60/20/20,Vanilla/SYNC,75360/19296,0.377827,per-meter CI,paired delta,0.000000,recorded,three meters; series-dependent; not building-wide,measured
+traffic,METR-LA (2 sensors),96,60/20/20,Vanilla/SYNC,75360/19296,1.151871,per-sensor CI,paired delta,0.000000,recorded,two sensors; spatial multivariate effects not evaluated,measured
+renewable,OPSD solar_DE_generation,96,60/20/20,Vanilla/SYNC,75360/19296,0.851922,query bootstrap CI,paired delta,0.000000,recorded,OPSD solar_DE_generation alternative; restricted to 2012-2015 observed coverage with interpolation limited to three consecutive gaps; no claim beyond this dataset,measured_alternative
+robot_manipulation,RoboMimic lift/ph,10,demo 60/20/20,Vanilla/SYNC/Persistence,trajectory,0.018942,trajectory bootstrap CI,ADE,0.118644,recorded,"nearest-context retrieval SYNC formulation; success is open-loop endpoint tolerance <=0.05m, not closed-loop control; vanilla_transformer.json included",measured_alternative
+industrial,UCI AI4I process temperature,96,60/20/20,Vanilla/SYNC,75360/19296,0.156322,query bootstrap CI,paired delta,1.000000,recorded,"UCI AI4I 2020 is synthetic predictive-maintenance data; process-temperature forecasting, not RUL classification",measured_alternative
+server,Cloud Monitoring MongoDB machine RPS,96,60/20/20,Vanilla/SYNC,75360/19296,0.322070,query bootstrap CI,paired delta,0.000000,recorded,"Microsoft Cloud Monitoring MongoDB machine RPS; workload forecasting, not anomaly classification",measured_alternative
+retail,Cloud Monitoring consumer purchase rate,96,60/20/20,Vanilla/SYNC,75360/19296,0.056513,query bootstrap CI,paired delta,1.000000,recorded,"Microsoft Cloud Monitoring consumer purchase-rate; small retail-demand alternative, not SKU-level inventory",measured_alternative
+robot_trajectory,UCI pedestrian in traffic,12,track 60/20/20,Vanilla/SYNC/Persistence,trajectory,1.253702,trajectory bootstrap CI,ADE,0.000000,recorded,"UCI pedestrian traffic alternative; success is open-loop endpoint tolerance <=2m, not closed-loop control; vanilla_transformer.json included",measured_alternative

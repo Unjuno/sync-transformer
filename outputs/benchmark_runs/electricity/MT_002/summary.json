@@ -5,5 +5,9 @@
   "mean_external_mse": 0.2375589907169342,
   "mean_vanilla_mse": 0.3011968235174815,
   "mean_gate_use_rate": 0.10273972602739727,
-  "failure_notes": "client-dependent; inspect query bootstrap report"
+  "failure_notes": "client-dependent; inspect query bootstrap report",
+  "mean_sync_mae": null,
+  "mean_vanilla_mae": null,
+  "sync_inference_latency_ms_per_query": null,
+  "vanilla_inference_latency_ms_per_query": null
 }

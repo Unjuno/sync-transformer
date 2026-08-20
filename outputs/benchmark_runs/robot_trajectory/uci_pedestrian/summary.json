@@ -1,0 +1,54 @@
+{
+  "task_id": "robot_trajectory",
+  "dataset": "uci_pedestrian",
+  "status": "measured_alternative",
+  "n_train": 1390,
+  "n_calibration": 268,
+  "n_test": 305,
+  "sync_ade": {
+    "mean": 1.2537020320158998,
+    "ci95": [
+      1.1933708310964624,
+      1.3142187443983473
+    ],
+    "n": 305
+  },
+  "sync_fde": {
+    "mean": 2.26153398556785,
+    "ci95": [
+      2.143749687596885,
+      2.377640714448394
+    ],
+    "n": 305
+  },
+  "tracking_error": {
+    "mean": 1.2537020320158998,
+    "ci95": [
+      1.1933708310964624,
+      1.3142187443983473
+    ],
+    "n": 305
+  },
+  "open_loop_success_rate": 0.3704918032786885,
+  "persistence_ade": {
+    "mean": 0.859517993735305,
+    "ci95": [
+      0.8364865787397074,
+      0.8821822869364625
+    ],
+    "n": 305
+  },
+  "persistence_fde": {
+    "mean": 1.5705158023868298,
+    "ci95": [
+      1.528605942284846,
+      1.6103456570619423
+    ],
+    "n": 305
+  },
+  "fallback_rate": 0.0,
+  "safety_violation_rate": 0.0,
+  "vanilla_transformer_artifact": "vanilla_transformer.json",
+  "failure_notes": "UCI pedestrian traffic alternative; success is open-loop endpoint tolerance <=2m, not closed-loop control",
+  "vanilla_inference_latency_ms_per_query": 0.07521027321876357
+}

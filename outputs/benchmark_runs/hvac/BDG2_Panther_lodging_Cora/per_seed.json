@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 163,
+    "sync_base_mse": 0.12598438560962677,
+    "sync_external_mse": 0.12598438560962677,
+    "vanilla_mse": 0.12607407569885254,
+    "persistence_mse": 0.22137373685836792,
+    "gate_use_rate": 0.0,
+    "parameter_count_sync": 19296,
+    "parameter_count_vanilla": 75360
+  },
+  {
+    "seed": 164,
+    "sync_base_mse": 0.12332911044359207,
+    "sync_external_mse": 0.12332911044359207,
+    "vanilla_mse": 0.13684406876564026,
+    "persistence_mse": 0.22137373685836792,
+    "gate_use_rate": 0.0,
+    "parameter_count_sync": 19296,
+    "parameter_count_vanilla": 75360
+  },
+  {
+    "seed": 165,
+    "sync_base_mse": 0.11208649724721909,
+    "sync_external_mse": 0.11208649724721909,
+    "vanilla_mse": 0.1328800469636917,
+    "persistence_mse": 0.22137373685836792,
+    "gate_use_rate": 0.0,
+    "parameter_count_sync": 19296,
+    "parameter_count_vanilla": 75360
+  }
+]

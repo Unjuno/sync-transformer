@@ -1,0 +1,17 @@
+{
+  "task_id": "industrial",
+  "dataset": "AI4I_process_temperature",
+  "status": "measured_alternative",
+  "mean_sync_external_mse": 0.15632190803686777,
+  "mean_vanilla_mse": 0.6625857750574747,
+  "paired_delta_95ci": [
+    -0.6998239801288583,
+    -0.33165500362714134
+  ],
+  "mean_gate_use_rate": 1.0,
+  "failure_notes": "UCI AI4I 2020 is synthetic predictive-maintenance data; process-temperature forecasting, not RUL classification",
+  "mean_sync_mae": 0.3155285716056824,
+  "mean_vanilla_mae": 0.6506816347440084,
+  "sync_inference_latency_ms_per_query": 0.06705666673951782,
+  "vanilla_inference_latency_ms_per_query": 0.2027483334434995
+}

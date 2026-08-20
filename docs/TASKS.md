@@ -2,7 +2,7 @@
 
 ## How to read this list
 
-SYNC is not presented as a general-purpose model for all forecasting or control problems. It is most plausible when the target contains repeated temporal motifs, comparable past episodes, and a safe fallback forecast or controller. The tasks below are candidate applications, not completed benchmark claims.
+SYNC is not presented as a general-purpose model for all forecasting or control problems. It is most plausible when the target contains repeated temporal motifs, comparable past episodes, and a safe fallback forecast or controller. The table separates measured alternatives from hypotheses; a measured row is evidence for the named dataset/formulation only.
 
 Every new task must compare SYNC against a Vanilla Transformer under the same split, horizon, seed, parameter budget, and compute budget. A task is only considered supported after improvement, uncertainty, abstention/fallback behavior, and failure cases are reported.
 
@@ -11,14 +11,14 @@ Every new task must compare SYNC against a Vanilla Transformer under the same sp
 | # | Task | Why SYNC may fit | Primary target | Candidate benchmark | Current status |
 |---:|---|---|---|---|---|
 | 1 | Building electricity-load forecasting | Daily/weekly cycles and recurring occupancy patterns | Load at 15–60 min horizon | UCI ElectricityLoadDiagrams, ASHRAE, or Pecan Street | Three UCI client series measured; client-dependent and not generalised |
-| 2 | Renewable-power forecasting | Day/night and weather-regime recurrence | Solar/wind power | GEFCom or public solar/wind series | Candidate; not tested |
+| 2 | Renewable-power forecasting | Day/night and weather-regime recurrence | Solar/wind power | OPSD solar DE alternative | Measured; series and coverage dependent |
 | 3 | Road-traffic forecasting | Rush-hour and weekday motifs | Flow/speed/occupancy | METR-LA | Two sensors measured; sensor-dependent, spatial effects not evaluated |
 | 4 | HVAC/control-demand forecasting | Occupancy and thermal cycles | Zone temperature/load | Building Data Genome 2 | Three BDG2 meters measured; series-dependent |
-| 5 | Server/workload forecasting | Daily and weekly request patterns | Requests/CPU/latency | Alibaba cluster or public workload traces | Candidate; not tested |
-| 6 | Retail/inventory demand forecasting | Calendar, promotion, and replenishment recurrence | SKU demand | M5 or Favorita | Candidate; not tested |
-| 7 | Industrial sensor forecasting | Repeated operating cycles and fault precursors | Sensor trajectory/residual | NASA C-MAPSS or industrial telemetry | Candidate; not tested |
-| 8 | Repetitive robot manipulation | Similar successful demonstrations can supply residual corrections | End-effector/action trajectory | RoboMimic or Open X-Embodiment subset | Candidate; not tested |
-| 9 | Mobile-robot trajectory tracking | Repeated routes and recoverable local deviations | Pose/velocity/action | KITTI/nuScenes trajectory subsets or simulator logs | Candidate; not tested |
+| 5 | Server/workload forecasting | Daily and weekly request patterns | Requests/CPU/latency | Microsoft Cloud Monitoring alternative | Measured; workload forecasting only |
+| 6 | Retail/inventory demand forecasting | Calendar, promotion, and replenishment recurrence | Purchase demand | Microsoft Cloud Monitoring purchase-rate alternative | Measured; not SKU-level inventory |
+| 7 | Industrial sensor forecasting | Repeated operating cycles and fault precursors | Sensor trajectory/residual | UCI AI4I alternative | Measured; synthetic process-temperature task |
+| 8 | Repetitive robot manipulation | Similar successful demonstrations can supply residual corrections | End-effector/action trajectory | RoboMimic lift/ph | Measured; open-loop trajectory only |
+| 9 | Mobile-robot trajectory tracking | Repeated routes and recoverable local deviations | Pose/velocity/action | UCI pedestrian alternative | Measured; open-loop pedestrian trajectory only |
 | 10 | Fleet/vehicle energy or demand forecasting | Route, shift, and daily recurrence | Energy/flow/arrival demand | Public fleet or mobility traces | Candidate; not tested |
 
 ## Priority order

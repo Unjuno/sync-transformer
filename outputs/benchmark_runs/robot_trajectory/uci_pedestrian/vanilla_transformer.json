@@ -1,0 +1,45 @@
+{
+  "model": "vanilla_transformer_trajectory",
+  "rows": [
+    {
+      "seed": 163,
+      "ade": 136.35394743027746,
+      "fde": 155.36250456821165,
+      "parameter_count": 17976,
+      "elapsed_seconds": 1.837359799988917,
+      "inference_latency_ms_per_query": 0.08024229509679631
+    },
+    {
+      "seed": 164,
+      "ade": 116.0868059445862,
+      "fde": 113.61065634812395,
+      "parameter_count": 17976,
+      "elapsed_seconds": 1.8424650999950245,
+      "inference_latency_ms_per_query": 0.08197803275476469
+    },
+    {
+      "seed": 165,
+      "ade": 125.24670918495586,
+      "fde": 157.1372365474124,
+      "parameter_count": 17976,
+      "elapsed_seconds": 1.918533899995964,
+      "inference_latency_ms_per_query": 0.06341049180472971
+    }
+  ],
+  "ade": {
+    "mean": 125.89582085327318,
+    "ci95": [
+      116.0868059445862,
+      136.35394743027746
+    ],
+    "n": 3
+  },
+  "fde": {
+    "mean": 142.03679915458267,
+    "ci95": [
+      113.61065634812395,
+      157.1372365474124
+    ],
+    "n": 3
+  }
+}

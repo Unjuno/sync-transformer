@@ -4,7 +4,7 @@ This is deliberately a transparent reconstruction, not a claim of reproducing
 the missing original implementation. All methods share P/H, split, queries,
 candidate futures, optimizer budget, and normalized MSE.
 """
-import argparse, json, random
+import argparse, json, random, time
 from pathlib import Path
 import numpy as np, pandas as pd, torch
 from torch import nn
@@ -65,7 +65,8 @@ def run(ds='ETTm1',seed_value=163,step=96,width=80,epochs=100,hier=False,candida
   kk=min(final_k,k); chosen=torch.gather(coarse,1,torch.topk(torch.gather(scores,1,coarse),kk,1).indices)
   mask=torch.full_like(scores,float('-inf')); mask.scatter_(1,chosen,torch.gather(scores,1,chosen)); w=torch.softmax(mask,1)
   return (w[:,:,None]*F[None,:,:]).sum(1),w,dist.min(1).values
- with torch.no_grad(): cc,cw,qd=transport(qx); tc,tw,cd=transport(tx); test_corr,test_w,td=transport(qx)
+ with torch.no_grad():
+  t_infer=time.perf_counter(); cc,cw,qd=transport(qx); tc,tw,cd=transport(tx); test_corr,test_w,td=transport(qx); infer_ms=(time.perf_counter()-t_infer)*1000/max(1,len(te))
  # calibrate residual scale and use same scale for all test queries
  alpha_grid=np.linspace(-.4,.8,49); best=(1e9,0.)
  for a in alpha_grid:
@@ -89,7 +90,7 @@ def run(ds='ETTm1',seed_value=163,step=96,width=80,epochs=100,hier=False,candida
  cal_head_q=np.mean((cb.numpy()-cy)**2,1); cal_ext_q=np.mean((cb.numpy()+a*tc.numpy()-cy)**2,1)
  cal_reg=np.asarray([np.std(np.diff(z[t-P:t])) for t in cv]); test_reg=np.asarray([np.std(np.diff(z[t-P:t])) for t in te])
  raw_q=np.mean((test_corr.numpy()-truth)**2,1)
- r={'dataset':ds,'seed':seed_value,'P':P,'H':H,'query_step':step,'candidate_step':candidate_step,'final_k':final_k,'width':width,'hierarchical':hier,'candidate_count':len(e),'train_queries':len(e),'calibration_queries':len(cv),'test_queries':len(te),'parameter_count':sum(p.numel() for p in m.parameters()),'alpha':a,'calibration_head_mse':float(cal_head_q.mean()),'calibration_external_mse':float(cal_ext_q.mean()),'calibration_head_query_mse':cal_head_q.tolist(),'calibration_external_query_mse':cal_ext_q.tolist(),'calibration_distance':cd.numpy().tolist(),'test_distance':td.numpy().tolist(),'calibration_regime_volatility':cal_reg.tolist(),'test_regime_volatility':test_reg.tolist(),'gate':'nearest_distance_calibrated','gate_threshold':gate_threshold,'gate_use_rate':float(use_test.mean()),'base_head_mse':float(head_mse.mean()),'external_residual_mse':float(ext_mse.mean()),'raw_transport_mse':float(raw_q.mean()),'raw_transport_query_mse':raw_q.tolist(),'persistence_mse':float(persistence.mean()),'head_query_mse':head_mse.tolist(),'external_query_mse':ext_mse.tolist(),'paired_delta_external_minus_head':(ext_mse-head_mse).tolist()}
+ r={'dataset':ds,'seed':seed_value,'P':P,'H':H,'query_step':step,'candidate_step':candidate_step,'final_k':final_k,'width':width,'hierarchical':hier,'candidate_count':len(e),'train_queries':len(e),'calibration_queries':len(cv),'test_queries':len(te),'parameter_count':sum(p.numel() for p in m.parameters()),'alpha':a,'calibration_head_mse':float(cal_head_q.mean()),'calibration_external_mse':float(cal_ext_q.mean()),'calibration_head_query_mse':cal_head_q.tolist(),'calibration_external_query_mse':cal_ext_q.tolist(),'calibration_distance':cd.numpy().tolist(),'test_distance':td.numpy().tolist(),'calibration_regime_volatility':cal_reg.tolist(),'test_regime_volatility':test_reg.tolist(),'gate':'nearest_distance_calibrated','gate_threshold':gate_threshold,'gate_use_rate':float(use_test.mean()),'base_head_mse':float(head_mse.mean()),'base_head_mae':float(np.abs(base_np-truth).mean()),'external_residual_mse':float(ext_mse.mean()),'external_residual_mae':float(np.abs(ext-truth).mean()),'raw_transport_mse':float(raw_q.mean()),'raw_transport_query_mse':raw_q.tolist(),'persistence_mse':float(persistence.mean()),'head_query_mse':head_mse.tolist(),'external_query_mse':ext_mse.tolist(),'paired_delta_external_minus_head':(ext_mse-head_mse).tolist(),'inference_latency_ms_per_query':float(infer_ms)}
  return r
 def main():
  ap=argparse.ArgumentParser(); ap.add_argument('--dataset',default='ETTm1'); ap.add_argument('--seeds',default='163,164,165'); ap.add_argument('--step',type=int,default=96); ap.add_argument('--candidate-step',type=int,default=None); ap.add_argument('--lookback',type=int,default=None); ap.add_argument('--width',type=int,default=80); ap.add_argument('--epochs',type=int,default=100); ap.add_argument('--rich',action='store_true'); ap.add_argument('--endpoint-features',action='store_true'); ap.add_argument('--seasonal-features',action='store_true'); ap.add_argument('--seasonal-base',action='store_true'); ap.add_argument('--multiscale-features',action='store_true'); ap.add_argument('--k',type=int,default=4); ap.add_argument('--vol-gate-threshold',type=float,default=None); ap.add_argument('--combine-gates',action='store_true'); ap.add_argument('--train-frac',type=float,default=.6); ap.add_argument('--cal-frac',type=float,default=.8); ap.add_argument('--eval-start-frac',type=float,default=None); ap.add_argument('--eval-end-frac',type=float,default=None); args=ap.parse_args()

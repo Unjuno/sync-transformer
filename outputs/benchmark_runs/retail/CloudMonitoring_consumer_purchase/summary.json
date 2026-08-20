@@ -1,0 +1,17 @@
+{
+  "task_id": "retail",
+  "dataset": "CloudMonitoring_consumer_purchase",
+  "status": "measured_alternative",
+  "mean_sync_external_mse": 0.05651336659987768,
+  "mean_vanilla_mse": 0.01791234314441681,
+  "paired_delta_95ci": [
+    0.0376182077328364,
+    0.03940899124679466
+  ],
+  "mean_gate_use_rate": 1.0,
+  "failure_notes": "Microsoft Cloud Monitoring consumer purchase-rate; small retail-demand alternative, not SKU-level inventory",
+  "mean_sync_mae": 0.18351608514785767,
+  "mean_vanilla_mae": 0.10231182724237442,
+  "sync_inference_latency_ms_per_query": 0.0873688889745002,
+  "vanilla_inference_latency_ms_per_query": 0.20407777790549317
+}

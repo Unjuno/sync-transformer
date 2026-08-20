@@ -26,23 +26,29 @@ The supported interpretation is:
 
 > SYNC is a conditional residual-transport and abstention mechanism, not a universally superior forecasting model.
 
+The expanded public benchmark covers ten task classes using the named
+alternative datasets in [`outputs/data_manifest.json`](outputs/data_manifest.json).
+Results are conditional: SYNC is favorable on several HVAC, renewable,
+server, and industrial series, while the retail and pedestrian alternatives
+favor Vanilla or Persistence. These are dataset/formulation results, not
+claims of domain-wide superiority.
+
 Internal-search results remain protocol-sensitive. The repository records both the initial Phase 4A–4B report and later reconstruction diagnostics rather than selecting one outcome without reconciliation.
 
 ## What can SYNC be used for?
 
-SYNC is intended for recurring or seasonal processes where comparable past episodes exist and a fallback is available. Plausible application families include electricity load, renewable power, traffic, HVAC, server workload, retail demand, industrial sensors, and repetitive robot trajectories. The public ETT suite, three UCI electricity client series, two METR-LA sensors, and three BDG2 HVAC meters are measured; the remaining applications are hypotheses and are listed in [the task map](docs/TASKS.md). Electricity, traffic, and HVAC results are series-dependent and do not establish general advantage (see the [cross-client summary](outputs/electricity_cross_client_summary.json)).
+SYNC is intended for recurring or seasonal processes where comparable past episodes exist and a fallback is available. The public benchmark includes ETT, three UCI electricity clients, two METR-LA sensors, three BDG2 HVAC meters, OPSD solar, Microsoft Cloud Monitoring server and purchase-rate alternatives, UCI AI4I industrial sensors, and two open-loop trajectory alternatives. Electricity, traffic, HVAC, retail, and trajectory results remain series/formulation-dependent; see the [task map](docs/TASKS.md) and [benchmark matrix](outputs/benchmark_matrix.csv).
 
 The measured-task matrix is in [`outputs/benchmark_matrix.csv`](outputs/benchmark_matrix.csv); the conservative requirement-by-requirement audit is in [`outputs/public_completion_audit.md`](outputs/public_completion_audit.md).
 
 Each new application must be compared with a Vanilla Transformer under the same data split, horizon, seeds, parameter budget, and compute budget. The public roadmap is [the task benchmark matrix](outputs/task_benchmark_matrix.md). No candidate task should be described as validated until its benchmark row has been filled.
 
-The common task registry and Phase-A orchestrator are available as `sync_experiments`. The current `--tasks all` command executes the validated ETT CPU suite, records measured electricity artifacts when present, and reports the remaining eight task families as `pending_adapter`; it does not fabricate results for datasets that have not been downloaded and licensed.
+The common task registry and orchestrator are available as `sync_experiments`. Raw data is never required to be committed: fetch scripts and the data manifest record source, license, version, and hash. Generated benchmark artifacts can be regenerated locally with the task-specific scripts in `work/`.
 
 Trajectory tasks use a separate contract from forecasting: `TrajectoryBatch`
-and `TrajectoryMetrics` report ADE, FDE, tracking error, success, fallback,
-safety violations, and latency. The implementation is in
-`sync_experiments/trajectory_metrics.py`; no robot performance claim is made
-until a licensed trajectory dataset and control formulation are available.
+and `TrajectoryMetrics` report ADE, FDE, tracking error, open-loop endpoint
+success, fallback, safety violations, and latency. Open-loop success is not a
+closed-loop robot-control guarantee.
 
 ```powershell
 python -m sync_experiments.run_all --tasks all --track all --seeds 163,164,165 --epochs 20 --device cpu
@@ -59,8 +65,14 @@ python work/audit_public_sync.py
 python work/validate_public_benchmark.py
 ```
 
-See `outputs/SYNC_Transformer_results_and_experiment_plan.md` for the protocol and interpretation.
-The current evidence audit is [public_validation_completion_audit.md](outputs/public_validation_completion_audit.md); it explicitly lists incomplete task families.
+See `outputs/SYNC_Transformer_results_and_experiment_plan.md` for the protocol and interpretation. The metric completeness audit is [`outputs/metric_completeness_audit.json`](outputs/metric_completeness_audit.json).
+
+## Public-release boundaries
+
+- This repository licenses its original code and documentation under Apache-2.0.
+- Datasets remain under their own licenses; raw files and downloaded archives are excluded.
+- Alternative datasets are named explicitly in the manifest and are not relicensed by this repository.
+- The theory documents hypotheses and non-claims; benchmark results do not establish universal superiority or closed-loop safety.
 
 ## Research structure
 

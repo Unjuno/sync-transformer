@@ -1,0 +1,186 @@
+{
+  "schema": "metric-completeness-audit-v1",
+  "rows": [
+    {
+      "artifact": "outputs\\benchmark_runs\\electricity\\MT_001\\summary.json",
+      "task": "electricity",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": false,
+      "has_fallback": true,
+      "notes": "client-dependent; inspect query bootstrap report"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\electricity\\MT_002\\summary.json",
+      "task": "electricity",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": false,
+      "has_fallback": true,
+      "notes": "client-dependent; inspect query bootstrap report"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\electricity\\MT_003\\summary.json",
+      "task": "electricity",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": false,
+      "has_fallback": true,
+      "notes": "client-dependent; inspect query bootstrap report"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\ett\\ETTh1\\summary.json",
+      "task": "ett",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": false,
+      "has_fallback": true,
+      "notes": "canonical ETT result; interpretation is dataset/split conditional"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\ett\\ETTh2\\summary.json",
+      "task": "ett",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": false,
+      "has_fallback": true,
+      "notes": "canonical ETT result; interpretation is dataset/split conditional"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\ett\\ETTm1\\summary.json",
+      "task": "ett",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": false,
+      "has_fallback": true,
+      "notes": "canonical ETT result; interpretation is dataset/split conditional"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\ett\\ETTm2\\summary.json",
+      "task": "ett",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": false,
+      "has_fallback": true,
+      "notes": "canonical ETT result; interpretation is dataset/split conditional"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\hvac\\BDG2_Panther_lodging_Cora\\summary.json",
+      "task": "hvac",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "three BDG2 meters; gate behavior is series-dependent; not a building-wide claim"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\hvac\\BDG2_Panther_office_Catherine\\summary.json",
+      "task": "hvac",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "three BDG2 meters; gate behavior is series-dependent; not a building-wide claim"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\hvac\\BDG2_Panther_office_Hannah\\summary.json",
+      "task": "hvac",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "three BDG2 meters; gate behavior is series-dependent; not a building-wide claim"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\industrial\\AI4I_process_temperature\\summary.json",
+      "task": "industrial",
+      "status": "measured_alternative",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "UCI AI4I 2020 is synthetic predictive-maintenance data; process-temperature forecasting, not RUL classification"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\renewable\\OPSD_solar_DE\\summary.json",
+      "task": "renewable",
+      "status": "measured_alternative",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "OPSD solar_DE_generation alternative; restricted to 2012-2015 observed coverage with interpolation limited to three consecutive gaps; no claim beyond this dataset"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\retail\\CloudMonitoring_consumer_purchase\\summary.json",
+      "task": "retail",
+      "status": "measured_alternative",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "Microsoft Cloud Monitoring consumer purchase-rate; small retail-demand alternative, not SKU-level inventory"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\robot_manipulation\\robomimic_lift_ph\\summary.json",
+      "task": "robot_manipulation",
+      "status": "measured_alternative",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "nearest-context retrieval SYNC formulation; success is open-loop endpoint tolerance <=0.05m, not closed-loop control"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\robot_trajectory\\uci_pedestrian\\summary.json",
+      "task": "robot_trajectory",
+      "status": "measured_alternative",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "UCI pedestrian traffic alternative; success is open-loop endpoint tolerance <=2m, not closed-loop control"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\server\\CloudMonitoring_machine_rps\\summary.json",
+      "task": "server",
+      "status": "measured_alternative",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "Microsoft Cloud Monitoring MongoDB machine RPS; workload forecasting, not anomaly classification"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\traffic\\METR_LA_sensor0\\summary.json",
+      "task": "traffic",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "one METR-LA sensor; spatial multivariate traffic effects not evaluated"
+    },
+    {
+      "artifact": "outputs\\benchmark_runs\\traffic\\METR_LA_sensor1\\summary.json",
+      "task": "traffic",
+      "status": "measured",
+      "has_mae": true,
+      "has_latency": true,
+      "has_uncertainty": true,
+      "has_fallback": true,
+      "notes": "one METR-LA sensor; spatial multivariate traffic effects not evaluated"
+    }
+  ],
+  "policy": "Missing MAE/latency are reported as missing; no values are inferred from MSE."
+}

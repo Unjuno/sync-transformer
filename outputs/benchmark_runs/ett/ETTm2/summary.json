@@ -5,5 +5,9 @@
   "mean_sync_external_mse": 0.38315096497535706,
   "mean_vanilla_mse": 0.39554883042971295,
   "mean_gate_use_rate": 1.0,
-  "failure_notes": "canonical ETT result; interpretation is dataset/split conditional"
+  "failure_notes": "canonical ETT result; interpretation is dataset/split conditional",
+  "mean_sync_mae": 0.4084918797016144,
+  "mean_vanilla_mae": 0.45346535245577496,
+  "sync_inference_latency_ms_per_query": 0.3587036781299367,
+  "vanilla_inference_latency_ms_per_query": 0.17103701150820902
 }

@@ -1,6 +1,6 @@
 # SYNC Transformer publication-readiness audit
 
-監査日: 2026-08-14
+監査日: 2026-08-21
 
 ## Verified
 
@@ -10,6 +10,9 @@
 - Public-data audit: passed.
 - Primary results use chronological splits, three seeds, paired query-level arrays, and condition-keyed filenames.
 - Negative transfer and failed selection variants are documented.
+- Ten task classes have named public alternatives, manifests, and result artifacts.
+- Forecasting summaries include measured MSE, MAE, uncertainty, fallback/gate rate, and inference latency.
+- Trajectory summaries include ADE, FDE, tracking error, open-loop success, fallback, safety, and latency.
 
 ## Not yet verified or complete
 
@@ -24,7 +27,7 @@
 
 ## Publication claim allowed now
 
-The project can be presented as a reproducible research prototype and empirical study of causal episodic residual transport, with conditional gains and explicit negative-transfer analysis. It should not yet be presented as a universally superior Transformer or as an exact reproduction of the original supplied table.
+The project can be presented as a reproducible research prototype and empirical study of causal episodic residual transport, with conditional gains and explicit negative-transfer analysis. It should not be presented as a universally superior Transformer, a closed-loop robot controller, or an exact reproduction of the original supplied table.
 ## Canonical deterministic rerun note (2026-08-14)
 
 The common runner now enforces deterministic CPU execution and the four primary 60/20/20 artifacts have been regenerated. Their fixed-gate deltas are ETTh1 +0.008479, ETTh2 0.000000 (abstention), ETTm1 +0.001070, and ETTm2 +0.008027. Earlier narrative values from nondeterministic runs must not be used as headline evidence. The present evidence supports an auditable causal retrieval/fallback prototype, not a demonstrated accuracy improvement.
