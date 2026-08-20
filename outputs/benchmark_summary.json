@@ -32,15 +32,15 @@
       "task_id": "traffic",
       "track": "forecasting",
       "dataset": "METR-LA/PEMS-BAY",
-      "status": "pending_adapter",
-      "message": "traffic: acquire and license METR-LA/PEMS-BAY, then implement its adapter"
+      "status": "completed_existing",
+      "artifacts": ["outputs/benchmark_runs/traffic/METR_LA_sensor0", "outputs/benchmark_runs/traffic/METR_LA_sensor1"]
     },
     {
       "task_id": "hvac",
       "track": "forecasting",
       "dataset": "Building Data Genome 2",
-      "status": "source_verified_pending_adapter",
-      "message": "hvac: acquire and license Building Data Genome 2, then implement its adapter"
+      "status": "completed_existing",
+      "artifacts": ["outputs/benchmark_runs/hvac/BDG2_Panther_office_Hannah", "outputs/benchmark_runs/hvac/BDG2_Panther_office_Catherine", "outputs/benchmark_runs/hvac/BDG2_Panther_lodging_Cora"]
     },
     {
       "task_id": "server",
