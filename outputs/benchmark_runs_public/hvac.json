@@ -2,6 +2,6 @@
   "task_id": "hvac",
   "track": "forecasting",
   "dataset": "Building Data Genome 2",
-  "status": "pending_adapter",
+  "status": "source_verified_pending_adapter",
   "message": "hvac: acquire and license Building Data Genome 2, then implement its adapter"
 }

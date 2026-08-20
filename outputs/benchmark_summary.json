@@ -25,7 +25,7 @@
       "task_id": "renewable",
       "track": "forecasting",
       "dataset": "GEFCom solar/wind or NREL",
-      "status": "pending_adapter",
+      "status": "source_public_license_unresolved",
       "message": "renewable: acquire and license GEFCom solar/wind or NREL, then implement its adapter"
     },
     {
@@ -39,7 +39,7 @@
       "task_id": "hvac",
       "track": "forecasting",
       "dataset": "Building Data Genome 2",
-      "status": "pending_adapter",
+      "status": "source_verified_pending_adapter",
       "message": "hvac: acquire and license Building Data Genome 2, then implement its adapter"
     },
     {
