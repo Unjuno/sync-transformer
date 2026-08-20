@@ -19,7 +19,7 @@ TASKS = (
     TaskSpec("ett", "forecasting", "ETTh1/ETTh2/ETTm1/ETTm2", "ett", ("mse", "mae", "bootstrap_ci", "abstention_rate"), "validated_cpu"),
     TaskSpec("electricity", "forecasting", "UCI ElectricityLoadDiagrams", "electricity", ("mse", "mae", "bootstrap_ci", "abstention_rate"), "benchmarked_cpu_mt001_mt002_mt003"),
     TaskSpec("renewable", "forecasting", "GEFCom solar/wind or NREL", "renewable", ("mse", "mae", "bootstrap_ci", "abstention_rate"), "source_public_license_unresolved"),
-    TaskSpec("traffic", "forecasting", "METR-LA/PEMS-BAY", "traffic", ("mse", "mae", "bootstrap_ci", "abstention_rate"), "source_verified_pending_data"),
+    TaskSpec("traffic", "forecasting", "METR-LA/PEMS-BAY", "traffic", ("mse", "mae", "bootstrap_ci", "abstention_rate"), "benchmarked_one_sensor"),
     TaskSpec("hvac", "forecasting", "Building Data Genome 2", "hvac", ("mse", "mae", "bootstrap_ci", "abstention_rate"), "benchmarked_three_meters"),
     TaskSpec("server", "forecasting", "Alibaba cluster trace", "server", ("mse", "mae", "bootstrap_ci", "abstention_rate")),
     TaskSpec("retail", "forecasting", "M5/Favorita", "retail", ("mse", "mae", "bootstrap_ci", "abstention_rate")),

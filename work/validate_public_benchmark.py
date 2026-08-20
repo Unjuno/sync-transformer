@@ -28,6 +28,11 @@ def main():
         assert all(len(q['sync_external_mse'])==len(q['vanilla_mse']) for q in query)
         assert len(summary['paired_delta_95ci'])==2
         assert summary['paired_delta_95ci'][0] <= summary['paired_delta_95ci'][1]
+    traffic_dir=ROOT/'outputs/benchmark_runs/traffic/METR_LA_sensor0'
+    for name in ('config.json','per_seed.json','query_metrics.json','summary.json','comparison.md'):
+        assert (traffic_dir/name).exists(), f'missing {traffic_dir/name}'
+    traffic_manifest=next(t for t in manifest['tasks'] if t['task_id']=='traffic')
+    assert traffic_manifest['status']=='benchmarked_one_sensor'
     matrix_path=ROOT/'outputs/benchmark_matrix.csv'
     rows=list(csv.DictReader(matrix_path.open(newline='', encoding='utf-8')))
     assert len(rows) == 16, f'expected 16 benchmark matrix rows, got {len(rows)}'
@@ -41,5 +46,5 @@ def main():
     assert all(r['status']=='measured' for r in rows if r['task'] in {'ett','electricity'})
     tracked=subprocess.run(['git','ls-files','data/raw'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
     assert not tracked, f'raw data tracked: {tracked}'
-    print({'tasks':len(manifest['tasks']),'matrix_rows':len(rows),'electricity_clients':3,'ett_datasets':4,'hvac_meters':3,'raw_tracked':False,'cuda_overwrite_cpu':False})
+    print({'tasks':len(manifest['tasks']),'matrix_rows':len(rows),'electricity_clients':3,'ett_datasets':4,'hvac_meters':3,'traffic_sensors':1,'raw_tracked':False,'cuda_overwrite_cpu':False})
 if __name__=='__main__': main()
