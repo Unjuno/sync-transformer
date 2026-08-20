@@ -40,6 +40,12 @@ python work/audit_public_sync.py
 
 See `outputs/SYNC_Transformer_results_and_experiment_plan.md` for the protocol and interpretation.
 
+## Research structure
+
+- [Theory and scope](docs/THEORY.md): definitions, hypotheses, and non-claims.
+- [Experiments](docs/EXPERIMENTS.md): fixed protocol, completed CPU studies, and reproduction commands.
+- [Limitations](docs/LIMITATIONS.md): missing implementation, statistical limits, baseline limits, and CUDA handoff.
+
 ## GPU/CUDA extension
 
 GPU experiments are intentionally deferred. On a separate CUDA-capable machine:
