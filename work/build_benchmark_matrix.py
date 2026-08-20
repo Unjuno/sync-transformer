@@ -22,7 +22,9 @@ def main():
     rows.append(dict(zip(FIELDS, ['traffic','METR-LA (2 sensors)','96','60/20/20','Vanilla/SYNC','75360/19296',f"{np.mean([x['mean_sync_external_mse'] for x in traffic]):.6f}",'per-sensor CI','paired delta',f"{np.mean([x['mean_gate_use_rate'] for x in traffic]):.6f}",'recorded','two sensors; spatial multivariate effects not evaluated','measured'])))
     renewable = json.loads((ROOT/'outputs/benchmark_runs/renewable/OPSD_solar_DE/summary.json').read_text())
     rows.append(dict(zip(FIELDS, ['renewable','OPSD solar_DE_generation','96','60/20/20','Vanilla/SYNC','75360/19296',f"{renewable['mean_sync_external_mse']:.6g}",'query bootstrap CI','paired delta',f"{renewable['mean_gate_use_rate']:.6f}",'recorded',renewable['failure_notes'],'measured_alternative'])))
-    pending = [('server','Alibaba cluster trace','pending'),('retail','M5/Favorita','pending'),('industrial','NASA C-MAPSS','blocked_source_unavailable'),('robot_manipulation','RoboMimic/Open X subset','pending'),('robot_trajectory','nuScenes or simulator logs','pending')]
+    robot = json.loads((ROOT/'outputs/benchmark_runs/robot_manipulation/robomimic_lift_ph/summary.json').read_text())
+    rows.append(dict(zip(FIELDS, ['robot_manipulation','RoboMimic lift/ph','10','demo 60/20/20','persistence/retrieval','trajectory',f"{robot['sync_ade']['mean']:.6f}",'trajectory bootstrap CI','ADE',f"{robot['fallback_rate']:.6f}",'recorded',robot['failure_notes'],'measured_alternative'])))
+    pending = [('server','Alibaba cluster trace','pending'),('retail','M5/Favorita','pending'),('industrial','NASA C-MAPSS','blocked_source_unavailable'),('robot_trajectory','nuScenes or simulator logs','pending')]
     for task, dataset, status in pending:
         note = 'official source unavailable/license unspecified' if task in ('industrial','renewable') else 'adapter/data not ready'
         rows.append(dict(zip(FIELDS,[task,dataset,'N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A',note,status])))

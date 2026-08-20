@@ -10,7 +10,7 @@
     {"task_id": "server", "status": "pending_adapter", "source": "Alibaba cluster trace", "license": "verify before download"},
     {"task_id": "retail", "status": "pending_adapter", "source": "M5 or Favorita", "license": "verify before download"},
     {"task_id": "industrial", "status": "blocked_source_unavailable", "source": "https://data.nasa.gov/dataset/c-mapss-aircraft-engine-simulator-data", "license": "not specified by NASA catalog; download currently unavailable", "note": "Do not substitute a mirror without provenance and redistribution terms."},
-    {"task_id": "robot_manipulation", "status": "adapter_ready_data_acquired", "source": "https://huggingface.co/datasets/amandlek/robomimic", "license": "dataset terms require review before publication", "raw_sha256": "2067777CB8B532E9263DD09FD6448C41CC31224BB27BE4A3B734010AE13EB540", "selection": "lift/ph/low_dim_v15.hdf5; 672 causal windows verified; trajectory performance benchmark pending."},
+    {"task_id": "robot_manipulation", "status": "benchmarked_alternative", "source": "https://huggingface.co/datasets/amandlek/robomimic", "license": "dataset terms require review before publication", "raw_sha256": "2067777CB8B532E9263DD09FD6448C41CC31224BB27BE4A3B734010AE13EB540", "selection": "lift/ph/low_dim_v15.hdf5; demo-level 60/20/20 split; nearest-context retrieval with fallback; no closed-loop success claim."},
     {"task_id": "robot_trajectory", "status": "pending_adapter", "source": "nuScenes or simulator logs", "license": "verify before download"}
   ]
 }
