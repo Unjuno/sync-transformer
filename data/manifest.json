@@ -3,7 +3,7 @@
   "raw_data_policy": "Raw datasets are not committed. Each adapter must record source, license, version, and sha256 after download.",
   "tasks": [
     {"task_id": "ett", "status": "available_local", "source": "public ETT CSVs in local outputs/ only"},
-    {"task_id": "electricity", "status": "benchmarked_mt001", "source": "https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014", "license": "CC BY 4.0", "raw_sha256": "F6C4D0E0DF12ECDB9EA008DD6EEF3518ADB52C559D04A9BAC2E1B81DCFC8D4E1", "selection": "MT_001 single series"},
+    {"task_id": "electricity", "status": "benchmarked_mt001_mt002", "source": "https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014", "license": "CC BY 4.0", "raw_sha256": "F6C4D0E0DF12ECDB9EA008DD6EEF3518ADB52C559D04A9BAC2E1B81DCFC8D4E1", "selection": "MT_001 and MT_002 single-series replications"},
     {"task_id": "renewable", "status": "pending_adapter", "source": "GEFCom solar/wind or NREL", "license": "verify before download"},
     {"task_id": "traffic", "status": "pending_adapter", "source": "METR-LA or PEMS-BAY", "license": "verify before download"},
     {"task_id": "hvac", "status": "pending_adapter", "source": "Building Data Genome 2", "license": "verify before download"},

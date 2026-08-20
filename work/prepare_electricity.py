@@ -17,7 +17,12 @@ def main():
     ap.add_argument("--output", default="outputs/Electricity.csv")
     args = ap.parse_args()
     raw = Path(args.raw); out = Path(args.output)
-    frame = pd.read_csv(raw, sep=";", decimal=",", usecols=[0, 1],
+    if not args.client.startswith("MT_"):
+        raise ValueError("--client must be a UCI client column such as MT_001")
+    header = pd.read_csv(raw, sep=";", nrows=0).columns.tolist()
+    if args.client not in header:
+        raise ValueError(f"unknown client {args.client}; available columns start {header[1:6]}")
+    frame = pd.read_csv(raw, sep=";", decimal=",", usecols=[header[0], args.client],
                         index_col=0, parse_dates=True)
     series = pd.to_numeric(frame.iloc[:, 0], errors="coerce").dropna()
     if len(series) < 1000:

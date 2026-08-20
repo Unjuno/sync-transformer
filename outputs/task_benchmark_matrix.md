@@ -5,7 +5,7 @@ This is the public roadmap for evaluating SYNC against a Vanilla Transformer. It
 | Task family | Dataset | Vanilla Transformer | SYNC | Evidence status |
 |---|---|---:|---:|---|
 | Electricity/traffic-like periodic forecasting | ETT hourly/minute datasets | measured | measured as conditional deltas | **Current CPU evidence** |
-| Electricity demand | UCI ElectricityLoadDiagrams (`MT_001`) | measured | measured; gate abstained 100% | **First non-ETT single-series benchmark** |
+| Electricity demand | UCI ElectricityLoadDiagrams (`MT_001`, `MT_002`) | measured | MT_001 gate abstained 100%; MT_002 gate used 10.27% | **Two single-series replications; seasonal persistence remains stronger** |
 | Building load | TBD | pending | pending | Candidate |
 | Solar/wind power | TBD | pending | pending | Candidate |
 | Road traffic | TBD | pending | pending | Candidate |
