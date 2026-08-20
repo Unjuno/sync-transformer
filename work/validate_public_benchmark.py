@@ -22,6 +22,12 @@ def main():
         d=ROOT/'outputs/benchmark_runs/hvac'/dataset
         for name in ('config.json','per_seed.json','query_metrics.json','summary.json','comparison.md'):
             assert (d/name).exists(), f'missing {d/name}'
+        cfg=json.loads((d/'config.json').read_text()); assert cfg['seeds']==[163,164,165]
+        per=json.loads((d/'per_seed.json').read_text()); query=json.loads((d/'query_metrics.json').read_text()); summary=json.loads((d/'summary.json').read_text())
+        assert len(per)==len(query)==3
+        assert all(len(q['sync_external_mse'])==len(q['vanilla_mse']) for q in query)
+        assert len(summary['paired_delta_95ci'])==2
+        assert summary['paired_delta_95ci'][0] <= summary['paired_delta_95ci'][1]
     matrix_path=ROOT/'outputs/benchmark_matrix.csv'
     rows=list(csv.DictReader(matrix_path.open(newline='', encoding='utf-8')))
     assert len(rows) == 16, f'expected 16 benchmark matrix rows, got {len(rows)}'
