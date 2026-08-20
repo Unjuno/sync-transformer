@@ -28,13 +28,20 @@ def main():
         task = get_task(task_id)
         record = {"task_id": task.task_id, "track": task.track, "dataset": task.dataset, "status": task.status}
         adapter = adapter_for(task_id, ROOT / "outputs")
-        if task_id != "ett":
+        if task_id not in ("ett", "electricity"):
             try:
                 adapter.load()
             except AdapterNotReady as exc:
                 record.update({"status": "pending_adapter", "message": str(exc)})
         elif args.device != "cpu":
             record.update({"status": "deferred_cuda", "message": "CUDA execution is reserved for the separate GPU machine."})
+        elif task_id == "electricity":
+            artifact = ROOT / "outputs/common_runner_Electricity_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json"
+            vanilla = ROOT / "outputs/vanilla_Electricity20.json"
+            if artifact.exists() and vanilla.exists():
+                record.update({"status": "completed_existing", "artifacts": [str(artifact), str(vanilla)]})
+            else:
+                record.update({"status": "pending_adapter", "message": "Run work/prepare_electricity.py and the electricity benchmark commands first."})
         else:
             subprocess.run([sys.executable, "work/run_canonical_suite.py"], cwd=ROOT, check=True)
             record.update({"status": "completed", "artifact": "outputs/common_runner_*.json"})

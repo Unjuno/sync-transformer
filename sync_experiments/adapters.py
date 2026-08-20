@@ -37,6 +37,11 @@ class ETTAdapter(BaseAdapter):
         return WindowBatch("ett", np.stack([y[t:t+context_length] for t in starts]),
                            np.stack([y[t+context_length:t+context_length+horizon] for t in starts]))
 
+class ElectricityAdapter(ETTAdapter):
+    task_id = "electricity"
+    def load(self, dataset="Electricity", context_length=720, horizon=96, step=96):
+        return super().load(dataset, context_length, horizon, step)
+
 class PendingAdapter(BaseAdapter):
     def __init__(self, task_id: str, dataset: str):
         self.task_id, self.dataset = task_id, dataset
@@ -46,6 +51,8 @@ class PendingAdapter(BaseAdapter):
 def adapter_for(task_id: str, data_root: str | Path):
     if task_id == "ett":
         return ETTAdapter(data_root)
+    if task_id == "electricity":
+        return ElectricityAdapter(data_root)
     from .tasks import get_task
     task = get_task(task_id)
     return PendingAdapter(task.task_id, task.dataset)
