@@ -1,0 +1,9 @@
+{
+  "task_id": "electricity",
+  "client": "MT_001",
+  "status": "measured",
+  "mean_external_mse": 0.7955438494682312,
+  "mean_vanilla_mse": 1.0976908604303997,
+  "mean_gate_use_rate": 0.0,
+  "failure_notes": "client-dependent; inspect query bootstrap report"
+}

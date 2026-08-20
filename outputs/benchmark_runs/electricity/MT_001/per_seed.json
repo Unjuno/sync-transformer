@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 163,
+    "base_head_mse": 0.8120865225791931,
+    "external_mse": 0.8120865225791931,
+    "vanilla_mse": 1.1015708446502686,
+    "gate_use_rate": 0.0,
+    "persistence_mse": 0.9107260704040527
+  },
+  {
+    "seed": 164,
+    "base_head_mse": 0.776642918586731,
+    "external_mse": 0.776642918586731,
+    "vanilla_mse": 1.07759428024292,
+    "gate_use_rate": 0.0,
+    "persistence_mse": 0.9107260704040527
+  },
+  {
+    "seed": 165,
+    "base_head_mse": 0.7979021072387695,
+    "external_mse": 0.7979021072387695,
+    "vanilla_mse": 1.1139074563980103,
+    "gate_use_rate": 0.0,
+    "persistence_mse": 0.9107260704040527
+  }
+]
