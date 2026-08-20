@@ -1,0 +1,9 @@
+{
+  "task_id": "ett",
+  "dataset": "ETTh1",
+  "status": "measured",
+  "mean_sync_external_mse": 0.06838507205247879,
+  "mean_vanilla_mse": 0.20376165707906088,
+  "mean_gate_use_rate": 1.0,
+  "failure_notes": "canonical ETT result; interpretation is dataset/split conditional"
+}

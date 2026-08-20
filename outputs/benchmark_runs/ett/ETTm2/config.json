@@ -1,0 +1,14 @@
+{
+  "task_id": "ett",
+  "dataset": "ETTm2",
+  "context_length": 720,
+  "horizon": 96,
+  "split": "canonical",
+  "seeds": [
+    163,
+    164,
+    165
+  ],
+  "epochs": 20,
+  "device": "cpu"
+}
