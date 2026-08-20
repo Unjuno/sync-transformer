@@ -43,6 +43,13 @@ def main():
                 vanilla.append(base_vanilla)
             if artifacts and vanilla:
                 record.update({"status": "completed_existing", "artifacts": [str(p) for p in artifacts + vanilla]})
+                # Export the documented per-client files from the immutable run artifacts.
+                for artifact in artifacts:
+                    client = "MT_002" if "MT002" in artifact.name else "MT_003" if "MT003" in artifact.name else "MT_001"
+                    vname = f"vanilla_Electricity_{client}_20.json" if client != "MT_001" else "vanilla_Electricity20.json"
+                    vpath = ROOT / "outputs" / vname
+                    if vpath.exists():
+                        subprocess.run([sys.executable, "work/export_electricity_task.py", "--client", client, "--sync", str(artifact), "--vanilla", str(vpath), "--output", str(out / "electricity" / client)], cwd=ROOT, check=True)
             else:
                 record.update({"status": "pending_adapter", "message": "Run work/prepare_electricity.py and the electricity benchmark commands first."})
         else:
