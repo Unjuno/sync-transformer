@@ -23,7 +23,7 @@ TASKS = (
     TaskSpec("hvac", "forecasting", "Building Data Genome 2", "hvac", ("mse", "mae", "bootstrap_ci", "abstention_rate")),
     TaskSpec("server", "forecasting", "Alibaba cluster trace", "server", ("mse", "mae", "bootstrap_ci", "abstention_rate")),
     TaskSpec("retail", "forecasting", "M5/Favorita", "retail", ("mse", "mae", "bootstrap_ci", "abstention_rate")),
-    TaskSpec("industrial", "forecasting", "NASA C-MAPSS", "industrial", ("mse", "mae", "bootstrap_ci", "abstention_rate")),
+    TaskSpec("industrial", "forecasting", "NASA C-MAPSS", "industrial", ("mse", "mae", "bootstrap_ci", "abstention_rate"), "blocked_source_unavailable"),
     TaskSpec("robot_manipulation", "trajectory", "RoboMimic/Open X subset", "robomimic", ("ade", "fde", "success_rate", "fallback_rate", "safety_violations")),
     TaskSpec("robot_trajectory", "trajectory", "nuScenes or simulator logs", "trajectory", ("ade", "fde", "success_rate", "fallback_rate", "safety_violations")),
 )

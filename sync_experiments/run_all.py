@@ -32,7 +32,7 @@ def main():
             try:
                 adapter.load()
             except AdapterNotReady as exc:
-                record.update({"status": "pending_adapter", "message": str(exc)})
+                record.update({"status": task.status if task.status == "blocked_source_unavailable" else "pending_adapter", "message": str(exc)})
         elif args.device != "cpu":
             record.update({"status": "deferred_cuda", "message": "CUDA execution is reserved for the separate GPU machine."})
         elif task_id == "electricity":
