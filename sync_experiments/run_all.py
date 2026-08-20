@@ -31,8 +31,13 @@ def main():
         if task_id not in ("ett", "electricity"):
             try:
                 if task_id == "hvac":
-                    adapter.load(context_length=720, horizon=96, step=96)
-                    record.update({"status": "source_verified_adapter_ready", "message": "BDG2 CSV adapter validated; model benchmark not yet run."})
+                    hvac_root=ROOT/'outputs'/'benchmark_runs'/'hvac'
+                    meters=('BDG2_Panther_office_Hannah','BDG2_Panther_office_Catherine','BDG2_Panther_lodging_Cora')
+                    if all((hvac_root/m/'summary.json').exists() for m in meters):
+                        record.update({"status":"completed_existing","artifacts":[str(hvac_root/m) for m in meters]})
+                    else:
+                        adapter.load(context_length=720, horizon=96, step=96)
+                        record.update({"status": "source_verified_adapter_ready", "message": "BDG2 CSV adapter validated; model benchmark not yet run."})
                 else:
                     adapter.load()
             except AdapterNotReady as exc:

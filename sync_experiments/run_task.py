@@ -41,6 +41,16 @@ def main():
             record.update(status="pending_adapter", message="Prepare data and run the documented benchmark first.")
     elif task.task_id == "ett":
         record.update(status="completed_existing", artifacts=["outputs/common_runner_*.json"])
+    elif task.task_id == "hvac":
+        hvac_root=ROOT/'outputs'/'benchmark_runs'/'hvac'
+        meters=('BDG2_Panther_office_Hannah','BDG2_Panther_office_Catherine','BDG2_Panther_lodging_Cora')
+        if all((hvac_root/m/'summary.json').exists() for m in meters):
+            record.update(status='completed_existing', artifacts=[str(hvac_root/m) for m in meters])
+        else:
+            try:
+                adapter_for(task.task_id, ROOT / "outputs").load(context_length=720, horizon=96, step=96)
+            except (AdapterNotReady, FileNotFoundError, TypeError) as exc:
+                record.update(status=task.status if task.status != "candidate" else "pending_adapter", message=str(exc))
     else:
         try:
             adapter = adapter_for(task.task_id, ROOT / "outputs")
