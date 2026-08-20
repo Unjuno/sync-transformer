@@ -6,6 +6,7 @@ with an actionable message until their licensed data and adapter are present.
 import argparse, json, subprocess, sys
 from pathlib import Path
 from .tasks import TASKS, get_task
+from .adapters import adapter_for, AdapterNotReady
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -26,8 +27,12 @@ def main():
     for task_id in requested:
         task = get_task(task_id)
         record = {"task_id": task.task_id, "track": task.track, "dataset": task.dataset, "status": task.status}
+        adapter = adapter_for(task_id, ROOT / "outputs")
         if task_id != "ett":
-            record.update({"status": "pending_adapter", "message": "Provide licensed data and implement the declared adapter before running."})
+            try:
+                adapter.load()
+            except AdapterNotReady as exc:
+                record.update({"status": "pending_adapter", "message": str(exc)})
         elif args.device != "cpu":
             record.update({"status": "deferred_cuda", "message": "CUDA execution is reserved for the separate GPU machine."})
         else:
