@@ -11,10 +11,10 @@ def main():
     summary = json.loads((ROOT/'outputs/electricity_cross_client_summary.json').read_text())
     for r in summary['rows']:
         rows.append(dict(zip(FIELDS, ['electricity',f"UCI ElectricityLoadDiagrams {r['client']}",'96','60/20/20','Vanilla small/SYNC','12800/19296',f"{r['sync_external_mse']['mean']:.6f}",f"[{r['sync_external_mse']['ci95'][0]:.6f}, {r['sync_external_mse']['ci95'][1]:.6f}]",'not pooled',f"{r['gate_use_rate']:.6f}",'recorded',r['failure'],'measured'])))
-    pending = [('renewable','GEFCom solar/wind or NREL'),('traffic','METR-LA/PEMS-BAY'),('hvac','Building Data Genome 2'),('server','Alibaba cluster trace'),('retail','M5/Favorita'),('industrial','NASA C-MAPSS'),('robot_manipulation','RoboMimic/Open X subset'),('robot_trajectory','nuScenes or simulator logs')]
-    for task, dataset in pending:
-        note = 'official source unavailable/license unspecified' if task == 'industrial' else 'adapter/data not ready'
-        rows.append(dict(zip(FIELDS,[task,dataset,'N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A',note,'pending'])))
+    pending = [('renewable','GEFCom solar/wind or NREL','source_public_license_unresolved'),('traffic','METR-LA/PEMS-BAY','pending'),('hvac','Building Data Genome 2','source_verified_pending_adapter'),('server','Alibaba cluster trace','pending'),('retail','M5/Favorita','pending'),('industrial','NASA C-MAPSS','blocked_source_unavailable'),('robot_manipulation','RoboMimic/Open X subset','pending'),('robot_trajectory','nuScenes or simulator logs','pending')]
+    for task, dataset, status in pending:
+        note = 'official source unavailable/license unspecified' if task in ('industrial','renewable') else 'adapter/data not ready'
+        rows.append(dict(zip(FIELDS,[task,dataset,'N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A','N/A',note,status])))
     out = ROOT/'outputs/benchmark_matrix.csv'; out.write_text('')
     with out.open('w', newline='', encoding='utf-8') as f:
         w=csv.DictWriter(f, fieldnames=FIELDS); w.writeheader(); w.writerows(rows)

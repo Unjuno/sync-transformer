@@ -3,11 +3,11 @@ ett,ETTh1/ETTh2/ETTm1/ETTm2,task-specific,canonical,Vanilla/SYNC,recorded,record
 electricity,UCI ElectricityLoadDiagrams MT_001,96,60/20/20,Vanilla small/SYNC,12800/19296,0.795544,"[0.723004, 0.869040]",not pooled,0.000000,recorded,gate abstained on every query,measured
 electricity,UCI ElectricityLoadDiagrams MT_002,96,60/20/20,Vanilla small/SYNC,12800/19296,0.237559,"[0.231607, 0.244159]",not pooled,0.102740,recorded,deployed residual worsened base head,measured
 electricity,UCI ElectricityLoadDiagrams MT_003,96,60/20/20,Vanilla small/SYNC,12800/19296,0.003625,"[0.003573, 0.003686]",not pooled,1.000000,recorded,no measured worsening,measured
-renewable,GEFCom solar/wind or NREL,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
+renewable,GEFCom solar/wind or NREL,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,official source unavailable/license unspecified,source_public_license_unresolved
 traffic,METR-LA/PEMS-BAY,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
-hvac,Building Data Genome 2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
+hvac,Building Data Genome 2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,source_verified_pending_adapter
 server,Alibaba cluster trace,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
 retail,M5/Favorita,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
-industrial,NASA C-MAPSS,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,official source unavailable/license unspecified,pending
+industrial,NASA C-MAPSS,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,official source unavailable/license unspecified,blocked_source_unavailable
 robot_manipulation,RoboMimic/Open X subset,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
 robot_trajectory,nuScenes or simulator logs,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,adapter/data not ready,pending
