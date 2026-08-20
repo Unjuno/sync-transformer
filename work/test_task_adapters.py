@@ -23,7 +23,7 @@ def test_hvac_adapter_loads_numeric_series(tmp_path):
     assert batch.context[0, 3] == pytest.approx(3.0)
 
 def test_traffic_adapter_loads_sensor_column(tmp_path):
-    (tmp_path / "METR-LA.csv").write_text("timestamp,0\n" + "\n".join(f"t{i},{i}" for i in range(8)))
+    (tmp_path / "METR-LA.csv").write_text("timestamp,sensor_123\n" + "\n".join(f"t{i},{i}" for i in range(8)))
     batch = TrafficAdapter(tmp_path).load(context_length=3, horizon=2, step=2)
     assert batch.task_id == "traffic"
     assert batch.context.shape == (2, 3)

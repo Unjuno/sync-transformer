@@ -64,13 +64,19 @@ class ElectricityAdapter(ETTAdapter):
 
 class CSVSeriesAdapter(BaseAdapter):
     """Load one deterministic numeric column from a timestamped CSV."""
-    def __init__(self, task_id: str, root: str | Path, filename: str, column: str):
+    def __init__(self, task_id: str, root: str | Path, filename: str, column: str | None):
         self.task_id, self.root, self.filename, self.column = task_id, Path(root), filename, column
 
     def load(self, context_length: int, horizon: int, step: int = 1) -> WindowBatch:
         path = self.root / self.filename
         if not path.exists():
             raise FileNotFoundError(path)
+        if self.column is None:
+            header = pd.read_csv(path, nrows=0).columns.tolist()
+            candidates = [c for c in header if c.lower() not in {'timestamp','datetime','date','time'}]
+            if not candidates:
+                raise ValueError(f'{path}: no sensor column found')
+            self.column = candidates[0]
         frame = pd.read_csv(path, usecols=[self.column])
         y = pd.to_numeric(frame[self.column], errors='coerce').interpolate(limit_direction='both').to_numpy(np.float32)
         starts = np.arange(0, len(y) - context_length - horizon + 1, step)
@@ -87,7 +93,7 @@ class HVACAdapter(CSVSeriesAdapter):
 
 class TrafficAdapter(CSVSeriesAdapter):
     """METR-LA/PEMS-BAY single-sensor view for the forecasting track."""
-    def __init__(self, root: str | Path, filename='METR-LA.csv', column='0'):
+    def __init__(self, root: str | Path, filename='METR-LA.csv', column=None):
         super().__init__('traffic', root, filename, column)
 
 class PendingAdapter(BaseAdapter):
