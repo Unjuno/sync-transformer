@@ -1,0 +1,6 @@
+SYNC Transformer original code and documentation are Copyright (c) 2026 Unjuno
+and are distributed under the Apache License, Version 2.0.
+
+Benchmark datasets are third-party materials. They are not included in this
+repository and remain subject to the licenses and terms recorded in
+data/manifest.json and the upstream sources.

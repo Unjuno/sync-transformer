@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "SYNC Transformer"
+message: "If you use this repository, please cite it and the upstream datasets listed in data/manifest.json."
+type: software
+authors:
+  - family-names: Unjuno
+license: Apache-2.0
+repository-code: "https://github.com/Unjuno/sync-transformer"
+abstract: >-
+  A reproducible research implementation and benchmark suite for conditional
+  residual transport with historical episode retrieval and abstention.
