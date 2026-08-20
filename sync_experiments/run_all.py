@@ -30,7 +30,11 @@ def main():
         adapter = adapter_for(task_id, ROOT / "outputs")
         if task_id not in ("ett", "electricity"):
             try:
-                adapter.load()
+                if task_id == "hvac":
+                    adapter.load(context_length=720, horizon=96, step=96)
+                    record.update({"status": "source_verified_adapter_ready", "message": "BDG2 CSV adapter validated; model benchmark not yet run."})
+                else:
+                    adapter.load()
             except AdapterNotReady as exc:
                 source_statuses = {"blocked_source_unavailable", "source_public_license_unresolved", "source_verified_pending_adapter"}
                 record.update({"status": task.status if task.status in source_statuses else "pending_adapter", "message": str(exc)})
