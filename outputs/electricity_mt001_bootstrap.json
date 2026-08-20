@@ -1,0 +1,44 @@
+{
+  "protocol": "pooled test queries; bootstrap resamples queries with seed 20260820",
+  "sync_external_mse": {
+    "mean": 0.7955438331509493,
+    "ci95": [
+      0.7230036669206109,
+      0.8690403406977117
+    ],
+    "n": 876
+  },
+  "sync_base_mse": {
+    "mean": 0.7955438331509493,
+    "ci95": [
+      0.723984114964414,
+      0.8736554781651149
+    ],
+    "n": 876
+  },
+  "seasonal_persistence_mse": {
+    "mean": 0.9107260704040527,
+    "ci95": [
+      0.9107260704040527,
+      0.9107260704040527
+    ],
+    "n": 876
+  },
+  "vanilla_small_mse": {
+    "mean": 1.0976908525694418,
+    "ci95": [
+      1.0135831324708942,
+      1.186864660783792
+    ],
+    "n": 876
+  },
+  "external_minus_base_delta": {
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "n": 876
+  },
+  "gate_use_rate_mean": 0.0
+}
