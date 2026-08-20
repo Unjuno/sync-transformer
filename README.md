@@ -28,6 +28,12 @@ The supported interpretation is:
 
 Internal-search results remain protocol-sensitive. The repository records both the initial Phase 4A–4B report and later reconstruction diagnostics rather than selecting one outcome without reconciliation.
 
+## What can SYNC be used for?
+
+SYNC is intended for recurring or seasonal processes where comparable past episodes exist and a fallback is available. Plausible application families include electricity load, renewable power, traffic, HVAC, server workload, retail demand, industrial sensors, and repetitive robot trajectories. Only the public ETT forecasting row has been benchmarked so far; the other applications are hypotheses and are listed in [the task map](docs/TASKS.md).
+
+Each new application must be compared with a Vanilla Transformer under the same data split, horizon, seeds, parameter budget, and compute budget. The public roadmap is [the task benchmark matrix](outputs/task_benchmark_matrix.md). No candidate task should be described as validated until its benchmark row has been filled.
+
 ## Reproducibility
 
 ```powershell

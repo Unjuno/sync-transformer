@@ -42,6 +42,8 @@ The authoritative summary is `outputs/SYNC_Transformer_results_and_experiment_pl
 
 The initial benchmark table is `outputs/benchmark_comparison_table.md`. It explicitly separates absolute Vanilla Transformer MSE from SYNC's canonical paired deltas because the two protocols use different model sizes and training budgets.
 
+The task-level roadmap is `docs/TASKS.md`, and its public status matrix is `outputs/task_benchmark_matrix.md`. Candidate tasks are hypotheses until both Vanilla Transformer and SYNC have been evaluated on the same benchmark.
+
 ## Deferred CUDA experiment
 
 RAFT and other external-baseline comparisons are intentionally deferred to a CUDA-capable machine. The CUDA experiment must clone this repository, reproduce the CPU baseline, preserve the fixed split/seed/horizon protocol, and add GPU artifacts in a separate commit.
