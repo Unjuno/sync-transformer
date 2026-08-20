@@ -47,5 +47,5 @@ def main():
     assert all(r['status']=='measured' for r in rows if r['task'] in {'ett','electricity'})
     tracked=subprocess.run(['git','ls-files','data/raw'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
     assert not tracked, f'raw data tracked: {tracked}'
-    print({'tasks':len(manifest['tasks']),'matrix_rows':len(rows),'electricity_clients':3,'ett_datasets':4,'hvac_meters':3,'traffic_sensors':1,'raw_tracked':False,'cuda_overwrite_cpu':False})
+    print({'tasks':len(manifest['tasks']),'matrix_rows':len(rows),'electricity_clients':3,'ett_datasets':4,'hvac_meters':3,'traffic_sensors':2,'raw_tracked':False,'cuda_overwrite_cpu':False})
 if __name__=='__main__': main()
