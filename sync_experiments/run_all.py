@@ -31,8 +31,13 @@ def main():
         if task_id not in ("ett", "electricity"):
             try:
                 if task_id == "traffic":
-                    adapter.load(context_length=720, horizon=96, step=96)
-                    record.update({"status":"source_verified_adapter_ready", "message":"METR-LA/PEMS-BAY CSV adapter validated; model benchmark not yet run."})
+                    traffic_root=ROOT/'outputs'/'benchmark_runs'/'traffic'
+                    sensors=('METR_LA_sensor0','METR_LA_sensor1')
+                    if all((traffic_root/s/'summary.json').exists() for s in sensors):
+                        record.update({"status":"completed_existing","artifacts":[str(traffic_root/s) for s in sensors]})
+                    else:
+                        adapter.load(context_length=720, horizon=96, step=96)
+                        record.update({"status":"source_verified_adapter_ready", "message":"METR-LA/PEMS-BAY CSV adapter validated; model benchmark not yet run."})
                 elif task_id == "hvac":
                     hvac_root=ROOT/'outputs'/'benchmark_runs'/'hvac'
                     meters=('BDG2_Panther_office_Hannah','BDG2_Panther_office_Catherine','BDG2_Panther_lodging_Cora')
