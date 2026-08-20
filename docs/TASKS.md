@@ -13,7 +13,7 @@ Every new task must compare SYNC against a Vanilla Transformer under the same sp
 | 1 | Building electricity-load forecasting | Daily/weekly cycles and recurring occupancy patterns | Load at 15–60 min horizon | UCI ElectricityLoadDiagrams, ASHRAE, or Pecan Street | Three UCI client series measured; client-dependent and not generalised |
 | 2 | Renewable-power forecasting | Day/night and weather-regime recurrence | Solar/wind power | GEFCom or public solar/wind series | Candidate; not tested |
 | 3 | Road-traffic forecasting | Rush-hour and weekday motifs | Flow/speed/occupancy | METR-LA, PEMS-BAY | Candidate; not tested |
-| 4 | HVAC/control-demand forecasting | Occupancy and thermal cycles | Zone temperature/load | Building energy datasets | Candidate; not tested |
+| 4 | HVAC/control-demand forecasting | Occupancy and thermal cycles | Zone temperature/load | Building Data Genome 2 | Three BDG2 meters measured; series-dependent |
 | 5 | Server/workload forecasting | Daily and weekly request patterns | Requests/CPU/latency | Alibaba cluster or public workload traces | Candidate; not tested |
 | 6 | Retail/inventory demand forecasting | Calendar, promotion, and replenishment recurrence | SKU demand | M5 or Favorita | Candidate; not tested |
 | 7 | Industrial sensor forecasting | Repeated operating cycles and fault precursors | Sensor trajectory/residual | NASA C-MAPSS or industrial telemetry | Candidate; not tested |
