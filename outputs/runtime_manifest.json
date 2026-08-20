@@ -1,0 +1,18 @@
+{
+  "schema": "sync-runtime-manifest-v1",
+  "cpu_baseline": {
+    "status": "published",
+    "device": "cpu",
+    "seeds": [163, 164, 165],
+    "epochs": 20,
+    "artifact_root": "outputs/"
+  },
+  "cuda_extension": {
+    "status": "deferred",
+    "device": "cuda",
+    "artifact_root": "outputs/benchmark_runs_cuda/",
+    "overwrite_cpu": false,
+    "reason": "GPU machine required by the experiment plan"
+  },
+  "invariant": "CUDA results must reproduce the CPU protocol before any hardware comparison."
+}
