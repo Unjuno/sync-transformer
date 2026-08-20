@@ -33,7 +33,7 @@ def main():
         for name in ('config.json','per_seed.json','query_metrics.json','summary.json','comparison.md'):
             assert (traffic_dir/name).exists(), f'missing {traffic_dir/name}'
     traffic_manifest=next(t for t in manifest['tasks'] if t['task_id']=='traffic')
-    assert traffic_manifest['status']=='benchmarked_one_sensor'
+    assert traffic_manifest['status']=='benchmarked_two_sensors'
     matrix_path=ROOT/'outputs/benchmark_matrix.csv'
     rows=list(csv.DictReader(matrix_path.open(newline='', encoding='utf-8')))
     assert len(rows) == 16, f'expected 16 benchmark matrix rows, got {len(rows)}'
