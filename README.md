@@ -76,6 +76,7 @@ See `outputs/SYNC_Transformer_results_and_experiment_plan.md` for the protocol a
 
 ## Research structure
 
+- [Repository map](docs/REPOSITORY_MAP.md): public evidence surface versus local-only artifacts.
 - [Theory and scope](docs/THEORY.md): definitions, hypotheses, and non-claims.
 - [Experiments](docs/EXPERIMENTS.md): fixed protocol, completed CPU studies, and reproduction commands.
 - [Benchmark table](outputs/benchmark_comparison_table.md): conventional Transformer versus the existing baselines.
