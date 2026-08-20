@@ -6,9 +6,11 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     changed=0
     for p in (ROOT/'outputs'/'benchmark_runs').glob('*/*/summary.json'):
-        d=json.loads(p.read_text()); name=d.get('dataset');
+        d=json.loads(p.read_text()); name=d.get('dataset') or d.get('client');
         if not name: continue
-        cs=list(ROOT.glob(f'outputs/common_runner_{name}*.json')); vs=[ROOT/f'outputs/vanilla_{name}_20.json']
+        lookup=name
+        if d.get('task_id')=='electricity': lookup='Electricity' if name=='MT_001' else f"Electricity_{name.replace('_','')}"
+        cs=list(ROOT.glob(f'outputs/common_runner_{lookup}*.json')); vs=[ROOT/f'outputs/vanilla_{lookup}_20.json']
         if not cs or not vs[0].exists(): continue
         sr=json.loads(max(cs,key=lambda q:q.stat().st_mtime).read_text()).get('rows',[]); vr=json.loads(vs[0].read_text()).get('rows',[])
         if not sr or not vr: continue
