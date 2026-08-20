@@ -1,0 +1,52 @@
+"""Run or report one task from the public benchmark registry.
+
+This entry point deliberately refuses to substitute datasets or fabricate
+metrics. Implemented tasks return pointers to their reproducible artifacts;
+unimplemented tasks return an explicit pending status.
+"""
+import argparse
+import json
+from pathlib import Path
+from .tasks import get_task
+from .adapters import adapter_for, AdapterNotReady
+
+ROOT = Path(__file__).resolve().parent.parent
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--task", required=True)
+    ap.add_argument("--models", default="vanilla,vanilla_small,sync")
+    ap.add_argument("--seeds", default="163,164,165")
+    ap.add_argument("--epochs", type=int, default=20)
+    ap.add_argument("--device", choices=("cpu", "cuda"), default="cpu")
+    ap.add_argument("--output", default=None)
+    args = ap.parse_args()
+    task = get_task(args.task)
+    record = {"task_id": task.task_id, "track": task.track,
+              "dataset": task.dataset, "models": args.models.split(","),
+              "seeds": [int(x) for x in args.seeds.split(",") if x],
+              "epochs": args.epochs, "device": args.device,
+              "status": task.status}
+    if args.device == "cuda":
+        record.update(status="deferred_cuda", message="CUDA runs are separate artifacts.")
+    elif task.task_id == "electricity":
+        a = ROOT / "outputs/common_runner_Electricity_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json"
+        v = ROOT / "outputs/vanilla_Electricity20.json"
+        if a.exists() and v.exists():
+            record.update(status="completed_existing", artifacts=[str(a), str(v)])
+        else:
+            record.update(status="pending_adapter", message="Prepare data and run the documented benchmark first.")
+    elif task.task_id == "ett":
+        record.update(status="completed_existing", artifacts=["outputs/common_runner_*.json"])
+    else:
+        try:
+            adapter_for(task.task_id, ROOT / "outputs").load()
+        except AdapterNotReady as exc:
+            record.update(status="pending_adapter", message=str(exc))
+    out = Path(args.output) if args.output else ROOT / "outputs" / "benchmark_runs" / task.task_id / "summary.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(record, indent=2), encoding="utf-8")
+    print(json.dumps(record, indent=2))
+
+if __name__ == "__main__":
+    main()
