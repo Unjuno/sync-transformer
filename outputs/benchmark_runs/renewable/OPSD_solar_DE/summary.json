@@ -2,13 +2,13 @@
   "task_id": "renewable",
   "dataset": "OPSD_solar_DE",
   "status": "measured_alternative",
-  "mean_sync_external_mse": 3.80151582734917e+23,
-  "mean_vanilla_mse": 3.80151582734917e+23,
-  "paired_delta_sync_minus_vanilla": -0.0038985028257895685,
+  "mean_sync_external_mse": 0.8519221941630045,
+  "mean_vanilla_mse": 3.0416259765625,
+  "paired_delta_sync_minus_vanilla": -2.1897038300004272,
   "paired_delta_95ci": [
-    -0.005440458813905248,
-    -0.0025551498419799784
+    -2.373412473315235,
+    -2.0036452499218282
   ],
-  "mean_gate_use_rate": 0.19344262295081968,
-  "failure_notes": "OPSD solar_DE_generation alternative; values include long missing-data interpolation and are not a claim of superiority"
+  "mean_gate_use_rate": 0.0,
+  "failure_notes": "OPSD solar_DE_generation alternative; restricted to 2012-2015 observed coverage with interpolation limited to three consecutive gaps; no claim beyond this dataset"
 }

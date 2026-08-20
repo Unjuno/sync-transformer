@@ -11,7 +11,9 @@ def main():
     args = ap.parse_args()
     src = ROOT / 'data' / 'raw' / 'opsd_time_series_2016.csv'
     frame = pd.read_csv(src, usecols=['utc-timestamp', args.column])
-    y = pd.to_numeric(frame[args.column], errors='coerce').interpolate(limit_direction='both')
+    frame['ts'] = pd.to_datetime(frame['utc-timestamp'], errors='coerce', utc=True)
+    frame = frame[frame['ts'].dt.year.between(2012, 2015)].copy()
+    y = pd.to_numeric(frame[args.column], errors='coerce').interpolate(limit=3, limit_direction='both')
     keep = y.notna()
     out = ROOT / 'outputs' / 'OPSD_solar_DE.csv'
     pd.DataFrame({'date': frame.loc[keep, 'utc-timestamp'].astype(str), 'OT': y.loc[keep].astype('float32')}).to_csv(out, index=False)
