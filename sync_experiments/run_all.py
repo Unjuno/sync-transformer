@@ -45,8 +45,9 @@ def main():
                 record.update({"status": "completed_existing", "artifacts": [str(p) for p in artifacts + vanilla]})
                 # Export the documented per-client files from the immutable run artifacts.
                 for artifact in artifacts:
-                    client = "MT_002" if "MT002" in artifact.name else "MT_003" if "MT003" in artifact.name else "MT_001"
-                    vname = f"vanilla_Electricity_{client}_20.json" if client != "MT_001" else "vanilla_Electricity20.json"
+                    token = "MT002" if "MT002" in artifact.name else "MT003" if "MT003" in artifact.name else "MT001"
+                    client = {"MT001":"MT_001", "MT002":"MT_002", "MT003":"MT_003"}[token]
+                    vname = f"vanilla_Electricity_{token}_20.json" if token != "MT001" else "vanilla_Electricity20.json"
                     vpath = ROOT / "outputs" / vname
                     if vpath.exists():
                         subprocess.run([sys.executable, "work/export_electricity_task.py", "--client", client, "--sync", str(artifact), "--vanilla", str(vpath), "--output", str(out / "electricity" / client)], cwd=ROOT, check=True)
