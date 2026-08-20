@@ -49,7 +49,7 @@ def main():
         else:
             try:
                 adapter_for(task.task_id, ROOT / "outputs").load(context_length=720, horizon=96, step=96)
-            except (AdapterNotReady, FileNotFoundError, TypeError) as exc:
+            except (AdapterNotReady, FileNotFoundError, TypeError, ValueError) as exc:
                 record.update(status=task.status if task.status != "candidate" else "pending_adapter", message=str(exc))
     else:
         try:
@@ -58,7 +58,7 @@ def main():
                 adapter.load(context_length=720, horizon=96, step=96)
             else:
                 adapter.load()
-        except (AdapterNotReady, FileNotFoundError, TypeError) as exc:
+        except (AdapterNotReady, FileNotFoundError, TypeError, ValueError) as exc:
             record.update(status=task.status if task.status != "candidate" else "pending_adapter", message=str(exc))
     out = Path(args.output) if args.output else ROOT / "outputs" / "benchmark_runs" / task.task_id / "summary.json"
     out.parent.mkdir(parents=True, exist_ok=True)

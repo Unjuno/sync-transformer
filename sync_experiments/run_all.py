@@ -43,7 +43,7 @@ def main():
                         record.update({"status": "source_verified_adapter_ready", "message": "BDG2 CSV adapter validated; model benchmark not yet run."})
                 else:
                     adapter.load()
-            except (AdapterNotReady, FileNotFoundError, TypeError) as exc:
+            except (AdapterNotReady, FileNotFoundError, TypeError, ValueError) as exc:
                 source_statuses = {"blocked_source_unavailable", "source_public_license_unresolved", "source_verified_pending_adapter"}
                 record.update({"status": task.status if task.status in source_statuses else "pending_adapter", "message": str(exc)})
         elif args.device != "cpu":
