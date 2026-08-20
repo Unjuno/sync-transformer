@@ -15,6 +15,25 @@ class WindowBatch:
     target: np.ndarray
     timestamps: np.ndarray | None = None
 
+@dataclass
+class TrajectoryBatch:
+    """Causal trajectory contract kept separate from scalar forecasting."""
+    task_id: str
+    observed: np.ndarray
+    future: np.ndarray
+    timestamps: np.ndarray | None = None
+    metadata: dict | None = None
+
+@dataclass
+class TrajectoryMetrics:
+    ade: float
+    fde: float
+    tracking_error: float | None
+    success_rate: float | None
+    fallback_rate: float
+    safety_violations: int
+    latency_ms: float | None = None
+
 class AdapterNotReady(RuntimeError):
     pass
 
@@ -46,7 +65,12 @@ class PendingAdapter(BaseAdapter):
     def __init__(self, task_id: str, dataset: str):
         self.task_id, self.dataset = task_id, dataset
     def load(self, *args, **kwargs):
-        raise AdapterNotReady(f"{self.task_id}: acquire and license {self.dataset}, then implement its adapter")
+            raise AdapterNotReady(f"{self.task_id}: acquire and license {self.dataset}, then implement its adapter")
+
+class PendingTrajectoryAdapter(PendingAdapter):
+    """Explicit trajectory-side blocker; never returns forecasting windows."""
+    def load_trajectory(self, *args, **kwargs) -> TrajectoryBatch:
+        raise AdapterNotReady(f"{self.task_id}: trajectory dataset/formulation is not ready for {self.dataset}")
 
 def adapter_for(task_id: str, data_root: str | Path):
     if task_id == "ett":
@@ -55,4 +79,6 @@ def adapter_for(task_id: str, data_root: str | Path):
         return ElectricityAdapter(data_root)
     from .tasks import get_task
     task = get_task(task_id)
+    if task.track == "trajectory":
+        return PendingTrajectoryAdapter(task.task_id, task.dataset)
     return PendingAdapter(task.task_id, task.dataset)
