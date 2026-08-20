@@ -54,9 +54,11 @@ python work/run_canonical_suite.py
 python work/summarize_rolling_origin.py --pattern "common_runner_*_ev*.json"
 python work/validate_reconstruction_artifacts.py
 python work/audit_public_sync.py
+python work/validate_public_benchmark.py
 ```
 
 See `outputs/SYNC_Transformer_results_and_experiment_plan.md` for the protocol and interpretation.
+The current evidence audit is [public_validation_completion_audit.md](outputs/public_validation_completion_audit.md); it explicitly lists incomplete task families.
 
 ## Research structure
 
