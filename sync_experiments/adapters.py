@@ -85,6 +85,11 @@ class HVACAdapter(CSVSeriesAdapter):
     def __init__(self, root: str | Path, filename='bdg2_electricity_cleaned.csv', column='Panther_office_Hannah'):
         super().__init__('hvac', root, filename, column)
 
+class TrafficAdapter(CSVSeriesAdapter):
+    """METR-LA/PEMS-BAY single-sensor view for the forecasting track."""
+    def __init__(self, root: str | Path, filename='METR-LA.csv', column='0'):
+        super().__init__('traffic', root, filename, column)
+
 class PendingAdapter(BaseAdapter):
     def __init__(self, task_id: str, dataset: str):
         self.task_id, self.dataset = task_id, dataset
@@ -103,6 +108,8 @@ def adapter_for(task_id: str, data_root: str | Path):
         return ElectricityAdapter(data_root)
     if task_id == "hvac":
         return HVACAdapter(Path(data_root).parent / 'data' / 'raw')
+    if task_id == "traffic":
+        return TrafficAdapter(Path(data_root).parent / 'data' / 'raw')
     from .tasks import get_task
     task = get_task(task_id)
     if task.track == "trajectory":
