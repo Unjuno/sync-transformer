@@ -20,11 +20,12 @@ def main():
             assert (d/name).exists(), f'missing {d/name}'
     matrix_path=ROOT/'outputs/benchmark_matrix.csv'
     rows=list(csv.DictReader(matrix_path.open(newline='', encoding='utf-8')))
-    assert len(rows) == 16, f'expected 16 benchmark matrix rows, got {len(rows)}'
+    assert len(rows) == 17, f'expected 17 benchmark matrix rows, got {len(rows)}'
     ett_rows={r['dataset'] for r in rows if r['task']=='ett'}
     assert {'ETTh1','ETTh2','ETTm1','ETTm2'} <= ett_rows
     electricity_rows={r['dataset'] for r in rows if r['task']=='electricity'}
     assert all(any(client in dataset for dataset in electricity_rows) for client in ('MT_001','MT_002','MT_003'))
+    assert any(r['task']=='hvac' and r['status']=='measured' for r in rows)
     assert all(r['status']=='measured' for r in rows if r['task'] in {'ett','electricity'})
     tracked=subprocess.run(['git','ls-files','data/raw'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
     assert not tracked, f'raw data tracked: {tracked}'
