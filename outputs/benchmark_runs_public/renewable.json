@@ -1,0 +1,7 @@
+{
+  "task_id": "renewable",
+  "track": "forecasting",
+  "dataset": "GEFCom solar/wind or NREL",
+  "status": "pending_adapter",
+  "message": "renewable: acquire and license GEFCom solar/wind or NREL, then implement its adapter"
+}

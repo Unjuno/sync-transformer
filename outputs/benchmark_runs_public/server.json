@@ -1,0 +1,7 @@
+{
+  "task_id": "server",
+  "track": "forecasting",
+  "dataset": "Alibaba cluster trace",
+  "status": "pending_adapter",
+  "message": "server: acquire and license Alibaba cluster trace, then implement its adapter"
+}

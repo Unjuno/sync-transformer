@@ -1,0 +1,7 @@
+{
+  "task_id": "robot_manipulation",
+  "track": "trajectory",
+  "dataset": "RoboMimic/Open X subset",
+  "status": "pending_adapter",
+  "message": "robot_manipulation: acquire and license RoboMimic/Open X subset, then implement its adapter"
+}

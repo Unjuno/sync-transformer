@@ -1,0 +1,7 @@
+{
+  "task_id": "ett",
+  "track": "forecasting",
+  "dataset": "ETTh1/ETTh2/ETTm1/ETTm2",
+  "status": "completed",
+  "artifact": "outputs/common_runner_*.json"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "traffic",
+  "track": "forecasting",
+  "dataset": "METR-LA/PEMS-BAY",
+  "status": "pending_adapter",
+  "message": "traffic: acquire and license METR-LA/PEMS-BAY, then implement its adapter"
+}

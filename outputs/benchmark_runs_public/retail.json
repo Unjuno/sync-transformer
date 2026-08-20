@@ -1,0 +1,7 @@
+{
+  "task_id": "retail",
+  "track": "forecasting",
+  "dataset": "M5/Favorita",
+  "status": "pending_adapter",
+  "message": "retail: acquire and license M5/Favorita, then implement its adapter"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "robot_trajectory",
+  "track": "trajectory",
+  "dataset": "nuScenes or simulator logs",
+  "status": "pending_adapter",
+  "message": "robot_trajectory: acquire and license nuScenes or simulator logs, then implement its adapter"
+}

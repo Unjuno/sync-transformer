@@ -1,0 +1,84 @@
+{
+  "tasks": [
+    {
+      "task_id": "ett",
+      "track": "forecasting",
+      "dataset": "ETTh1/ETTh2/ETTm1/ETTm2",
+      "status": "completed",
+      "artifact": "outputs/common_runner_*.json"
+    },
+    {
+      "task_id": "electricity",
+      "track": "forecasting",
+      "dataset": "UCI ElectricityLoadDiagrams",
+      "status": "completed_existing",
+      "artifacts": [
+        "C:\\Users\\junny\\Documents\\Codex\\2026-08-12\\new-chat\\outputs\\common_runner_Electricity_MT002_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json",
+        "C:\\Users\\junny\\Documents\\Codex\\2026-08-12\\new-chat\\outputs\\common_runner_Electricity_MT003_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json",
+        "C:\\Users\\junny\\Documents\\Codex\\2026-08-12\\new-chat\\outputs\\common_runner_Electricity_q96_c48_lbfull_k8_rich0_end_sf_vg0.079168.json",
+        "C:\\Users\\junny\\Documents\\Codex\\2026-08-12\\new-chat\\outputs\\vanilla_Electricity_MT002_20.json",
+        "C:\\Users\\junny\\Documents\\Codex\\2026-08-12\\new-chat\\outputs\\vanilla_Electricity_MT003_20.json",
+        "C:\\Users\\junny\\Documents\\Codex\\2026-08-12\\new-chat\\outputs\\vanilla_Electricity20.json"
+      ]
+    },
+    {
+      "task_id": "renewable",
+      "track": "forecasting",
+      "dataset": "GEFCom solar/wind or NREL",
+      "status": "pending_adapter",
+      "message": "renewable: acquire and license GEFCom solar/wind or NREL, then implement its adapter"
+    },
+    {
+      "task_id": "traffic",
+      "track": "forecasting",
+      "dataset": "METR-LA/PEMS-BAY",
+      "status": "pending_adapter",
+      "message": "traffic: acquire and license METR-LA/PEMS-BAY, then implement its adapter"
+    },
+    {
+      "task_id": "hvac",
+      "track": "forecasting",
+      "dataset": "Building Data Genome 2",
+      "status": "pending_adapter",
+      "message": "hvac: acquire and license Building Data Genome 2, then implement its adapter"
+    },
+    {
+      "task_id": "server",
+      "track": "forecasting",
+      "dataset": "Alibaba cluster trace",
+      "status": "pending_adapter",
+      "message": "server: acquire and license Alibaba cluster trace, then implement its adapter"
+    },
+    {
+      "task_id": "retail",
+      "track": "forecasting",
+      "dataset": "M5/Favorita",
+      "status": "pending_adapter",
+      "message": "retail: acquire and license M5/Favorita, then implement its adapter"
+    },
+    {
+      "task_id": "industrial",
+      "track": "forecasting",
+      "dataset": "NASA C-MAPSS",
+      "status": "pending_adapter",
+      "message": "industrial: acquire and license NASA C-MAPSS, then implement its adapter"
+    },
+    {
+      "task_id": "robot_manipulation",
+      "track": "trajectory",
+      "dataset": "RoboMimic/Open X subset",
+      "status": "pending_adapter",
+      "message": "robot_manipulation: acquire and license RoboMimic/Open X subset, then implement its adapter"
+    },
+    {
+      "task_id": "robot_trajectory",
+      "track": "trajectory",
+      "dataset": "nuScenes or simulator logs",
+      "status": "pending_adapter",
+      "message": "robot_trajectory: acquire and license nuScenes or simulator logs, then implement its adapter"
+    }
+  ],
+  "seeds": "163,164,165",
+  "epochs": 20,
+  "device": "cpu"
+}

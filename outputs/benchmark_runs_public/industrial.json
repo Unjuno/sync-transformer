@@ -1,0 +1,7 @@
+{
+  "task_id": "industrial",
+  "track": "forecasting",
+  "dataset": "NASA C-MAPSS",
+  "status": "pending_adapter",
+  "message": "industrial: acquire and license NASA C-MAPSS, then implement its adapter"
+}
