@@ -14,6 +14,10 @@ def main():
         d=ROOT/'outputs/benchmark_runs/electricity'/client
         for name in ('config.json','per_seed.json','query_metrics.json','summary.json','comparison.md'):
             assert (d/name).exists(), f'missing {d/name}'
+    for dataset in ('ETTh1','ETTh2','ETTm1','ETTm2'):
+        d=ROOT/'outputs/benchmark_runs/ett'/dataset
+        for name in ('config.json','per_seed.json','query_metrics.json','summary.json','comparison.md'):
+            assert (d/name).exists(), f'missing {d/name}'
     tracked=subprocess.run(['git','ls-files','data/raw'],cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
     assert not tracked, f'raw data tracked: {tracked}'
     print({'tasks':len(manifest['tasks']),'electricity_clients':3,'raw_tracked':False,'cuda_overwrite_cpu':False})
